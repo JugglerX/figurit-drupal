@@ -1,0 +1,21 @@
+.block-hero-homepage {
+  background-size: cover;
+  .field--name-field-hero {
+  }
+  .field--name-field-hero-heading {
+    text-align: center;
+    @extend .h1;
+    margin: 0;
+    padding-top: 120px;
+    color: #FFF;
+    font-weight: 600;
+  }
+  .field--name-field-hero-subheading {
+    text-align: center;
+    @extend .h2;
+    margin: 0;
+    padding-top: 10px;
+    color: #FFF;
+    font-weight: 200;
+  }
+}

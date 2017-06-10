@@ -1,0 +1,6 @@
+.layout-top {
+  background: $primary-color;
+  body.role-administrator & {
+    //display: none;
+  }
+}
