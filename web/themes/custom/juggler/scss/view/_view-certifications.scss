@@ -1,0 +1,11 @@
+.view.view-certifications {
+  .view-content {
+    @include grid-row(nest);
+    .views-row {
+      @include grid-column(4);
+      @media #{$small-only} {
+        @include grid-column(12);
+      }
+    }
+  }
+}

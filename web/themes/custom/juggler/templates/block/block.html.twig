@@ -25,13 +25,17 @@
  * @see template_preprocess_block()
  */
 #}
+{{ breakpoint() }}
 
 {% set classes = [
 'block',
-'block-' ~ machine_name|clean_class,
+'block-id-' ~ machine_name|clean_class,
+'block-' ~ base_plugin_id|clean_class,
 ] %}
 
-<div {{ attributes.addClass(classes) }}>
+{#'block-' ~ derivative_plugin_id|clean_class#}
+
+<div {{ attributes.addClass(classes).removeClass('views-element-container') }}>
 
   {{ title_prefix }}
   {% if label %}

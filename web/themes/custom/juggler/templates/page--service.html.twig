@@ -1,0 +1,94 @@
+<div class="page page-service">
+
+  {% if page.top %}
+    <div class="layout layout-top">
+      <div class="row">
+        {{ page.top }}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if page.header %}
+    <div class="layout layout-header">
+      <div class="row">
+        {{ page.header }}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if page.sub_header %}
+    <div class="layout layout-sub-header">
+      <div class="row">
+        <div class="small-12 column">
+          {{ page.sub_header }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if page.hero %}
+    <div class="layout layout-hero">
+      <div class="row">
+        <div class="small-12 column">
+          {{ page.hero }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if page.highlighted %}
+    <div class="layout layout-highlighted">
+      {{ page.highlighted }}
+    </div>
+  {% endif %}
+
+  {% if page.breadcrumb %}
+    <div class="row">
+      <div class="small-12 column">
+        {{ page.breadcrumb }}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if page.above_content %}
+    <div class="row">
+      <div class="small-12 column">
+        {{ page.above_content }}
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="layout layout-content">
+    {{ page.content }}
+  </div>
+
+  {% if page.canyon %}
+    <div class="layout layout-canyon">
+      <div class="row">
+        <div class="small-12 column">
+          {{ page.canyon }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if page.footer %}
+    <div class="layout layout-footer">
+      <div class="row">
+        <div class="small-12 column">
+          {{ page.footer }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if page.bottom %}
+    <div class="layout layout-bottom">
+      <div class="row">
+        <div class="small-12 column">
+          {{ page.bottom }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+</div>

@@ -1,5 +1,12 @@
-.block-hero-homepage {
+.block-id-hero-homepage {
+  height: 400px;
   background-size: cover;
+  .view {
+    @include grid-row();
+  }
+  .view-content {
+    @include grid-column(12);
+  }
   .field--name-field-hero {
   }
   .field--name-field-hero-heading {

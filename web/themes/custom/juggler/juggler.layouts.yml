@@ -1,0 +1,27 @@
+ds_1col_fullwidth_hero_footer:
+  label: One column fullwidth hero footer
+  category: Display Suite
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds/ds-1col-fullwidth-hero-footer
+  icon: ds/ds-1col-fullwidth-hero-footer.png
+  regions:
+    header:
+      label: Header (Fullwidth)
+    middle:
+      label: Middle Fixed
+    footer:
+      label: Footer (Fullwidth)
+
+ds_1col_hero:
+  label: One column layout + hero
+  category: Display Suite
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds/ds-1col-hero
+  icon: ds/ds-1col-hero.png
+  regions:
+    hero:
+      label: Hero
+    middle:
+      label: Middle

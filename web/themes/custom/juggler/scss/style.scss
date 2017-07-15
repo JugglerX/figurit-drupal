@@ -4,17 +4,18 @@
 @import 'grid/breakpoints';
 @import 'grid/grid';
 
+@import 'region/layout.scss';
+@import 'region/layout-top';
+@import 'region/layout-header';
+@import 'region/layout-canyon';
 @import 'region/region.scss';
-@import 'region/region-top.scss';
-@import 'region/region-header.scss';
-@import 'region/region-global-search.scss';
-@import 'region/region-hero.scss';
-@import 'region/region-highlighted.scss';
-@import 'region/region-content.scss';
-@import 'region/region-above-content.scss';
-@import 'region/region-sidebar-first.scss';
-@import 'region/region-footer.scss';
-@import 'region/region-bottom.scss';
+@import 'region/region-middle';
+
+@import 'page/page';
+@import 'page/path-frontpage';
+
+@import 'view/view-services';
+@import 'view/view-certifications';
 
 @import 'component/colorbox';
 @import 'component/fonts';
@@ -48,9 +49,15 @@
 @import 'component/chosen';
 @import 'component/ext';
 
+@import 'ds/ds-1col-fullwidth-hero-footer';
+@import 'ds/ds-1col-hero';
+
 @import 'block/block-local-tasks';
+@import 'block/block-contact-details-top';
+@import 'block/block-hero-homepage';
 @import 'block/block-account-menu';
 @import 'block/block-main-menu';
+@import 'block/block-primary-menu';
 @import 'block/block-user-menu';
 @import 'block/block-submenu';
 @import 'block/block-responsive-menu-toggle';
@@ -61,8 +68,9 @@
 @import 'node/node';
 @import 'node/node-page-view-mode-full';
 @import 'node/node-portfolio-view-mode-teaser';
+@import 'node/node-certification-view-mode-teaser';
 
-@import 'page/path-frontpage';
+
 
 /* Setup */
 body {
@@ -81,8 +89,3 @@ body {
   @include display-breakpoint;
 }
 
-
-  img {
-    width: 100%;
-    height: auto;
-  }

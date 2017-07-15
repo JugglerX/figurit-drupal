@@ -25,7 +25,7 @@ class Application extends BaseApplication
     /**
      * @var string
      */
-    const VERSION = '1.0.0-rc21';
+    const VERSION = '1.0.0-rc23';
 
     public function __construct(ContainerInterface $container)
     {
@@ -48,7 +48,7 @@ class Application extends BaseApplication
                 $output .= sprintf('<info>%s</info>', $this->getName());
             }
         } else {
-            $output .= '<info>Console Tool</info>';
+            $output .= '<info>Drupal Console</info>';
         }
 
         return $output;

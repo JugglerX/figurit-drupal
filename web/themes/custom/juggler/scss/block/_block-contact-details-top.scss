@@ -1,0 +1,19 @@
+.block-id-contact-details-top {
+  float: right;
+  font-weight: 400;
+  font-family: $base-font;
+  font-size: 14px;
+  line-height: 18px;
+  .views-field {
+    display: inline-block;
+    margin-right: 10px;
+    .views-label {
+      font-weight: bold;
+      display: inline-block;
+      margin-right: 5px;
+    }
+    .field-content {
+      display: inline-block;
+    }
+  }
+}

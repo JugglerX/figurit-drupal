@@ -60,7 +60,27 @@ function juggler_preprocess_page(array &$variables) {
  * Implements hook_theme_suggestions_page_alter().
  */
 function juggler_theme_suggestions_page_alter(array &$suggestions, array $variables) {
-
+// Add content type suggestions.
+  if ($node = \Drupal::request()->attributes->get('node')) {
+    array_splice($suggestions, 1, 0, 'page__node__' . $node->getType());
+  }
+  //  $node     = \Drupal::routeMatch()->getParameter('node');
+//  $revision = \Drupal::routeMatch()->getRawParameter('node_revision');
+//
+//  if ($node) {
+//    if ($revision) {
+//      $revised_node = \Drupal::entityTypeManager()
+//          ->getStorage('node')
+//          ->loadRevision($revision);
+//
+//      $content_type = $revised_node->bundle();
+//    }
+//    else {
+//      $content_type = $node->bundle();
+//    }
+//
+//    $suggestions[] = 'page__node_' . $content_type;
+//  }
 }
 
 /**
@@ -87,6 +107,9 @@ function juggler_preprocess_block(array &$variables) {
 
   // Add region as variable
   $variables['machine_name'] = $variables['elements']['#id'];
+  $variables['base_plugin_id'] = $variables['elements']['#base_plugin_id'];
+  $variables['derivative_plugin_id'] = $variables['elements']['#derivative_plugin_id'];
+
   $variables['region'] = $block->getRegion();
 }
 

@@ -1,20 +1,22 @@
-.block-logo{
+.block-id-logo{
   @include grid-column(3);
   .logo {
     float: left;
-    height: 23px;
-    width: 140px;
+    height: 39px;
+    width: 305px;
     background-image: url('../images/logo.png');
+    background-size: 305px 39px;
     background-repeat: no-repeat;
     @media #{$small-only} {
-      height: 18px;
-      width: 100px;
+      float: left;
+      height: 12px;
+      width: 94px;
+      background-image: url('../images/logo-mobile.png');
+      background-size: 94px 12px;
+      background-repeat: no-repeat;
     }
   }
-}
-
-#block-logo {
-  .field--name-body {
-    float: left;
+  .field {
+    margin: 0;
   }
 }
