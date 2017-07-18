@@ -36,7 +36,8 @@
     not page.sidebar_first and not page.sidebar_second ? 'no-sidebars',
     page.sidebar_first and not page.sidebar_second ? 'sidebar-first',
     page.sidebar_second and not page.sidebar_first ? 'sidebar-second',
-    page.sidebar_first and page.sidebar_second ? 'both-sidebars'
+    page.sidebar_first and page.sidebar_second ? 'both-sidebars',
+    not root_path ? 'front'
   ]
 %}
 <!DOCTYPE html>

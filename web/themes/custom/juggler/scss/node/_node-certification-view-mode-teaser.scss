@@ -1,17 +1,26 @@
 .node--type-certification.node--view-mode-teaser {
   background-color:white;
-  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
   .field--name-field-certification-image {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     vertical-align: middle;
   }
   .field--name-node-title {
-    padding: 20px;
+    padding: 10px;
     border-top: 1px solid #CCC;
+    min-height: 90px;
+    h2 {
+      margin: 0;
+    }
   }
   .field--name-body {
-    padding: 20px;
+    padding: 10px;
     border-top: 1px solid #CCC;
+    margin: 0;
+    min-height: 90px;
+    p {
+      margin: 0;
+    }
   }
 }

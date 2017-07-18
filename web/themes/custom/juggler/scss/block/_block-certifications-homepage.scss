@@ -1,9 +1,12 @@
 .block-id-certifications-homepage {
+  margin-top: 30px;
+  margin-bottom: 30px;
   .block-title {
     display: block;
     text-align: center;
     width: 70%;
     margin: 0 auto;
+    margin-bottom: 20px;
     font-weight: 200;
     font-size: 28px;
     color: #999;
@@ -19,6 +22,14 @@
           font-size: 28px;
           color: #999;
       }
+    }
+  }
+}
+
+.region-canyon {
+  .block-id-certifications-homepage {
+    .block-title {
+      color: #FFF;
     }
   }
 }

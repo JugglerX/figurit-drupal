@@ -96,6 +96,17 @@ page.sidebar_first and page.sidebar_second ? 'both-sidebars'
     </div>
   {% endif %}
 
+  {% if page.content_lower %}
+    <div class="layout layout-content-lower">
+      <div class="row">
+        <div class="small-12 column">
+          {{ page.content_lower }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+
   {% if page.footer %}
     <div class="layout layout-footer">
       <div class="row">

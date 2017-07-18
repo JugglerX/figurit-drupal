@@ -31,6 +31,7 @@
     "drupal/ds": "^3.1",
     "drupal/exclude_node_title": "^1.0@beta",
     "drupal/field_group": "^1.0@RC",
+    "drupal/image_effects": "^1.0",
     "drupal/libraries": "3.x-dev",
     "drupal/metatag": "~1.0",
     "drupal/pathauto": "^1.0@RC",

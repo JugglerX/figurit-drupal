@@ -563,14 +563,65 @@ table {
 }
 
 .view.view-certifications .view-content .views-row {
+  margin-bottom: 10px;
   float: left;
   padding-left: 10px;
   padding-right: 10px;
-  width: 33.3333333333%;
+  width: 25%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .view.view-certifications .view-content .views-row {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 33.3333333333%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .view.view-certifications .view-content .views-row {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+}
+
+.view.view-testimonials .view-content {
+  width: auto;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: none;
+}
+
+.view.view-testimonials .view-content:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.view.view-testimonials .view-content .views-row {
+  margin-bottom: 10px;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .view.view-testimonials .view-content .views-row {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 33.3333333333%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .view.view-testimonials .view-content .views-row {
     float: left;
     padding-left: 10px;
     padding-right: 10px;
@@ -3769,11 +3820,17 @@ span.ext {
   margin: 0;
 }
 
+.block-id-certifications-homepage {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .block-id-certifications-homepage .block-title {
   display: block;
   text-align: center;
   width: 70%;
   margin: 0 auto;
+  margin-bottom: 20px;
   font-weight: 200;
   font-size: 28px;
   color: #999;
@@ -3790,6 +3847,43 @@ span.ext {
   font-weight: 200;
   font-size: 28px;
   color: #999;
+}
+
+.region-canyon .block-id-certifications-homepage .block-title {
+  color: #FFF;
+}
+
+.block-id-testimonials-homepage {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.block-id-testimonials-homepage .block-title {
+  display: block;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-weight: 200;
+  font-size: 28px;
+  color: #999;
+}
+
+.block-id-testimonials-homepage .node--type-page .field--name-node-title {
+  display: block;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.block-id-testimonials-homepage .node--type-page .field--name-node-title h1 {
+  font-weight: 200;
+  font-size: 28px;
+  color: #999;
+}
+
+.region-canyon .block-id-certifications-homepage .block-title {
+  color: #FFF;
 }
 
 .block-account-menu {
@@ -4267,23 +4361,34 @@ span.ext {
 
 .node--type-certification.node--view-mode-teaser {
   background-color: white;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
 .node--type-certification.node--view-mode-teaser .field--name-field-certification-image {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   vertical-align: middle;
 }
 
 .node--type-certification.node--view-mode-teaser .field--name-node-title {
-  padding: 20px;
+  padding: 10px;
   border-top: 1px solid #CCC;
+  min-height: 90px;
+}
+
+.node--type-certification.node--view-mode-teaser .field--name-node-title h2 {
+  margin: 0;
 }
 
 .node--type-certification.node--view-mode-teaser .field--name-body {
-  padding: 20px;
+  padding: 10px;
   border-top: 1px solid #CCC;
+  margin: 0;
+  min-height: 90px;
+}
+
+.node--type-certification.node--view-mode-teaser .field--name-body p {
+  margin: 0;
 }
 
 .node--type-service.node--view-mode-teaser .group-left {
