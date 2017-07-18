@@ -1,5 +1,5 @@
 .block-id-logo{
-  @include grid-column(3);
+  @include grid-column(4);
   .logo {
     float: left;
     height: 39px;
@@ -9,10 +9,10 @@
     background-repeat: no-repeat;
     @media #{$small-only} {
       float: left;
-      height: 12px;
-      width: 94px;
+      height: 24px;
+      width: 188px;
       background-image: url('../images/logo-mobile.png');
-      background-size: 94px 12px;
+      background-size: 188px 24px;
       background-repeat: no-repeat;
     }
   }

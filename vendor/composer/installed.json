@@ -3868,7 +3868,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.19.zip",
-            "reference": null,
+            "reference": "8.x-1.19",
             "shasum": "87de41eab3c5cd49d4e1b5b764cb3b9d5ad683a0"
         },
         "require": {
@@ -3930,7 +3930,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/better_exposed_filters-8.x-3.0-alpha2.zip",
-            "reference": null,
+            "reference": "8.x-3.0-alpha2",
             "shasum": "f1bbe21379a4ac8e28e3edfbdd4964343299caeb"
         },
         "require": {
@@ -3975,7 +3975,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/bg_image_formatter-8.x-1.0-beta2.zip",
-            "reference": null,
+            "reference": "8.x-1.0-beta2",
             "shasum": "7fa825eb104e67a87c352378015071425d8c1c4d"
         },
         "require": {
@@ -4028,7 +4028,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/config_direct_save-8.x-1.0.zip",
-            "reference": null,
+            "reference": "8.x-1.0",
             "shasum": "dae776d96310aa01aa6e3c536821a1b496ffae1f"
         },
         "require": {
@@ -4073,7 +4073,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/config_installer-8.x-1.4.zip",
-            "reference": null,
+            "reference": "8.x-1.4",
             "shasum": "5371ced3d688f6c932992066fa0d5f44f7d6e7dd"
         },
         "require": {
@@ -4117,7 +4117,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/ds-8.x-3.1.zip",
-            "reference": null,
+            "reference": "8.x-3.1",
             "shasum": "1f7fd1bafed43844976d69b8c78513c84362facf"
         },
         "require": {
@@ -4188,7 +4188,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/field_group-8.x-1.0-rc6.zip",
-            "reference": null,
+            "reference": "8.x-1.0-rc6",
             "shasum": "1ce3c6387e745a04a1099956a5bf39bb50096d44"
         },
         "require": {
@@ -4249,7 +4249,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0.zip",
-            "reference": null,
+            "reference": "8.x-1.0",
             "shasum": "d24c7f1ffddbd0fc56bc92bacae1c4ff769a4442"
         },
         "require": {
@@ -4314,7 +4314,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.1.zip",
-            "reference": null,
+            "reference": "8.x-1.1",
             "shasum": "bb9b608879e2f7d8086a0e6606286086f5009d71"
         },
         "require": {
@@ -4374,7 +4374,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0.zip",
-            "reference": null,
+            "reference": "8.x-3.0",
             "shasum": "302e869ecd1e59fe55663673999fee2ccac5daa8"
         },
         "require": {
@@ -4461,7 +4461,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0.zip",
-            "reference": null,
+            "reference": "8.x-1.0",
             "shasum": "4c82a5689a18421c8c73fcc8be7b333bb21ae02a"
         },
         "require": {
@@ -4520,7 +4520,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/responsive_menu-8.x-2.4.zip",
-            "reference": null,
+            "reference": "8.x-2.4",
             "shasum": "a463506457f1f7053d55318574b13352b70c27c5"
         },
         "require": {
@@ -4567,7 +4567,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/simplify-8.x-1.0.zip",
-            "reference": null,
+            "reference": "8.x-1.0",
             "shasum": "dc33a1253b5a4c714ade8494241e7386f7d03939"
         },
         "require": {
@@ -4681,7 +4681,7 @@
         "dist": {
             "type": "zip",
             "url": "https://ftp.drupal.org/files/projects/twig_xdebug-8.x-1.0.zip",
-            "reference": null,
+            "reference": "8.x-1.0",
             "shasum": "f8a5cfef63b427d6b6b428a2c4bd19b19d082037"
         },
         "require": {
@@ -7241,5 +7241,62 @@
         ],
         "description": "Symfony BrowserKit Component",
         "homepage": "https://symfony.com"
+    },
+    {
+        "name": "drupal/exclude_node_title",
+        "version": "1.0.0-beta1",
+        "version_normalized": "1.0.0.0-beta1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/exclude_node_title",
+            "reference": "8.x-1.0-beta1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/exclude_node_title-8.x-1.0-beta1.zip",
+            "reference": null,
+            "shasum": "04b307c90c71285f421f8727d5ba8fd84b3df066"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-beta1",
+                "datestamp": "1452548339"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "fizk",
+                "homepage": "https://www.drupal.org/user/473174"
+            },
+            {
+                "name": "gabrielu",
+                "homepage": "https://www.drupal.org/user/279352"
+            },
+            {
+                "name": "id.tarzanych",
+                "homepage": "https://www.drupal.org/user/2776543"
+            },
+            {
+                "name": "jordanpagewhite",
+                "homepage": "https://www.drupal.org/user/3162067"
+            }
+        ],
+        "description": "Excludes a node title from display. It provides a checkbox on node-edit pages for easier exclusion. You can also exclude title display from teaser pages.",
+        "homepage": "https://www.drupal.org/project/exclude_node_title",
+        "support": {
+            "source": "http://cgit.drupalcode.org/exclude_node_title"
+        }
     }
 ]

@@ -31,6 +31,11 @@ function juggler_preprocess_html(&$variables) {
   $variables['path'] = 'path-' . $path;
   $variables['section'] = 'section-' .$path_aliased_array[1];
 
+  $path_class = !$variables['root_path'] ? 'front' : 'path-' . Html::getClass($variables['root_path']);
+  if (isset($path_class)) {
+    $variables['attributes']['class'][] = $path_class;
+  }
+
 }
 
 /**

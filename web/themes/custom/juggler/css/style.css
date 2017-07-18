@@ -414,6 +414,11 @@ table {
   clear: both;
 }
 
+.layout-hero {
+  background: #1B96D4;
+  background-size: cover;
+}
+
 .page .main {
   width: 100%;
   margin-left: auto;
@@ -509,29 +514,6 @@ table {
   clear: both;
 }
 
-body.path-frontpage h1 {
-  margin-top: 100px;
-  text-align: center;
-  font-size: 40px;
-}
-
-@media only screen and (max-width: 767px) {
-  body.path-frontpage {
-    margin-top: 50px;
-  }
-  body.path-frontpage h1 {
-    font-size: 36px;
-  }
-}
-
-body.path-frontpage .field--name-title {
-  display: none;
-}
-
-body.path-frontpage .field--name-body {
-  text-align: center;
-}
-
 .view.view-services .view-content {
   width: auto;
   margin-left: -10px;
@@ -552,6 +534,8 @@ body.path-frontpage .field--name-body {
   padding-left: 10px;
   padding-right: 10px;
   width: 50%;
+  min-height: 150px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -669,7 +653,9 @@ body.html #cboxLoadedContent {
   font-weight: normal;
 }
 
-p {
+p,
+.p,
+.field--name-body {
   font-size: 15px;
   line-height: 20px;
   font-style: normal;
@@ -682,8 +668,7 @@ p {
 h1,
 .h1,
 .ds-1col-hero .ds-hero .ds-full .ds-row .ds-column .field--name-field-hero-heading,
-.ds-1col-hero .ds-hero .ds-full .ds-row .ds-column .field--name-title,
-.block-id-hero-homepage .field--name-field-hero-heading {
+.ds-1col-hero .ds-hero .ds-full .ds-row .ds-column .field--name-title {
   margin-top: 0;
   font-size: 40px;
   margin-bottom: 20px;
@@ -3670,7 +3655,6 @@ span.ext {
 
 .block-id-hero-homepage {
   height: 400px;
-  background-size: cover;
 }
 
 .block-id-hero-homepage .view {
@@ -3696,19 +3680,116 @@ span.ext {
 }
 
 .block-id-hero-homepage .field--name-field-hero-heading {
-  text-align: center;
+  float: left;
+  width: 400px;
   margin: 0;
-  padding-top: 120px;
+  padding-top: 50px;
   color: #FFF;
-  font-weight: 600;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 767px) {
+  .block-id-hero-homepage .field--name-field-hero-heading {
+    width: 80%;
+    padding-top: 40px;
+  }
+}
+
+.block-id-hero-homepage .field--name-field-hero-heading h1, .block-id-hero-homepage .field--name-field-hero-heading h2, .block-id-hero-homepage .field--name-field-hero-heading p {
+  margin-top: 0;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 20px;
+  font-weight: 200;
+  font-family: "Montserrat", "helvetica", "arial";
+  color: #FFF;
+}
+
+.block-id-hero-homepage .field--name-field-hero-heading h1 strong, .block-id-hero-homepage .field--name-field-hero-heading h2 strong, .block-id-hero-homepage .field--name-field-hero-heading p strong {
+  color: #1CD34F;
+  font-weight: 200;
 }
 
 .block-id-hero-homepage .field--name-field-hero-subheading {
-  text-align: center;
+  position: absolute;
   margin: 0;
-  padding-top: 10px;
   color: #FFF;
   font-weight: 200;
+  width: 200px;
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: 5px solid #1CD34F;
+  padding: 20px;
+  right: 0;
+  top: 218px;
+}
+
+.block-id-services-homepage {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.block-id-services-homepage .block-title {
+  display: block;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  font-weight: 200;
+  font-size: 28px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .block-id-services-homepage .block-title {
+    width: auto;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.block-id-services-homepage .node--type-page .field--name-node-title {
+  display: block;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+  .block-id-services-homepage .node--type-page .field--name-node-title {
+    width: auto;
+  }
+}
+
+.block-id-services-homepage .node--type-page .field--name-node-title h1 {
+  font-weight: 200;
+  font-size: 26px;
+  line-height: 32px;
+  color: #999;
+  margin: 0;
+}
+
+.block-id-certifications-homepage .block-title {
+  display: block;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  font-weight: 200;
+  font-size: 28px;
+  color: #999;
+}
+
+.block-id-certifications-homepage .node--type-page .field--name-node-title {
+  display: block;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.block-id-certifications-homepage .node--type-page .field--name-node-title h1 {
+  font-weight: 200;
+  font-size: 28px;
+  color: #999;
 }
 
 .block-account-menu {
@@ -4051,7 +4132,7 @@ span.ext {
   float: left;
   padding-left: 10px;
   padding-right: 10px;
-  width: 25%;
+  width: 33.3333333333%;
 }
 
 .block-id-logo .logo {
@@ -4066,55 +4147,16 @@ span.ext {
 @media only screen and (max-width: 767px) {
   .block-id-logo .logo {
     float: left;
-    height: 12px;
-    width: 94px;
+    height: 24px;
+    width: 188px;
     background-image: url("../images/logo-mobile.png");
-    background-size: 94px 12px;
+    background-size: 188px 24px;
     background-repeat: no-repeat;
   }
 }
 
 .block-id-logo .field {
   margin: 0;
-}
-
-.block-machine-views-block-homepage-block-1 {
-  background-size: cover;
-}
-
-.block-machine-views-block-homepage-block-1 .view-content {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 1200px;
-}
-
-.block-machine-views-block-homepage-block-1 .view-content:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.block-machine-views-block-homepage-block-1 .views-row {
-  float: left;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 100%;
-}
-
-.block-machine-views-block-homepage-block-1 .field--name-body {
-  padding-top: 100px;
-}
-
-.block-machine-views-block-homepage-block-1 .field--name-body h2 {
-  color: #FFF;
-  font-size: 46px;
-}
-
-.block-machine-views-block-homepage-block-1 .field--name-body p {
-  color: #FFF;
 }
 
 .node:after {
@@ -4242,6 +4284,26 @@ span.ext {
 .node--type-certification.node--view-mode-teaser .field--name-body {
   padding: 20px;
   border-top: 1px solid #CCC;
+}
+
+.node--type-service.node--view-mode-teaser .group-left {
+  float: left;
+  width: 110px;
+}
+
+.node--type-service.node--view-mode-teaser .group-right {
+  float: left;
+  width: calc(100% - 110px);
+}
+
+.node--type-service.node--view-mode-teaser .field--name-node-title {
+  margin-bottom: 10px;
+}
+
+.node--type-service.node--view-mode-teaser .field--name-field-icon {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 /* Setup */
