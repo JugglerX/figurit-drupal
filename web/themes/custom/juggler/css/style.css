@@ -3532,6 +3532,20 @@ span.ext {
   display: inline-block;
 }
 
+.slick__slide .node {
+  margin: 20px;
+  background-color: white;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.slick__arrow .slick-arrow:before {
+  color: #1B96D4;
+}
+
+.slick__arrow .slick-arrow:after {
+  color: #1B96D4;
+}
+
 .ds-1col-fullwidth-hero-footer {
   width: 100%;
   margin-left: auto;
@@ -4359,15 +4373,14 @@ span.ext {
   line-height: 34px;
 }
 
-.node--type-certification.node--view-mode-teaser {
-  background-color: white;
-  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
-}
-
 .node--type-certification.node--view-mode-teaser .field--name-field-certification-image {
   padding: 10px;
   text-align: center;
   vertical-align: middle;
+}
+
+.node--type-certification.node--view-mode-teaser .field--name-field-certification-image img {
+  display: inline-block;
 }
 
 .node--type-certification.node--view-mode-teaser .field--name-node-title {

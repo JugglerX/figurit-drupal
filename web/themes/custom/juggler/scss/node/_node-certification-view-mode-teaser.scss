@@ -1,10 +1,12 @@
 .node--type-certification.node--view-mode-teaser {
-  background-color:white;
-  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+
   .field--name-field-certification-image {
     padding: 10px;
     text-align: center;
     vertical-align: middle;
+    img {
+      display: inline-block;
+    }
   }
   .field--name-node-title {
     padding: 10px;
