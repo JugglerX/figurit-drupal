@@ -20,7 +20,6 @@
 @import 'view/view-testimonials';
 
 @import 'component/field-body';
-@import 'component/colorbox';
 @import 'component/fonts';
 @import 'component/type';
 @import 'component/form';
@@ -62,22 +61,18 @@
 @import 'block/block-services-homepage';
 @import 'block/block-certifications-homepage';
 @import 'block/block-testimonials-homepage';
-
-@import 'block/block-account-menu';
-@import 'block/block-main-menu';
+@import 'block/block-user-account-menu';
 @import 'block/block-primary-menu';
-@import 'block/block-user-menu';
-@import 'block/block-submenu';
+@import 'block/block-footer-menu';
+@import 'block/block-user-account-menu';
 @import 'block/block-responsive-menu-toggle';
 @import 'block/block-horizontalmenu';
 @import 'block/block-logo';
 
 @import 'node/node';
 @import 'node/node-page-view-mode-full';
-@import 'node/node-portfolio-view-mode-teaser';
 @import 'node/node-certification-view-mode-teaser';
 @import 'node/node-service-view-mode-teaser';
-
 
 
 /* Setup */

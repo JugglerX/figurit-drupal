@@ -1,0 +1,38 @@
+.block-id-useraccountmenu {
+  @include grid-column(3);
+  @media #{$medium-only} {
+    @include grid-column(4);
+  }
+  @media #{$small-only} {
+    @include grid-column(12);
+  }
+  margin-bottom: 30px;
+  ul.menu {
+    @include clearfix;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: $base-font;
+    font-size: 14px;
+    line-height: 18px;
+    vertical-align: middle;
+    border-bottom: none;
+    li {
+      display: block;
+      text-decoration: none;
+      a {
+        display: block;
+        color: $primary-color;
+        text-decoration: none;
+        &:hover {
+          color: $primary-color;
+          text-decoration: underline;
+        }
+        &.active {
+          color: $primary-color;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

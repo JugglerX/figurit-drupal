@@ -1,7 +1,8 @@
 .block-id-primary-menu {
-  float: right;
+  @include grid-column(8);
   ul.menu {
     @include clearfix;
+    float: right;
     margin: 0;
     font-weight: 400;
     font-family: $base-font;
@@ -11,13 +12,12 @@
     border-bottom: none;
     z-index: 140;
     padding: 0;
-    border-right: 1px solid #CCC;
     li {
       float: left;
       display: block;
       text-decoration: none;
       a {
-        padding: 5px 14px;
+        padding: 10px 14px;
         display: block;
         background: none;
         color: $primary-color;
