@@ -1,5 +1,8 @@
 .block-id-primary-menu {
   @include grid-column(8);
+  @media #{$small-only} {
+    display: none;
+  }
   ul.menu {
     @include clearfix;
     float: right;

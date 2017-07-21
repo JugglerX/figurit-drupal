@@ -1,5 +1,8 @@
 .block-id-logo{
   @include grid-column(4);
+  @media #{$small-only} {
+    @include grid-column(6);
+  }
   .logo {
     float: left;
     height: 39px;

@@ -1,0 +1,33 @@
+.block-id-responsivemenumobileicon {
+  float: right;
+  .responsive-menu-toggle-icon {
+    height: 24px;
+    width: 30px;
+  }
+  .responsive-menu-toggle-icon:before,
+  .responsive-menu-toggle-icon:after,
+  .responsive-menu-toggle-icon span.icon {
+    background: #000;
+    left: 0;
+  }
+  .responsive-menu-toggle-icon:before {
+    top: 4px;
+  }
+  .responsive-menu-toggle-icon:after {
+    top: 10px;
+  }
+  .responsive-menu-toggle-icon span.icon {
+    top: 16px;
+  }
+  .responsive-menu-toggle-icon span.label {
+    //top: 6px;
+    //left: 33px;
+    display: none;
+    position: absolute;
+    font-size: 17px;
+    text-transform: uppercase;
+    top: 2px;
+    left: 40px;
+    color: #000;
+  }
+}

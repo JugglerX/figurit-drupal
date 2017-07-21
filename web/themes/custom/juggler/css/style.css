@@ -3632,7 +3632,10 @@ span.ext {
 }
 
 .block-id-contact-details-top {
-  float: right;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
   font-weight: 400;
   font-family: "Open+Sans", "helvetica", "arial";
   font-size: 14px;
@@ -3907,6 +3910,12 @@ span.ext {
   width: 66.6666666667%;
 }
 
+@media only screen and (max-width: 767px) {
+  .block-id-primary-menu {
+    display: none;
+  }
+}
+
 .block-id-primary-menu ul.menu {
   float: right;
   margin: 0;
@@ -4078,21 +4087,6 @@ span.ext {
   text-decoration: underline;
 }
 
-.block-machine-responsive-menu-toggle {
-  display: block;
-}
-
-.block-machine-responsive-menu-toggle .responsive-menu-toggle-icon:before,
-.block-machine-responsive-menu-toggle .responsive-menu-toggle-icon:after,
-.block-machine-responsive-menu-toggle .responsive-menu-toggle-icon span.icon {
-  left: 0;
-}
-
-.block-machine-responsive-menu-toggle .responsive-menu-toggle-icon span.label {
-  top: 6px;
-  left: 33px;
-}
-
 .block-machine-horizontalmenu {
   float: left;
   padding-left: 10px;
@@ -4135,6 +4129,15 @@ span.ext {
   width: 33.3333333333%;
 }
 
+@media only screen and (max-width: 767px) {
+  .block-id-logo {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50%;
+  }
+}
+
 .block-id-logo .logo {
   float: left;
   height: 39px;
@@ -4163,6 +4166,44 @@ span.ext {
 
 .block-id-logo .field {
   margin: 0;
+}
+
+.block-id-responsivemenumobileicon {
+  float: right;
+}
+
+.block-id-responsivemenumobileicon .responsive-menu-toggle-icon {
+  height: 24px;
+  width: 30px;
+}
+
+.block-id-responsivemenumobileicon .responsive-menu-toggle-icon:before,
+.block-id-responsivemenumobileicon .responsive-menu-toggle-icon:after,
+.block-id-responsivemenumobileicon .responsive-menu-toggle-icon span.icon {
+  background: #000;
+  left: 0;
+}
+
+.block-id-responsivemenumobileicon .responsive-menu-toggle-icon:before {
+  top: 4px;
+}
+
+.block-id-responsivemenumobileicon .responsive-menu-toggle-icon:after {
+  top: 10px;
+}
+
+.block-id-responsivemenumobileicon .responsive-menu-toggle-icon span.icon {
+  top: 16px;
+}
+
+.block-id-responsivemenumobileicon .responsive-menu-toggle-icon span.label {
+  display: none;
+  position: absolute;
+  font-size: 17px;
+  text-transform: uppercase;
+  top: 2px;
+  left: 40px;
+  color: #000;
 }
 
 .node:after {
