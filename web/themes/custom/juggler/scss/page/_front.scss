@@ -6,6 +6,20 @@ body.front {
   }
   .block-id-content {
     text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    h1, h2, h3 {
+      margin-top: 0;
+      font-size: 28px;
+      line-height: 38px;
+      font-family: $custom-font;
+      font-weight: 400;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    p {
+     
+    }
   }
 }
 

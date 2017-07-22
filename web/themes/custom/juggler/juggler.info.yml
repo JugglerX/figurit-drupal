@@ -10,12 +10,7 @@ base theme: stable
 libraries:
   - juggler/global-css
   - juggler/global-js
-  - juggler/modernizr
-  - juggler/detectizr
-  - juggler/foundation6
   - juggler/tooltipster
-  - juggler/loglevel
-  - juggler/js-cookie
 
 # Remove stylesheets.
 stylesheets-remove:

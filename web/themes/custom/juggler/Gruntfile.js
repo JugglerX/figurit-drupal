@@ -61,7 +61,7 @@ module.exports = function (grunt) {
         map: false
       },
       css: {
-        src: 'css/autodesk.css'
+        src: 'css/style.css'
       }
     },
 
@@ -69,7 +69,7 @@ module.exports = function (grunt) {
       css: {
         options: {},
         files: {
-          'blessed/autodesk.css': 'css/autodesk.css'
+          'blessed/style.css': 'css/style.css'
         }
       }
     },
@@ -77,7 +77,7 @@ module.exports = function (grunt) {
     cssmetrics: {
       dev: {
         src: [
-          'css/autodesk.css'
+          'css/style.css'
         ]
       }
     },
@@ -99,20 +99,14 @@ module.exports = function (grunt) {
         },
         options: {
           watchTask: true,
-          proxy: "service-market.autodesk.com",
+          proxy: "juggler.dev",
           injectChanges: false
         }
       }
     }
-
-
-
-
-
   });
 
   grunt.registerTask('build', ['sass', 'autoprefixer', 'jshint', 'uglify']);
   grunt.registerTask('default', ['build']);
   grunt.registerTask('sync', ['browserSync','watch']);
-  // grunt.loadNpmTasks('grunt-browser-sync');
 };

@@ -8,9 +8,9 @@
 @import 'region/layout-top';
 @import 'region/layout-header';
 @import 'region/layout-canyon';
-@import 'region/region.scss';
-@import 'region/region-middle';
 @import 'region/layout-hero';
+@import 'region/region.scss';
+@import 'region/region-content';
 
 @import 'page/page';
 @import 'page/front';
@@ -82,6 +82,8 @@ body {
   font-family: $base-font;
   font-size: $base-font-size;
   color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 * {

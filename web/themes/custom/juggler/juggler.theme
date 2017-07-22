@@ -12,16 +12,12 @@ function juggler_preprocess_html(&$variables) {
   // Get currently active user and his roles.
   $account = \Drupal::currentUser();
   $roles = $account->getRoles();
-  // The getRoles() method will return us the machine names, so there is no need
-  // to process roles names additionally. However, I suggest prefixing the names
-  // with "role-", so it's more obvious.
   foreach ($roles as $role) {
     $variables['attributes']['class'][] = 'role-' . $role;
   }
 
   // Body Classes
   $path_unaliased = \Drupal::service('path.current')->getPath();
-  $path_unaliased_array = explode('/', $path_unaliased);
   $path_aliased = \Drupal::service('path.alias_manager')->getAliasByPath($path_unaliased);
   $path_aliased_array = explode('/', $path_aliased);
 
@@ -30,23 +26,12 @@ function juggler_preprocess_html(&$variables) {
 
   $variables['path'] = 'path-' . $path;
   $variables['section'] = 'section-' .$path_aliased_array[1];
-
 }
 
 /**
  * Implements hook_page_attachments_alter().
  */
 function juggler_page_attachments_alter(array &$page) {
-  // Tell IE to use latest rendering engine (not to use compatibility mode).
-  /*$ie_edge = [
-    '#type' => 'html_tag',
-    '#tag' => 'meta',
-    '#attributes' => [
-    'http-equiv' => 'X-UA-Compatible',
-    'content' => 'IE=edge',
-    ],
-  ];
-  $page['#attached']['html_head'][] = [$ie_edge, 'ie_edge'];*/
 }
 
 /**
@@ -60,38 +45,16 @@ function juggler_preprocess_page(array &$variables) {
  * Implements hook_theme_suggestions_page_alter().
  */
 function juggler_theme_suggestions_page_alter(array &$suggestions, array $variables) {
-// Add content type suggestions.
+  // Add content type suggestions.
   if ($node = \Drupal::request()->attributes->get('node')) {
     array_splice($suggestions, 1, 0, 'page__node__' . $node->getType());
   }
-  //  $node     = \Drupal::routeMatch()->getParameter('node');
-//  $revision = \Drupal::routeMatch()->getRawParameter('node_revision');
-//
-//  if ($node) {
-//    if ($revision) {
-//      $revised_node = \Drupal::entityTypeManager()
-//          ->getStorage('node')
-//          ->loadRevision($revision);
-//
-//      $content_type = $revised_node->bundle();
-//    }
-//    else {
-//      $content_type = $node->bundle();
-//    }
-//
-//    $suggestions[] = 'page__node_' . $content_type;
-//  }
 }
 
 /**
  * Implements hook_theme_suggestions_node_alter().
  */
 function juggler_theme_suggestions_node_alter(array &$suggestions, array $variables) {
-  /*$node = $variables['elements']['#node'];
-
-  if ($variables['elements']['#view_mode'] == "full") {
-
-  }*/
 }
 
 /**
@@ -117,27 +80,18 @@ function juggler_preprocess_block(array &$variables) {
  * Implements hook_theme_suggestions_field_alter().
  */
 function juggler_theme_suggestions_field_alter(array &$suggestions, array $variables) {
-  /*$element = $variables['element'];
-  $suggestions[] = 'field__' . $element['#view_mode'];
-  $suggestions[] = 'field__' . $element['#view_mode'] . '__' . $element['#field_name'];*/
 }
 
 /**
  * Implements hook_theme_suggestions_field_alter().
  */
 function juggler_theme_suggestions_fieldset_alter(array &$suggestions, array $variables) {
-  /*$element = $variables['element'];
-  if (isset($element['#attributes']['class']) && in_array('form-composite', $element['#attributes']['class'])) {
-    $suggestions[] = 'fieldset__form_composite';
-  }*/
 }
 
 /**
  * Implements hook_preprocess_node().
  */
 function juggler_preprocess_node(array &$variables) {
-  // Default to turning off byline/submitted.
-  //$variables['display_submitted'] = FALSE;
 }
 
 /**
@@ -151,14 +105,12 @@ function juggler_theme_suggestions_views_view_alter(array &$suggestions, array $
  * Implements hook_preprocess_form().
  */
 function juggler_preprocess_form(array &$variables) {
-  //$variables['attributes']['novalidate'] = 'novalidate';
 }
 
 /**
  * Implements hook_preprocess_select().
  */
 function juggler_preprocess_select(array &$variables) {
-  //$variables['attributes']['class'][] = 'select-chosen';
 }
 
 /**
@@ -172,8 +124,6 @@ function juggler_preprocess_field(array &$variables, $hook) {
  * Implements hook_preprocess_details().
  */
 function juggler_preprocess_details(array &$variables) {
-  /*$variables['attributes']['class'][] = 'details';
-  $variables['summary_attributes']['class'] = 'summary';*/
 }
 
 /**
@@ -187,5 +137,4 @@ function juggler_theme_suggestions_details_alter(array &$suggestions, array $var
  * Implements hook_preprocess_menu_local_task().
  */
 function juggler_preprocess_menu_local_task(array &$variables) {
-  //$variables['element']['#link']['url']->setOption('attributes', ['class'=>'rounded']);
 }

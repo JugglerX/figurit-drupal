@@ -3,7 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,Open+Sans:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,Open+Sans:400,600,700");
 html, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, acronym, address, big, cite, code,
@@ -408,15 +408,24 @@ table {
   padding-bottom: 10px;
 }
 
+.layout-hero {
+  background: #1B96D4;
+  background-size: cover;
+}
+
+.region {
+  position: relative;
+}
+
 .region:after {
   content: "";
   display: block;
   clear: both;
 }
 
-.layout-hero {
-  background: #1B96D4;
-  background-size: cover;
+.region-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .page .main {
@@ -516,6 +525,18 @@ table {
 
 body.front .block-id-content {
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+body.front .block-id-content h1, body.front .block-id-content h2, body.front .block-id-content h3 {
+  margin-top: 0;
+  font-size: 28px;
+  line-height: 38px;
+  font-family: "Montserrat", "helvetica", "arial";
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .view.view-services .view-content {
@@ -634,36 +655,30 @@ body.front .block-id-content {
 }
 
 @font-face {
-  font-family: "artifakt-legend";
-  src: url("../fonts/legend/WOFF/Artifakt Legend Light.woff") format("woff");
+  font-family: "custom-font-name";
+  src: url("../fonts/custom-font-name.woff") format("woff");
   font-style: normal;
   font-weight: 200;
 }
 
 @font-face {
-  font-family: "artifakt-legend";
-  src: url("../fonts/legend/WOFF/Artifakt Legend Bold.woff") format("woff");
-  font-style: normal;
+  font-family: "custom-font-name";
+  src: url("../fonts/custom-font-name.woff") format("woff");
+  font-style: bold;
   font-weight: 600;
-}
-
-@font-face {
-  font-family: "Autodesk-Icon-Font";
-  src: url("../fonts/Autodesk-Icon-Font.ttf");
-  font-style: normal;
-  font-weight: normal;
 }
 
 p,
 .p,
 .field--name-body {
+  font-family: "Open+Sans", "helvetica", "arial";
   font-size: 15px;
-  line-height: 20px;
+  line-height: 24px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 0;
   margin-bottom: 15px;
-  color: #666;
+  color: #444;
 }
 
 h1,
@@ -681,10 +696,11 @@ h2,
 .h2,
 .block-id-hero-homepage .field--name-field-hero-subheading {
   margin-top: 0;
-  font-size: 20px;
+  font-size: 22px;
+  line-height: 28px;
   font-family: "Montserrat", "helvetica", "arial";
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 
 h3 {
@@ -3919,7 +3935,7 @@ span.ext {
 .block-id-primary-menu ul.menu {
   float: right;
   margin: 0;
-  font-weight: 400;
+  font-weight: 600;
   font-family: "Open+Sans", "helvetica", "arial";
   font-size: 14px;
   line-height: 18px;
@@ -4264,35 +4280,55 @@ span.ext {
   line-height: 34px;
 }
 
+.node--type-certification.node--view-mode-teaser {
+  background-color: white;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  min-height: 206px;
+}
+
 .node--type-certification.node--view-mode-teaser .field--name-field-certification-image {
-  padding: 10px;
+  padding: 10px 10px 10px 10px;
   text-align: center;
   vertical-align: middle;
 }
 
 .node--type-certification.node--view-mode-teaser .field--name-field-certification-image img {
   display: inline-block;
+  width: 100px;
+  height: 100px;
 }
 
 .node--type-certification.node--view-mode-teaser .field--name-node-title {
-  padding: 10px;
+  padding: 10px 10px 0 10px;
   border-top: 1px solid #CCC;
-  min-height: 90px;
+  margin: 0;
 }
 
 .node--type-certification.node--view-mode-teaser .field--name-node-title h2 {
-  margin: 0;
+  font-family: "Open+Sans", "helvetica", "arial";
+  font-size: 15px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #000;
 }
 
 .node--type-certification.node--view-mode-teaser .field--name-body {
-  padding: 10px;
-  border-top: 1px solid #CCC;
+  padding: 0px 10px 10px 10px;
   margin: 0;
-  min-height: 90px;
 }
 
 .node--type-certification.node--view-mode-teaser .field--name-body p {
-  margin: 0;
+  font-family: "Open+Sans", "helvetica", "arial";
+  font-size: 15px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #666;
 }
 
 .node--type-service.node--view-mode-teaser .group-left {
@@ -4322,6 +4358,8 @@ body {
   font-family: "Open+Sans", "helvetica", "arial";
   font-size: 15px;
   color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
