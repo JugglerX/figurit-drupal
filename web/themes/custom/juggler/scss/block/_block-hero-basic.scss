@@ -1,0 +1,41 @@
+.block-id-hero-basic {
+  height: 300px;
+  .field--name-field-hero-heading {
+    float: left;
+    width: 400px;
+    margin: 0;
+    padding-top: 50px;
+    color: #FFF;
+    font-weight: 400;
+    @media #{$small-only} {
+      width: 80%;
+      padding-top: 40px;
+    }
+    h1, h2, p {
+      margin-top: 0;
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 20px;
+      font-weight: 200;
+      font-family: $custom-font;
+      color: #FFF;
+      strong {
+        color: $primary-color;
+        font-weight: 200;
+      }
+    }
+  }
+  .field--name-field-hero-subheading {
+    @extend .h2;
+    position: absolute;
+    margin: 0;
+    color: #FFF;
+    font-weight: 200;
+    width: 300px;
+    background: rgba(0,0,0,0.1);
+    border-bottom: 5px solid $primary-color;
+    padding: 20px;
+    right: 0;
+    top: 80px;
+  }
+}

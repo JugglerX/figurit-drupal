@@ -409,7 +409,7 @@ table {
 }
 
 .layout-hero {
-  background: #1B96D4;
+  background: #232A2C;
   background-size: cover;
 }
 
@@ -694,7 +694,9 @@ h1,
 
 h2,
 .h2,
-.block-id-hero-homepage .field--name-field-hero-subheading {
+.block-id-hero-homepage .field--name-field-hero-subheading,
+.block-id-hero-service .field--name-field-hero-subheading,
+.block-id-hero-basic .field--name-field-hero-subheading {
   margin-top: 0;
   font-size: 22px;
   line-height: 28px;
@@ -1317,7 +1319,7 @@ label.form-required:after {
 }
 
 .btn.secondary {
-  background-color: #1B96D4;
+  background-color: #232A2C;
 }
 
 .btn.cancel {
@@ -3505,11 +3507,11 @@ span.ext {
 }
 
 .slick__arrow .slick-arrow:before {
-  color: #1B96D4;
+  color: #232A2C;
 }
 
 .slick__arrow .slick-arrow:after {
-  color: #1B96D4;
+  color: #232A2C;
 }
 
 .ds-1col-fullwidth-hero-footer {
@@ -3595,6 +3597,35 @@ span.ext {
   padding-left: 10px;
   padding-right: 10px;
   width: 75%;
+}
+
+.ds-2col-75-25 {
+  width: auto;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: none;
+}
+
+.ds-2col-75-25:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.ds-2col-75-25 .group-left {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 75%;
+}
+
+.ds-2col-75-25 .group-right {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 25%;
 }
 
 .block-local-tasks-block {
@@ -3741,6 +3772,102 @@ span.ext {
   padding: 20px;
   right: 0;
   top: 218px;
+}
+
+.block-id-hero-service {
+  height: 300px;
+}
+
+.block-id-hero-service .field--name-field-hero-heading {
+  float: left;
+  width: 400px;
+  margin: 0;
+  padding-top: 50px;
+  color: #FFF;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 767px) {
+  .block-id-hero-service .field--name-field-hero-heading {
+    width: 80%;
+    padding-top: 40px;
+  }
+}
+
+.block-id-hero-service .field--name-field-hero-heading h1, .block-id-hero-service .field--name-field-hero-heading h2, .block-id-hero-service .field--name-field-hero-heading p {
+  margin-top: 0;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 20px;
+  font-weight: 200;
+  font-family: "Montserrat", "helvetica", "arial";
+  color: #FFF;
+}
+
+.block-id-hero-service .field--name-field-hero-heading h1 strong, .block-id-hero-service .field--name-field-hero-heading h2 strong, .block-id-hero-service .field--name-field-hero-heading p strong {
+  color: #1CD34F;
+  font-weight: 200;
+}
+
+.block-id-hero-service .field--name-field-hero-subheading {
+  position: absolute;
+  margin: 0;
+  color: #FFF;
+  font-weight: 200;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: 5px solid #1CD34F;
+  padding: 20px;
+  right: 0;
+  top: 80px;
+}
+
+.block-id-hero-basic {
+  height: 300px;
+}
+
+.block-id-hero-basic .field--name-field-hero-heading {
+  float: left;
+  width: 400px;
+  margin: 0;
+  padding-top: 50px;
+  color: #FFF;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 767px) {
+  .block-id-hero-basic .field--name-field-hero-heading {
+    width: 80%;
+    padding-top: 40px;
+  }
+}
+
+.block-id-hero-basic .field--name-field-hero-heading h1, .block-id-hero-basic .field--name-field-hero-heading h2, .block-id-hero-basic .field--name-field-hero-heading p {
+  margin-top: 0;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 20px;
+  font-weight: 200;
+  font-family: "Montserrat", "helvetica", "arial";
+  color: #FFF;
+}
+
+.block-id-hero-basic .field--name-field-hero-heading h1 strong, .block-id-hero-basic .field--name-field-hero-heading h2 strong, .block-id-hero-basic .field--name-field-hero-heading p strong {
+  color: #1CD34F;
+  font-weight: 200;
+}
+
+.block-id-hero-basic .field--name-field-hero-subheading {
+  position: absolute;
+  margin: 0;
+  color: #FFF;
+  font-weight: 200;
+  width: 300px;
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: 5px solid #1CD34F;
+  padding: 20px;
+  right: 0;
+  top: 80px;
 }
 
 .block-id-services-homepage {
@@ -4230,54 +4357,6 @@ span.ext {
 
 .node--unpublished {
   background-color: #fff4f4;
-}
-
-.node--type-page.node--view-mode-full {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 1200px;
-}
-
-.node--type-page.node--view-mode-full:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.node--type-page.node--view-mode-full .group-left {
-  float: left;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 25%;
-}
-
-.node--type-page.node--view-mode-full .group-right {
-  float: left;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 75%;
-}
-
-.node--type-page.node--view-mode-full .field--name-field-logo {
-  max-width: 200px;
-}
-
-.node--type-page.node--view-mode-full .field--name-field-logo img {
-  max-width: 100%;
-  height: auto;
-}
-
-.node--type-page.node--view-mode-full .field--name-node-title {
-  margin-bottom: 10px;
-}
-
-.node--type-page.node--view-mode-full .field--name-node-title h2 {
-  margin: 0;
-  font-size: 28px;
-  line-height: 34px;
 }
 
 .node--type-certification.node--view-mode-teaser {
