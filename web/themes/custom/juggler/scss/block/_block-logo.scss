@@ -5,10 +5,10 @@
   }
   .logo {
     float: left;
-    height: 39px;
-    width: 305px;
+    height: 34px;
+    width: 268px;
     background-image: url('../images/logo.png');
-    background-size: 305px 39px;
+    background-size: contain;
     background-repeat: no-repeat;
     @media #{$small-only} {
       float: left;

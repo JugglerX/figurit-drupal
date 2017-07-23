@@ -14,7 +14,7 @@
     margin: 0;
     padding-top: 50px;
     color: #FFF;
-    font-weight: 400;
+    font-weight: 300;
     @media #{$small-only} {
       width: 80%;
       padding-top: 40px;
@@ -24,12 +24,12 @@
       font-size: 40px;
       line-height: 48px;
       margin-bottom: 20px;
-      font-weight: 200;
+      font-weight: 300;
       font-family: $custom-font;
       color: #FFF;
       strong {
         color: $primary-color;
-        font-weight: 200;
+        font-weight: 300;
       }
     }
   }
@@ -38,7 +38,7 @@
     position: absolute;
     margin: 0;
     color: #FFF;
-    font-weight: 200;
+    font-weight: 400;
     width: 200px;
     background: rgba(0,0,0,0.1);
     border-bottom: 5px solid $primary-color;

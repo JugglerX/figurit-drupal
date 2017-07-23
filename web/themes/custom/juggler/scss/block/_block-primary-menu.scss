@@ -16,11 +16,13 @@
     z-index: 140;
     padding: 0;
     li {
+      margin: 0;
+      padding: 0;
       float: left;
       display: block;
       text-decoration: none;
       a {
-        padding: 10px 14px;
+        padding: 7px 13px;
         display: block;
         background: none;
         color: $primary-color;

@@ -20,6 +20,14 @@ body.front {
     p {
 
     }
+    .node--type-page {
+      .group-left {
+        @include grid-column(12);
+      }
+      .group-right {
+        @include grid-column(12);
+      }
+    }
   }
 }
 

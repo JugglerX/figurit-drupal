@@ -28,7 +28,6 @@
 @import 'component/form-select';
 @import 'component/form-textarea';
 @import 'component/form-composite';
-@import 'component/form-checkbox';
 @import 'component/form-submit';
 @import 'component/form-tabledrag';
 @import 'component/form-fieldset';
@@ -36,20 +35,13 @@
 @import 'component/form-filter-wrapper';
 @import 'component/form-required';
 @import 'component/button';
-@import 'component/poster';
-@import 'component/hero';
 @import 'component/field';
 @import 'component/table';
-@import 'component/throbber';
 @import 'component/description';
-@import 'component/selectize';
-@import 'component/modal';
 @import 'component/tooltipster';
 @import 'component/highlight';
-@import 'component/parsley';
 @import 'component/dropbutton';
 @import 'component/chosen';
-@import 'component/ext';
 @import 'component/slick';
 
 @import 'ds/ds-1col-fullwidth-hero-footer';
@@ -64,6 +56,7 @@
 @import 'block/block-hero-basic';
 @import 'block/block-services-homepage';
 @import 'block/block-certifications-homepage';
+@import 'block/block-certifications-homepage-carousel';
 @import 'block/block-testimonials-homepage';
 @import 'block/block-user-account-menu';
 @import 'block/block-primary-menu';
