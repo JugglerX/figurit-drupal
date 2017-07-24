@@ -34,6 +34,7 @@
     "drupal/libraries": "3.x-dev",
     "drupal/metatag": "~1.0",
     "drupal/pathauto": "^1.0@RC",
+    "drupal/redirect": "^1.0@alpha",
     "drupal/responsive_menu": "^2.4",
     "drupal/slick": "^1.0",
     "drupal/slick_views": "^1.0@RC",
