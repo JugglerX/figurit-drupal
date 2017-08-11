@@ -99,14 +99,47 @@ module.exports = function (grunt) {
         },
         options: {
           watchTask: true,
-          proxy: "juggler.dev",
-          injectChanges: false
+          proxy: "http://figurit.dev",
+          injectChanges: true
         }
       }
+    },
+
+    stylelint: {
+      stylelint: {
+        options: {
+          configFile: 'scss/.stylelint.json',
+          formatter: 'string',
+          ignoreDisables: false,
+          failOnError: true,
+          outputFile: '',
+          reportNeedlessDisables: false,
+          syntax: ''
+        },
+        src: [
+          'scss/**/*.scss'
+        ]
+      }
+    },
+
+    sasslint: {
+      options: {
+        configFile: 'scss/.sass-lint.yml'
+      },
+      target: ['scss/view/_view-certifications.scss']
+    },
+
+    eslint: {
+      options: {
+        configFile: '.eslintrc.json'
+        // rulePaths: ['conf/rules']
+      },
+      target: ['js/scripts.js']
     }
+
   });
 
-  grunt.registerTask('build', ['sass', 'autoprefixer', 'jshint', 'uglify']);
+  grunt.registerTask('build', ['sass', 'autoprefixer', 'jshint', 'uglify', 'sasslint']);
   grunt.registerTask('default', ['build']);
   grunt.registerTask('sync', ['browserSync','watch']);
 };
