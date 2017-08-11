@@ -1,218 +1,77 @@
-.btn {
-  &.secondary {
-    background-color: $secondary-color;
-  }
-  &.cancel {
-    background-color: #6e706f;
-  }
-
-  &.clear {
-    background-color: #fff;
-    color: #33669b;
-    border: 1px solid #33669b;
-  }
-  &.expand {
-    display: block;
-  }
-  &.small {
-    padding: 6px 11px 5px 11px;
-  }
-  &.medium {
-    padding: 11px 15px 10px 15px;
-  }
-  &.large {
-    padding: 16px 20px 15px 20px;
-  }
-  &.left {
-    text-align: left;
-  }
-  &.center {
-    text-align: center;
-  }
-  &.back {
-    padding-left: 34px;
-    &:after {
-      position: absolute;
-      content: "\f104";
-      width: 14px;
-      top: 45%;
-      left: 0.9rem;
-      color: white;
-      display: inline-block;
-      font-family: 'FontAwesome';
-      vertical-align: middle;
-      font-size: 20px;
-      line-height: 20px;
-      transform: translateY(-50%);
-    }
-  }
-  &.arrow {
-    padding-right: 34px;
-    &:after {
-      position: absolute;
-      content: "\f105";
-      width: 14px;
-      top: 44%;
-      right: 0.5rem;
-      color: white;
-      display: inline-block;
-      font-family: 'FontAwesome';
-      vertical-align: middle;
-      font-size: 20px;
-      line-height: 20px;
-      transform: translateY(-50%);
-    }
-  }
-  &.no-arrow {
-    padding: 11px 15px 10px 15px;
-    &:after {
-      content: "";
-    }
-  }
-  &.external {
-    padding-right: 34px;
-    //background-image: url(../images/standard/external-link-white.png);
-    background-repeat: no-repeat;
-    background-position: calc(100% + -14px) 45%;;
-  }
-  &.right {
-    float: right;
-  }
-  &.left {
-    float: left;
-  }
-  &.full-on-mobile {
-    @media #{$small-only} {
-      float: none;
-      display: block;
-      width: 100%;
-      text-align: center;
-    }
-  }
-  &.no-margin {
-    margin: 0;
-  }
-  &.no-bottom-margin,
-  &.no-margin-bottom,
-  &.button-no-margin-bottom {
-    margin-bottom: 0;
-  }
-  &.button-margin-right {
-    margin-right: 10px;
-  }
-  &.button-margin-left {
-    margin-left: 10px;
-  }
-  &.button-next-to-input {
-    padding: 7px 15px 6px 15px;
-  }
-  .fa {
-    margin-left: 8px;
-  }
-  &.edit-contribution-button {
-    display: block;
-    margin-bottom: 10px;
-    @media #{$small-only} {
-      float: none;
-      margin-bottom: 15px;
-    }
-  }
-  &.button-margin-bottom-on-mobile {
-    @media #{$small-only} {
-      margin-bottom: 10px;
-    }
-  }
-}
-
-.close-button {
-  position: absolute;
-  right: rem-calc(21);
-  top: rem-calc(28);
-  width: rem-calc(16);
-  height: rem-calc(16);
-}
-
-// Mixins
 @mixin btn() {
   position: relative;
-  text-transform: uppercase;
-  font-weight: 200;
-  font-size: 14px;
+  display: inline-block;
+  width: auto;
   padding: 11px 17px 10px 17px;
-  background-color: $primary-color;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: 1px;
   border-color: $primary-color;
   border-radius: 3px;
-  border: 1px;
-  color: #FFFFFF;
-  text-align: center;
-  cursor: pointer;
-  font-family: $custom-font;
-  -webkit-font-smoothing: auto;
   outline: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
+  background-color: $primary-color;
+  font-family: $custom-font;
+  font-size: 14px;
+  font-weight: 200;
+
   appearance: none;
-  display:inline-block;
-  cursor:pointer;
-  text-decoration:none;
-  width: auto;
   &:link,
   &:visited {
-    color: #FFF;
+    color: #FFFFFF;
   }
   &:hover,
   &:focus {
-    background-color: #2b5784;
-    color: #FFF;
     text-decoration: none;
+    color: #FFFFFF;
+    background-color: #2B5784;
     background-image: none;
     box-shadow: none;
   }
 }
 @mixin btn-cancel() {
   @include btn;
-  background-color: #6e706f;
-  border-color: #6e706f;
+  border-color: #6E706F;
+  background-color: #6E706F;
   &:link,
   &:visited {
-    color: #FFF;
+    color: #FFFFFF;
   }
   &:hover,
   &:focus {
-    background-color: darken(#6e706f,10%);
-    color: #FFF;
     text-decoration: none;
+    color: #FFFFFF;
+    background-color: darken(#6E706F, 10%);
     background-image: none;
     box-shadow: none;
   }
 }
 @mixin btn-clear() {
   @include btn;
-  background-color: #fff;
-  color: #33669b;
-  border: 1px solid #33669b;
+  color: #33669B;
+  border: 1px solid #33669B;
+  background-color: #FFFFFF;
 }
 @mixin btn-full() {
-  @extend .btn;
-  padding: 11px 15px 10px 15px;
+  @include btn;
   display: block;
   width: 100%;
+  padding: 11px 15px 10px 15px;
   text-align: center;
 }
-
 @mixin btn-small() {
   padding: 6px 11px 5px 11px;
 }
-
 .form-submit {
-  -webkit-appearance: none;
   @include btn;
-}
 
+  appearance: none;
+}
 .btn {
   @include btn;
 }
-
 .btn-cancel {
   @include btn-cancel;
 }

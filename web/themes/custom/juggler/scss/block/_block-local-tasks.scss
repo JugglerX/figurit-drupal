@@ -1,36 +1,36 @@
 .block-local-tasks-block {
+  @include clearfix;
   margin-top: 10px;
   margin-bottom: 10px;
-  @include clearfix;
   ul {
     @include clearfix;
     li {
       float: left;
-      list-style: none;
       margin: 0;
       padding: 0;
+      list-style: none;
       a {
         float: left;
-        background: #000;
         padding: 11px 15px;
         color: rgb(255, 255, 255);
-        font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif;
+        background: #000000;
+        font-family: 'Source Sans Pro', 'Lucida Grande', Verdana, sans-serif;
         font-size: 13px;
         font-weight: bold;
         line-height: 13px;
         &:hover {
-          background: #000;
-          background-image: linear-gradient(rgba(255, 255, 255, 0.125) 20%, transparent 200%);
-          color: #FFF;
-          text-decoration: underline;
           cursor: pointer;
+          text-decoration: underline;
+          color: #FFFFFF;
+          background: #000000;
+          background-image: linear-gradient(rgba(255, 255, 255, 0.125) 20%, transparent 200%);
         }
         &.active,
         &.is-active {
-          background: #000;
-          background-image: linear-gradient(rgba(255, 255, 255, 0.25) 20%, transparent 200%);
-          color: #FFF;
           text-decoration: underline;
+          color: #FFFFFF;
+          background: #000000;
+          background-image: linear-gradient(rgba(255, 255, 255, 0.25) 20%, transparent 200%);
         }
       }
     }

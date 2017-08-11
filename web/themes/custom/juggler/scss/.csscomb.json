@@ -6,6 +6,7 @@
     "node_modules/**",
     "bower_components/**"
   ],
+  "lines-between-rulesets": 0,
   "unitless-zero": true,
   "leading-zero": true,
   "remove-empty-rulesets": true,
@@ -17,7 +18,7 @@
   "eof-newline": true,
   "quotes": "single",
   "space-before-colon": "",
-  "space-after-colon": " ",
+  "space-after-colon": 1,
   "space-before-combinator": " ",
   "space-after-combinator": " ",
   "space-between-declarations": "\n",

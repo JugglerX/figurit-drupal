@@ -2,10 +2,6 @@ body.no-sidebars {
   .region-content {
     @include grid-column(12);
   }
-  .region-sidebar-first {
-  }
-  .region-sidebar-second {
-  }
 }
 .node--type-service.node--view-mode-full {
   @include grid-row();

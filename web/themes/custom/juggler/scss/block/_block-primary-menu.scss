@@ -5,35 +5,35 @@
   }
   ul.menu {
     @include clearfix;
+    z-index: 140;
     float: right;
     margin: 0;
-    font-weight: 600;
+    padding: 0;
+    vertical-align: middle;
+    border-bottom: 0;
     font-family: $base-font;
     font-size: 14px;
+    font-weight: 600;
     line-height: 18px;
-    vertical-align: middle;
-    border-bottom: none;
-    z-index: 140;
-    padding: 0;
     li {
+      display: block;
+      float: left;
       margin: 0;
       padding: 0;
-      float: left;
-      display: block;
       text-decoration: none;
       a {
-        padding: 7px 13px;
         display: block;
-        background: none;
-        color: $primary-color;
+        padding: 7px 13px;
         text-decoration: none;
+        color: $primary-color;
+        background: none;
         &:hover {
-          color: $primary-color;
           text-decoration: underline;
+          color: $primary-color;
         }
         &.active {
-          color: $primary-color;
           text-decoration: underline;
+          color: $primary-color;
         }
       }
     }

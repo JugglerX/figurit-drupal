@@ -1,15 +1,16 @@
 @import 'reset';
 @import 'settings';
 
+@import 'grid/clearfix';
 @import 'grid/breakpoints';
 @import 'grid/grid';
 
-@import 'region/layout.scss';
+@import 'region/layout';
 @import 'region/layout-top';
 @import 'region/layout-header';
 @import 'region/layout-canyon';
 @import 'region/layout-hero';
-@import 'region/region.scss';
+@import 'region/region';
 @import 'region/region-content';
 
 @import 'page/page';
@@ -34,15 +35,12 @@
 @import 'base/field';
 
 @import 'component/button';
-@import 'component/field-body';
 @import 'component/fonts';
 @import 'component/type';
 @import 'component/type-body';
 @import 'component/table';
 @import 'component/description';
 @import 'component/tooltipster';
-@import 'component/dropbutton';
-@import 'component/chosen';
 @import 'component/slick';
 
 @import 'ds/ds-1col-fullwidth-hero-footer';
@@ -70,23 +68,15 @@
 @import 'node/node-certification-view-mode-teaser';
 @import 'node/node-service-view-mode-teaser';
 
-
-/* Setup */
 body {
+  @include display-breakpoint;
   margin: 0;
   padding: 0;
+  color: #333333;
   font-family: $base-font;
   font-size: $base-font-size;
-  color: #333;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
   box-sizing: border-box;
 }
-
-body {
-  @include display-breakpoint;
-}
-

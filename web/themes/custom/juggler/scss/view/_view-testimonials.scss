@@ -2,8 +2,8 @@
   .view-content {
     @include grid-row(nest);
     .views-row {
-      margin-bottom: 10px;
       @include grid-column(6);
+      margin-bottom: 10px;
       @media #{$medium-only} {
         @include grid-column(4);
       }

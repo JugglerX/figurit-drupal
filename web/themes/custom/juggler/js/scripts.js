@@ -1,18 +1,17 @@
-console.log("Scripts.js");
+console.log('Scripts.js');
 
 (function ($, Drupal) {
 
   Drupal.behaviors.foundation5 = {
-    attach: function(context) {
+    attach: function (context) {
     }
-
   };
 
   Drupal.behaviors.tooltipster = {
-    attach: function(context) {
+    attach: function (context) {
       $('.tooltipster-text').tooltipster({
         animation: 'fade',
-        delay: [300,100],
+        delay: [300, 100],
         trigger: 'custom',
         triggerOpen: {
           mouseenter: true,
@@ -25,7 +24,7 @@ console.log("Scripts.js");
           tap: true
         },
         interactive: true,
-        side: "right",
+        side: 'right',
         arrow: true,
         maxWidth: 250
       });

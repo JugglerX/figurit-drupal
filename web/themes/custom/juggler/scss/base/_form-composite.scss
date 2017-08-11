@@ -6,15 +6,15 @@
   }
   .form-item {
     label {
-      font-weight: 400;
-      margin: 0;
       display: inline-block;
+      margin: 0;
       vertical-align: middle;
+      font-weight: 400;
     }
     input {
+      display: inline-block;
       margin: 0;
       margin-right: 3px;
-      display: inline-block;
       vertical-align: middle;
     }
   }
