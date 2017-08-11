@@ -24,12 +24,21 @@
  *
  * @see template_preprocess_block()
  */
+
+ /**
+  * Available theme variables:
+  * - machine_name: The ID of the block as set in the block machine name.
+  * - region: The machine name of the region the block is inside.
+  */
 #}
+
 {% set classes = [
-'block',
-'block-id-' ~ machine_name|clean_class,
-'block-' ~ base_plugin_id|clean_class,
-] %}
+    'block',
+    'block-id-' ~ machine_name|clean_class,
+    'block-' ~ base_plugin_id|clean_class,
+    'block-region-' ~ region|clean_class,
+  ]
+%}
 
 {#'block-' ~ derivative_plugin_id|clean_class#}
 

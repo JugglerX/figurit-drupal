@@ -1,49 +1,15 @@
 .btn {
-  position: relative;
-  text-transform: uppercase;
-  font-weight: 200;
-  padding: 11px 15px 10px 15px;
-  background-color: $primary-color;
-  border-color: $primary-color;
-  color: #FFFFFF;
-  text-align: left;
-  border-style: solid;
-  border-width: 0;
-  cursor: pointer;
-  font-family: FrutigerNext,Arial,"メイリオ",Meiryo,sans-serif;
-  line-height: normal;
-  margin: 0 0 15px 0;
-  text-decoration: none;
-  -webkit-appearance: none;
-  border-radius: 0;
-  display: inline-block;
-  padding-top: 0.625rem;
-  padding-right: 1.25rem;
-  padding-bottom: 0.6875rem;
-  padding-left: 1.25rem;
-  font-size: 1rem;
-  transition: background-color 300ms ease-out;
-  &:link,
-  &:visited {
-    color: #FFF;
-  }
-  &:hover,
-  &:focus {
-    background-color: #275666;
-    color: #FFF;
-    text-decoration: none;
-  }
   &.secondary {
     background-color: $secondary-color;
   }
   &.cancel {
     background-color: #6e706f;
   }
-  &.full {
-    padding: 11px 15px 10px 15px;
-    display: block;
-    width: 100%;
-    text-align: center;
+
+  &.clear {
+    background-color: #fff;
+    color: #33669b;
+    border: 1px solid #33669b;
   }
   &.expand {
     display: block;
@@ -105,7 +71,7 @@
   }
   &.external {
     padding-right: 34px;
-    background-image: url(../images/standard/external-link-white.png);
+    //background-image: url(../images/standard/external-link-white.png);
     background-repeat: no-repeat;
     background-position: calc(100% + -14px) 45%;;
   }
@@ -168,5 +134,88 @@
 
 // Mixins
 @mixin btn() {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 14px;
+  padding: 11px 17px 10px 17px;
+  background-color: $primary-color;
+  border-color: $primary-color;
+  border-radius: 3px;
+  border: 1px;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+  font-family: $custom-font;
+  -webkit-font-smoothing: auto;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  display:inline-block;
+  cursor:pointer;
+  text-decoration:none;
+  width: auto;
+  &:link,
+  &:visited {
+    color: #FFF;
+  }
+  &:hover,
+  &:focus {
+    background-color: #2b5784;
+    color: #FFF;
+    text-decoration: none;
+    background-image: none;
+    box-shadow: none;
+  }
+}
+@mixin btn-cancel() {
+  @include btn;
+  background-color: #6e706f;
+  border-color: #6e706f;
+  &:link,
+  &:visited {
+    color: #FFF;
+  }
+  &:hover,
+  &:focus {
+    background-color: darken(#6e706f,10%);
+    color: #FFF;
+    text-decoration: none;
+    background-image: none;
+    box-shadow: none;
+  }
+}
+@mixin btn-clear() {
+  @include btn;
+  background-color: #fff;
+  color: #33669b;
+  border: 1px solid #33669b;
+}
+@mixin btn-full() {
   @extend .btn;
+  padding: 11px 15px 10px 15px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+@mixin btn-small() {
+  padding: 6px 11px 5px 11px;
+}
+
+.form-submit {
+  -webkit-appearance: none;
+  @include btn;
+}
+
+.btn {
+  @include btn;
+}
+
+.btn-cancel {
+  @include btn-cancel;
+}
+.btn-clear {
+  @include btn-clear;
 }

@@ -1,4 +1,14 @@
-<div class="page page-service">
+{%
+  set body_classes = [
+    'page',
+    not page.sidebar_first and not page.sidebar_second ? 'no-sidebars',
+    page.sidebar_first and not page.sidebar_second ? 'sidebar-first',
+    page.sidebar_second and not page.sidebar_first ? 'sidebar-second',
+    page.sidebar_first and page.sidebar_second ? 'both-sidebars'
+  ]
+%}
+
+<div {{ attributes.addClass(body_classes) }}>
 
   {% if page.top %}
     <div class="layout layout-top">
