@@ -122,6 +122,8 @@ module.exports = function (grunt) {
       }
     },
 
+
+    // https://github.com/ahmednuaman/grunt-scss-lint
     sasslint: {
       options: {
         configFile: 'scss/.sass-lint.yml'
@@ -135,6 +137,36 @@ module.exports = function (grunt) {
         // rulePaths: ['conf/rules']
       },
       target: ['js/scripts.js']
+    },
+
+    stylizeSCSS: {
+      target: {
+        options: {
+          // order: ['display', 'position', 'top', ...]
+        },
+        files: [{
+          expand: true,
+          src: ['scss/view/_view-certifications.scss']
+        }]
+      }
+    },
+
+    // https://github.com/csscomb/csscomb.js/blob/dev/doc/options.md
+    csscomb: {
+      // dynamic_mappings: {
+      //   expand: true,
+      //   cwd: '/assets/css/',
+      //   src: ['*.css', '!*.resorted.css'],
+      //   dest: '/assets/dest/css/',
+      //   ext: '.resorted.css'
+      // },
+      options: {
+        config: 'scss/.csscomb.json'
+      },
+      files: {
+        expand: true,
+        src: 'scss/view/_view-certifications.scss'
+      }
     }
 
   });
