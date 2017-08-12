@@ -43,20 +43,7 @@ input[type='url'] {
     outline: none;
     box-shadow: 0 0 5px #999999;
   }
+  &[disabled] {
+    background-color: #DDDDDD;
+  }
 }
-input[type='text'][disabled],
-input[type='password'][disabled],
-input[type='date'][disabled],
-input[type='datetime'][disabled],
-input[type='datetime-local'][disabled],
-input[type='month'][disabled],
-input[type='week'][disabled],
-input[type='email'][disabled],
-input[type='number'][disabled],
-input[type='search'][disabled],
-input[type='tel'][disabled],
-input[type='time'][disabled],
-input[type='url'][disabled] {
-  background-color: #DDDDDD;
-}
-

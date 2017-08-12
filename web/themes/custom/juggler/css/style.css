@@ -135,18 +135,6 @@ table {
   content: '';
 }
 
-.row.collapse > .column,
-.row.collapse > .columns {
-  float: left;
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.row.collapse .row {
-  margin-right: 0;
-  margin-left: 0;
-}
-
 .row .row {
   width: auto;
   max-width: none;
@@ -157,18 +145,6 @@ table {
 }
 
 .row .row:after {
-  display: block;
-  clear: both;
-  content: '';
-}
-
-.row .row.collapse {
-  width: auto;
-  max-width: none;
-  margin: 0;
-}
-
-.row .row.collapse:after {
   display: block;
   clear: both;
   content: '';
@@ -230,22 +206,6 @@ table {
     float: left;
     width: 100%;
   }
-  .row.small-collapse > .column,
-  .row.small-collapse > .columns {
-    float: left;
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .row.small-collapse .row {
-    margin-right: 0;
-    margin-left: 0;
-  }
-  .row.small-uncollapse > .column,
-  .row.small-uncollapse > .columns {
-    float: left;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -296,22 +256,6 @@ table {
   .medium-12 {
     float: left;
     width: 100%;
-  }
-  .row.medium-collapse > .column,
-  .row.medium-collapse > .columns {
-    float: left;
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .row.medium-collapse .row {
-    margin-right: 0;
-    margin-left: 0;
-  }
-  .row.medium-uncollapse > .column,
-  .row.medium-uncollapse > .columns {
-    float: left;
-    padding-right: 10px;
-    padding-left: 10px;
   }
 }
 
@@ -364,22 +308,6 @@ table {
     float: left;
     width: 100%;
   }
-  .row.large-collapse > .column,
-  .row.large-collapse > .columns {
-    float: left;
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .row.large-collapse .row {
-    margin-right: 0;
-    margin-left: 0;
-  }
-  .row.large-uncollapse > .column,
-  .row.large-uncollapse > .columns {
-    float: left;
-    padding-right: 10px;
-    padding-left: 10px;
-  }
 }
 
 @media only screen and (min-width: 1441px) {
@@ -430,22 +358,6 @@ table {
   .extra-large-12 {
     float: left;
     width: 100%;
-  }
-  .row.extra-large-collapse > .column,
-  .row.extra-large-collapse > .columns {
-    float: left;
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .row.extra-large-collapse .row {
-    margin-right: 0;
-    margin-left: 0;
-  }
-  .row.extra-large-uncollapse > .column,
-  .row.extra-large-uncollapse > .columns {
-    float: left;
-    padding-right: 10px;
-    padding-left: 10px;
   }
 }
 

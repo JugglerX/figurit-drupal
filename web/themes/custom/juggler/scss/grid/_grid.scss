@@ -74,50 +74,14 @@ $column-gutter: 20px;
       @include grid-column($columns: $i, $collapse: null);
     }
   }
-
-  .row {
-    &.#{$size}-collapse {
-      > .column,
-      > .columns {
-        @include grid-column($collapse: true);
-      }
-
-      .row {
-        margin-right: 0;
-        margin-left: 0;
-      }
-    }
-    &.#{$size}-uncollapse {
-      > .column,
-      > .columns {
-        @include grid-column;
-      }
-    }
-  }
 }
 
 @if $include-html-grid-classes {
   // Row
   .row {
     @include grid-row;
-
-    &.collapse {
-      > .column,
-      > .columns {
-        @include grid-column($collapse: true);
-      }
-
-      .row {
-        margin-right: 0;
-        margin-left: 0;
-      }
-    }
-
     .row {
       @include grid-row($behavior: nest);
-      &.collapse {
-        @include grid-row($behavior: nest-collapse);
-      }
     }
   }
 
