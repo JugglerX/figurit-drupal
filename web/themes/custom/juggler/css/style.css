@@ -744,8 +744,6 @@ input[type='url'] {
   font-size: 15px;
   font-weight: 200;
   line-height: 24px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
@@ -842,8 +840,6 @@ select {
   font-size: 15px;
   font-weight: 200;
   line-height: 24px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
@@ -874,8 +870,6 @@ textarea {
   font-size: 16px;
   font-weight: 200;
   line-height: 19px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
@@ -920,8 +914,6 @@ textarea:focus {
   font-family: "Open+Sans", "helvetica", "arial";
   font-size: 15px;
   font-weight: bold;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
@@ -976,8 +968,6 @@ input.form-file {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.125);
   font-size: 13px;
   font-weight: 200;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
@@ -1036,11 +1026,7 @@ label.form-required:after {
   font-family: "Lato", "helvetica", "arial";
   font-size: 14px;
   font-weight: 200;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
@@ -1074,8 +1060,6 @@ label.form-required:after {
   font-family: "Lato", "helvetica", "arial";
   font-size: 14px;
   font-weight: 200;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
@@ -1109,8 +1093,6 @@ label.form-required:after {
   font-family: "Lato", "helvetica", "arial";
   font-size: 14px;
   font-weight: 200;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   border-color: #6E706F;
   background-color: #6E706F;
@@ -1158,8 +1140,6 @@ label.form-required:after {
   font-family: "Lato", "helvetica", "arial";
   font-size: 14px;
   font-weight: 200;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   color: #33669B;
   border: 1px solid #33669B;
@@ -1176,20 +1156,6 @@ label.form-required:after {
   background-color: #2B5784;
   background-image: none;
   box-shadow: none;
-}
-
-@font-face {
-  font-family: 'custom-font-name';
-  font-weight: 200;
-  font-style: normal;
-  src: url("../fonts/custom-font-name.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'custom-font-name';
-  font-weight: 600;
-  font-style: bold;
-  src: url("../fonts/custom-font-name.woff") format("woff");
 }
 
 p,
@@ -1372,311 +1338,6 @@ table tbody tr:hover th {
   color: #666666;
   font-size: 13px;
   line-height: 16px;
-}
-
-.tooltipster-icon:hover {
-  cursor: pointer;
-  color: #111111;
-}
-
-@media only screen and (max-width: 767px) {
-  .tooltipster-icon {
-    font-size: 20px;
-  }
-}
-
-.tooltipster-text {
-  text-decoration: none;
-  color: #327084;
-  border-bottom: 1px dotted #CCCCCC;
-  line-height: inherit;
-}
-
-.tooltipster-text:hover {
-  cursor: pointer;
-  text-decoration: none;
-  color: #275666;
-  border-bottom: 1px dotted #333333;
-}
-
-.tooltipster-base {
-  position: absolute;
-  display: -ms-flexbox;
-  display: flex;
-  pointer-events: none;
-}
-
-.tooltipster-box {
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.tooltipster-content {
-  overflow: auto;
-  box-sizing: border-box;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.tooltipster-ruler {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  visibility: hidden;
-  overflow: hidden;
-}
-
-.tooltipster-fade {
-  transition-property: opacity;
-  opacity: 0;
-}
-
-.tooltipster-fade.tooltipster-show {
-  opacity: 1;
-}
-
-.tooltipster-grow {
-  transition-property: transform;
-  transform: scale(0, 0);
-  backface-visibility: hidden;
-}
-
-.tooltipster-grow.tooltipster-show {
-  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
-  transform: scale(1, 1);
-}
-
-.tooltipster-swing {
-  transition-property: transform;
-  transform: rotateZ(4deg);
-  opacity: 0;
-}
-
-.tooltipster-swing.tooltipster-show {
-  transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
-  transform: rotateZ(0deg);
-  opacity: 1;
-}
-
-.tooltipster-fall {
-  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
-  transition-property: top;
-}
-
-.tooltipster-fall.tooltipster-initial {
-  top: 0 !important;
-}
-
-.tooltipster-fall.tooltipster-dying {
-  top: 0 !important;
-  transition-property: all;
-  opacity: 0;
-}
-
-.tooltipster-slide {
-  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
-  transition-property: left;
-}
-
-.tooltipster-slide.tooltipster-initial {
-  left: -40px !important;
-}
-
-.tooltipster-slide.tooltipster-dying {
-  left: 0 !important;
-  transition-property: all;
-  opacity: 0;
-}
-
-@keyframes tooltipster-fading {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.tooltipster-update-fade {
-  animation: tooltipster-fading 400ms;
-}
-
-@keyframes tooltipster-rotating {
-  25% {
-    transform: rotate(-2deg);
-  }
-  75% {
-    transform: rotate(2deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-
-.tooltipster-update-rotate {
-  animation: tooltipster-rotating 600ms;
-}
-
-@keyframes tooltipster-scaling {
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.tooltipster-update-scale {
-  animation: tooltipster-scaling 600ms;
-}
-
-.tooltipster-sidetip .tooltipster-box {
-  background: #111111;
-}
-
-.tooltipster-sidetip.tooltipster-bottom .tooltipster-box {
-  margin-top: 8px;
-}
-
-.tooltipster-sidetip.tooltipster-left .tooltipster-box {
-  margin-right: 8px;
-}
-
-.tooltipster-sidetip.tooltipster-right .tooltipster-box {
-  margin-left: 8px;
-}
-
-.tooltipster-sidetip.tooltipster-top .tooltipster-box {
-  margin-bottom: 8px;
-}
-
-.tooltipster-sidetip .tooltipster-content {
-  padding: 15px;
-  text-align: left;
-  color: #CCCCCC;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 18px;
-}
-
-.tooltipster-sidetip .tooltipster-content a {
-  text-decoration: none;
-  color: #FFFFFF;
-  font-weight: 500;
-}
-
-.tooltipster-sidetip .tooltipster-content a:hover {
-  text-decoration: underline;
-}
-
-.tooltipster-sidetip .tooltipster-arrow {
-  position: absolute;
-  overflow: hidden;
-}
-
-.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow {
-  top: 0;
-  width: 20px;
-  height: 10px;
-  margin-left: -10px;
-}
-
-.tooltipster-sidetip.tooltipster-left .tooltipster-arrow {
-  top: 0;
-  right: 0;
-  width: 10px;
-  height: 20px;
-  margin-top: -10px;
-}
-
-.tooltipster-sidetip.tooltipster-right .tooltipster-arrow {
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 20px;
-  margin-top: -10px;
-}
-
-.tooltipster-sidetip.tooltipster-top .tooltipster-arrow {
-  bottom: 0;
-  width: 20px;
-  height: 10px;
-  margin-left: -10px;
-}
-
-.tooltipster-sidetip .tooltipster-arrow-background,
-.tooltipster-sidetip .tooltipster-arrow-border {
-  position: absolute;
-  width: 0;
-  height: 0;
-}
-
-.tooltipster-sidetip .tooltipster-arrow-background {
-  border: 10px solid transparent;
-}
-
-.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-background {
-  top: 3px;
-  left: 0;
-  border-bottom-color: #111111;
-}
-
-.tooltipster-sidetip.tooltipster-left .tooltipster-arrow-background {
-  top: 0;
-  left: -3px;
-  border-left-color: #111111;
-}
-
-.tooltipster-sidetip.tooltipster-right .tooltipster-arrow-background {
-  top: 0;
-  left: 3px;
-  border-right-color: #111111;
-}
-
-.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background {
-  top: -3px;
-  left: 0;
-  border-top-color: #111111;
-}
-
-.tooltipster-sidetip .tooltipster-arrow-border {
-  top: 0;
-  left: 0;
-  border: 10px solid transparent;
-}
-
-.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-border {
-  border-bottom-color: #000000;
-}
-
-.tooltipster-sidetip.tooltipster-left .tooltipster-arrow-border {
-  border-left-color: #000000;
-}
-
-.tooltipster-sidetip.tooltipster-right .tooltipster-arrow-border {
-  border-right-color: #000000;
-}
-
-.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
-  border-top-color: #000000;
-}
-
-.tooltipster-sidetip .tooltipster-arrow-uncropped {
-  position: relative;
-}
-
-.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-uncropped {
-  top: -10px;
-}
-
-.tooltipster-sidetip.tooltipster-right .tooltipster-arrow-uncropped {
-  left: -10px;
-}
-
-.tooltipster-region {
-  display: none;
 }
 
 .slick__slide .node {
@@ -2779,3 +2440,5 @@ body:after {
 * {
   box-sizing: border-box;
 }
+
+/*# sourceMappingURL=style.css.map */

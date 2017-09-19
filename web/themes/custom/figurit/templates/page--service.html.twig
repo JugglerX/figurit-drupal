@@ -1,11 +1,11 @@
 {%
-  set body_classes = [
-    'page',
-    not page.sidebar_first and not page.sidebar_second ? 'no-sidebars',
-    page.sidebar_first and not page.sidebar_second ? 'sidebar-first',
-    page.sidebar_second and not page.sidebar_first ? 'sidebar-second',
-    page.sidebar_first and page.sidebar_second ? 'both-sidebars'
-  ]
+set body_classes = [
+'page',
+not page.sidebar_first and not page.sidebar_second ? 'no-sidebars',
+page.sidebar_first and not page.sidebar_second ? 'sidebar-first',
+page.sidebar_second and not page.sidebar_first ? 'sidebar-second',
+page.sidebar_first and page.sidebar_second ? 'both-sidebars'
+]
 %}
 
 <div {{ attributes.addClass(body_classes) }}>
@@ -52,24 +52,36 @@
     </div>
   {% endif %}
 
-  {% if page.breadcrumb %}
-    <div class="row">
-      <div class="small-12 column">
-        {{ page.breadcrumb }}
-      </div>
-    </div>
-  {% endif %}
+  <div class="layout layout-middle">
 
-  {% if page.above_content %}
-    <div class="row">
-      <div class="small-12 column">
-        {{ page.above_content }}
+    {% if page.breadcrumb %}
+      <div class="row">
+        <div class="small-12 column">
+          {{ page.breadcrumb }}
+        </div>
       </div>
-    </div>
-  {% endif %}
+    {% endif %}
 
-  <div class="layout layout-content">
-    {{ page.content }}
+    {% if page.above_content %}
+      <div class="row">
+        <div class="small-12 column">
+          {{ page.above_content }}
+        </div>
+      </div>
+    {% endif %}
+
+    <div class="main">
+      {% if page.sidebar_first %}
+        {{ page.sidebar_first }}
+      {% endif %}
+
+      {{ page.content }}
+
+      {% if page.sidebar_second %}
+        {{ page.sidebar_second }}
+      {% endif %}
+    </div>
+
   </div>
 
   {% if page.canyon %}

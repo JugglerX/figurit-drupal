@@ -1,4 +1,5 @@
-.block-id-primary-menu {
+.block-id-primary-menu,
+.block-id-primarymenu {
   @include grid-column(8);
   @media #{$small-only} {
     display: none;

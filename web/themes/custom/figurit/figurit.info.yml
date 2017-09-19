@@ -39,8 +39,6 @@ stylesheets-remove:
   - core/themes/stable/css/system/components/tabledrag.module.css
   - core/themes/stable/css/system/components/tablesort.module.css
   - core/themes/stable/css/system/components/tree-child.module.css
-  - core/themes/stable/css/system/components/js.module.css
-  - core/themes/stable/css/system/components/hidden.module.css
   - core/themes/classy/css/components/form.css
   - core/themes/classy/css/components/field.css
   - core/themes/classy/css/components/dropbutton.css
@@ -66,7 +64,7 @@ stylesheets-remove:
   - core/themes/classy/css/components/link.css
   - core/themes/classy/css/components/links.css
   - core/themes/classy/css/components/menu.css
-  - core/themes/classy/css/components/messages.css
+#  - core/themes/classy/css/components/messages.css
   - core/themes/classy/css/components/more-link.css
   - core/themes/classy/css/components/node.css
   - core/themes/classy/css/components/pager.css
@@ -75,7 +73,7 @@ stylesheets-remove:
   - core/themes/classy/css/components/tabledrag.css
   - core/themes/classy/css/components/tableselect.css
   - core/themes/classy/css/components/tablesort.css
-  - core/themes/classy/css/components/tabs.css
+#  - core/themes/classy/css/components/tabs.css
   - core/themes/classy/css/components/textarea.css
   - core/themes/classy/css/components/ui-dialog.css
   - core/themes/classy/css/components/user.css

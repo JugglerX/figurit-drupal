@@ -31,13 +31,32 @@ ds_2col_75_25:
   category: Display Suite
   class: '\Drupal\ds\Plugin\DsLayout'
   type: partial
+  path: templates/ds
   template: ds/ds-2col-75-25
-  icon: ds/ds-2col-75-25.png
+  icon: ds-2col-75-25.png
   regions:
     left:
       label: Left
     right:
       label: Right
+
+ds_2col_stacked_75_25:
+  label: Two column stacked layout - 75/25
+  category: Display Suite
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  path: templates/ds
+  template: ds/ds-2col-stacked-75-25
+  icon: ds-2col-stacked-75-25.png
+  regions:
+    header:
+      label: Header
+    left:
+      label: Left
+    right:
+      label: Right
+    footer:
+      label: Footer
 
 layout_twocol_fullwidth_bricks:
   label: 'Two column fullwidth bricks'

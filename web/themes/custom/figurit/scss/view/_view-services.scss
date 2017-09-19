@@ -3,7 +3,7 @@
     @include grid-row(nest);
     .views-row {
       @include grid-column(6);
-      min-height: 150px;
+      min-height: 250px;
       margin-bottom: 10px;
       @media #{$small-only} {
         @include grid-column(12);

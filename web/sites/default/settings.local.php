@@ -6,7 +6,8 @@ assert_options(ASSERT_ACTIVE, TRUE);
 /**
  * services.yml
  */
-$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/services.local.yml';
+//$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/services.local.yml';
+$settings['container_yamls'][] = __DIR__ . '/services.local.yml';
 
 $config['system.logging']['error_level'] = 'verbose';
 $config['system.performance']['css']['preprocess'] = FALSE;
