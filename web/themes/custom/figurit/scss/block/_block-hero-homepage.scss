@@ -1,0 +1,50 @@
+.block-id-hero-homepage {
+  height: 400px;
+  .view {
+    @include grid-row();
+  }
+  .view-content {
+    @include grid-column(12);
+  }
+
+  .field--name-field-hero-heading {
+    float: left;
+    width: 400px;
+    margin: 0;
+    padding-top: 50px;
+    color: #FFFFFF;
+    font-weight: 300;
+    @media #{$small-only} {
+      width: 80%;
+      padding-top: 40px;
+    }
+    h1,
+    h2,
+    p {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #FFFFFF;
+      font-family: $custom-font;
+      font-size: 40px;
+      font-weight: 300;
+      line-height: 48px;
+      strong {
+        color: $primary-color;
+        font-weight: 300;
+      }
+    }
+  }
+  .field--name-field-hero-subheading {
+    @extend %h2;
+    position: absolute;
+    top: 218px;
+    right: 0;
+    width: 200px;
+    margin: 0;
+    padding: 20px;
+    color: #FFFFFF;
+    border-bottom: 5px solid $primary-color;
+    background: rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+  }
+}
