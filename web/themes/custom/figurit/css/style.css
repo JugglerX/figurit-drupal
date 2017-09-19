@@ -550,7 +550,7 @@ body.front .block-id-content .node--type-page .group-right {
   padding-right: 10px;
   padding-left: 10px;
   width: 50%;
-  min-height: 250px;
+  min-height: 180px;
   margin-bottom: 10px;
 }
 
@@ -560,6 +560,7 @@ body.front .block-id-content .node--type-page .group-right {
     padding-right: 10px;
     padding-left: 10px;
     width: 100%;
+    min-height: inherit;
   }
 }
 
@@ -2395,7 +2396,19 @@ table tbody tr:hover th {
 .node--type-service.node--view-mode-teaser .field--name-field-icon {
   float: left;
   margin-right: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .node--type-service.node--view-mode-teaser .field--name-field-icon {
+    margin-bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .node--type-service.node--view-mode-teaser .field--name-field-icon {
+    margin-bottom: 10px;
+  }
 }
 
 body {

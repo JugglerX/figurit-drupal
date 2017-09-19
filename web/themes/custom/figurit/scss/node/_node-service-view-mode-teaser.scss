@@ -13,6 +13,12 @@
   .field--name-field-icon {
     float: left;
     margin-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    @media #{$medium-only} {
+      margin-bottom: 80px;
+    }
+    @media #{$small-only} {
+      margin-bottom: 10px;
+    }
   }
 }
