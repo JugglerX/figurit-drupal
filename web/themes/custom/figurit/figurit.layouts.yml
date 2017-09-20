@@ -58,6 +58,20 @@ ds_2col_stacked_75_25:
     footer:
       label: Footer
 
+ds_2col_empty:
+  label: Two column layout + empty
+  category: Display Suite
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  path: templates/ds
+  template: ds/ds-2col-empty
+  icon: ds-2col-empty.png
+  regions:
+    left:
+      label: Left
+    right:
+      label: Right
+
 ds_2row:
   label: Two row layout
   category: Display Suite

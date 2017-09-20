@@ -5,7 +5,7 @@
       @include grid-column(6);
       margin-bottom: 10px;
       @media #{$medium-only} {
-        @include grid-column(4);
+        @include grid-column(6);
       }
       @media #{$small-only} {
         @include grid-column(12);

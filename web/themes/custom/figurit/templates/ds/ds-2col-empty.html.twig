@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Display Suite 2 column template.
+ * Display Suite 2 column + empty template.
  *
  * Available variables:
  * - outer_wrapper: outer wrapper element
@@ -14,20 +14,21 @@
  * - right: content of right region
  */
 #}
-<{{ outer_wrapper }}{{ attributes.addClass('ds-2col', 'clearfix') }}>
+<{{ outer_wrapper }}{{ attributes.addClass('ds-2col-empty', 'clearfix') }}>
 
+{{ title_suffix.contextual_links }}
   <div class="groups">
-    {{ title_suffix.contextual_links }}
-
     {% if left|render %}
     <{{ left_wrapper }}{{ left_attributes.addClass('group-left') }}>
       {{ left }}
     </{{ left_wrapper }}>
     {% endif %}
 
-    <{{ right_wrapper }}{{ right_attributes.addClass('group-right') }}>
-      {{ right }}
-    </{{ right_wrapper }}>
+    {% if right|render %}
+      <{{ right_wrapper }}{{ right_attributes.addClass('group-right') }}>
+        {{ right }}
+      </{{ right_wrapper }}>
+  {% endif %}
   </div>
 
 </{{ outer_wrapper }}>

@@ -733,7 +733,7 @@ body.front .block-id-content .node--type-page .group-right {
     float: left;
     padding-right: 10px;
     padding-left: 10px;
-    width: 33.3333333333%;
+    width: 50%;
   }
 }
 
@@ -2521,6 +2521,32 @@ table tbody tr:hover th {
 }
 
 .node--type-work.node--view-mode-teaser.ds-2row .group-secondrow {
+  padding: 20px;
+}
+
+.node--type-testimonial.node--view-mode-teaser .field--name-field-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.node--type-testimonial.node--view-mode-teaser.ds-2col .groups, .node--type-testimonial.node--view-mode-teaser.ds-2col-empty .groups {
+  display: flex;
+  flex-direction: row;
+}
+
+.node--type-testimonial.node--view-mode-teaser.ds-2col .groups:after, .node--type-testimonial.node--view-mode-teaser.ds-2col-empty .groups:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.node--type-testimonial.node--view-mode-teaser.ds-2col .group-left, .node--type-testimonial.node--view-mode-teaser.ds-2col-empty .group-left {
+  flex: 1 0 0;
+}
+
+.node--type-testimonial.node--view-mode-teaser.ds-2col .group-right, .node--type-testimonial.node--view-mode-teaser.ds-2col-empty .group-right {
+  flex: 2 0 0;
   padding: 20px;
 }
 
