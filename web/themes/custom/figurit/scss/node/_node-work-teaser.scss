@@ -1,4 +1,9 @@
 .node--type-work.node--view-mode-teaser {
+  .field--name-node-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .field--name-field-image {
     img {
       width: 100%;
@@ -19,8 +24,10 @@
   }
 
   &.ds-2row {
+    height: inherit;
     .groups {
       @include clearfix;
+      height: inherit;
       background-color: #FFFFFF;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
