@@ -388,6 +388,22 @@ table {
   background-size: cover;
 }
 
+.layout-highlighted {
+  padding: 40px 0 40px 0;
+  background: #EAEAEA;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,eaeaea+100 */
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #eaeaea 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #eaeaea 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #ffffff 0%, #eaeaea 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+
 .region {
   position: relative;
 }
@@ -530,6 +546,25 @@ body.front .block-id-content .node--type-page .group-right {
   width: 100%;
 }
 
+.view.view-services .view-header {
+  text-align: center;
+}
+
+.view.view-services .view-header h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 32px;
+  font-weight: 300;
+  font-family: "Open+Sans", "helvetica", "arial";
+  line-height: 28px;
+}
+
+.view.view-services .view-header p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
 .view.view-services .view-content {
   width: auto;
   max-width: none;
@@ -562,6 +597,12 @@ body.front .block-id-content .node--type-page .group-right {
     width: 100%;
     min-height: inherit;
   }
+}
+
+.view.view-services.view-display-id-block_2 {
+  padding-top: 50px;
+  margin-top: 30px;
+  border-top: 3px solid #1CD34F;
 }
 
 .view.view-certifications .view-content {
@@ -698,6 +739,66 @@ body.front .block-id-content .node--type-page .group-right {
 
 @media only screen and (max-width: 767px) {
   .view.view-testimonials .view-content .views-row {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+  }
+}
+
+.view.view-work .view-header {
+  text-align: center;
+}
+
+.view.view-work .view-header h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 32px;
+  font-weight: 300;
+  font-family: "Open+Sans", "helvetica", "arial";
+  line-height: 28px;
+}
+
+.view.view-work .view-header p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.view.view-work .view-content {
+  width: auto;
+  max-width: none;
+  margin-top: 0;
+  margin-right: -10px;
+  margin-bottom: 0;
+  margin-left: -10px;
+}
+
+.view.view-work .view-content:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.view.view-work .view-content .views-row {
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 25%;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .view.view-work .view-content .views-row {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 33.3333333333%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .view.view-work .view-content .views-row {
     float: left;
     padding-right: 10px;
     padding-left: 10px;
@@ -1131,7 +1232,7 @@ p,
 .field--name-body {
   margin-top: 0;
   margin-bottom: 15px;
-  color: #444444;
+  color: #666666;
   font-family: "Open+Sans", "helvetica", "arial";
   font-size: 15px;
   font-weight: 400;
@@ -1596,7 +1697,7 @@ table tbody tr:hover th {
 }
 
 .block-id-hero-homepage {
-  height: 400px;
+  height: 500px;
 }
 
 .block-id-hero-homepage .view {
@@ -1790,25 +1891,6 @@ table tbody tr:hover th {
 .block-id-services-homepage {
   margin-top: 30px;
   margin-bottom: 30px;
-}
-
-.block-id-services-homepage .block-title {
-  display: block;
-  width: 70%;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #999999;
-  font-size: 28px;
-  font-weight: 400;
-}
-
-@media only screen and (max-width: 767px) {
-  .block-id-services-homepage .block-title {
-    width: auto;
-    font-size: 24px;
-    line-height: 28px;
-  }
 }
 
 .block-id-services-homepage .node--type-page .field--name-node-title {
@@ -2409,6 +2491,37 @@ table tbody tr:hover th {
   .node--type-service.node--view-mode-teaser .field--name-field-icon {
     margin-bottom: 10px;
   }
+}
+
+.node--type-work.node--view-mode-teaser .field--name-field-image img {
+  width: 100%;
+  height: auto;
+}
+
+.node--type-work.node--view-mode-teaser .field--name-body p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #666666;
+  font-family: "Open+Sans", "helvetica", "arial";
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.node--type-work.node--view-mode-teaser.ds-2row .groups {
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.node--type-work.node--view-mode-teaser.ds-2row .groups:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.node--type-work.node--view-mode-teaser.ds-2row .group-secondrow {
+  padding: 20px;
 }
 
 body {

@@ -1,4 +1,4 @@
-.view.view-services {
+.view.view-work {
   .view-header {
     text-align: center;
     h2 {
@@ -18,18 +18,14 @@
   .view-content {
     @include grid-row(nest);
     .views-row {
-      @include grid-column(6);
-      min-height: 180px;
+      @include grid-column(3);
       margin-bottom: 10px;
+      @media #{$medium-only} {
+        @include grid-column(4);
+      }
       @media #{$small-only} {
         @include grid-column(12);
-        min-height: inherit;
       }
     }
-  }
-  &.view-display-id-block_2 {
-    padding-top: 50px;
-    margin-top: 30px;
-    border-top: 3px solid $primary-color;
   }
 }

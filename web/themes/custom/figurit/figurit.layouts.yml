@@ -58,6 +58,20 @@ ds_2col_stacked_75_25:
     footer:
       label: Footer
 
+ds_2row:
+  label: Two row layout
+  category: Display Suite
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  path: templates/ds
+  template: ds-2row
+  icon: ds-2row.png
+  regions:
+    firstrow:
+      label: First Row
+    secondrow:
+      label: Second Row
+
 layout_twocol_fullwidth_bricks:
   label: 'Two column fullwidth bricks'
   path: layouts/twocol_fullwidth_bricks

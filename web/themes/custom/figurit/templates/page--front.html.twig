@@ -48,7 +48,11 @@ page.sidebar_first and page.sidebar_second ? 'both-sidebars'
 
   {% if page.highlighted %}
     <div class="layout layout-highlighted">
-      {{ page.highlighted }}
+      <div class="row">
+        <div class="small-12 column">
+          {{ page.highlighted }}
+        </div>
+      </div>
     </div>
   {% endif %}
 

@@ -10,8 +10,10 @@
 @import 'region/layout-header';
 @import 'region/layout-canyon';
 @import 'region/layout-hero';
+@import 'region/layout-highlighted';
 @import 'region/region';
 @import 'region/region-content';
+
 
 @import 'page/page';
 @import 'page/front';
@@ -19,6 +21,7 @@
 @import 'view/view-services';
 @import 'view/view-certifications';
 @import 'view/view-testimonials';
+@import 'view/view-work';
 
 @import 'base/form';
 @import 'base/form-item';
@@ -46,6 +49,7 @@
 @import 'ds/ds-1col-hero';
 @import 'ds/ds-2col-75-25';
 @import 'ds/ds-2col-stacked-75-25';
+@import 'ds/ds-2row';
 
 @import 'block/block-tabs';
 @import 'block/block-contact-details-top';
@@ -67,6 +71,7 @@
 @import 'node/node';
 @import 'node/node-certification-view-mode-teaser';
 @import 'node/node-service-view-mode-teaser';
+@import 'node/node-work-teaser';
 
 body {
   @include display-breakpoint;
