@@ -1,0 +1,36 @@
+.node--type-contact-details.node--view-mode-teaser {
+  .field--name-node-title {
+    h3 {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+  .field--name-body {
+    margin-bottom: 0;
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+      color: #666666;
+      font-family: $base-font;
+      font-size: 15px;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 20px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .field--name-field-phone {
+
+  }
+  .field--name-field-email {
+
+  }
+  .field--name-field-short-address {
+
+  }
+}
+
+

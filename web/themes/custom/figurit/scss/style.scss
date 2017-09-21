@@ -12,6 +12,8 @@
 @import 'region/layout-hero';
 @import 'region/layout-highlighted';
 @import 'region/layout-highlighted-second';
+@import 'region/layout-footer';
+@import 'region/layout-bottom';
 @import 'region/region';
 @import 'region/region-content';
 
@@ -23,6 +25,7 @@
 @import 'view/view-testimonials';
 @import 'view/view-work';
 @import 'view/view-team';
+@import 'view/view-contact-details';
 
 @import 'base/form';
 @import 'base/form-item';
@@ -53,6 +56,7 @@
 
 @import 'block/block-tabs';
 @import 'block/block-contact-details-top';
+@import 'block/block-contact-details-bottom';
 @import 'block/block-hero-homepage';
 @import 'block/block-hero-service';
 @import 'block/block-hero-basic';
@@ -67,6 +71,7 @@
 @import 'block/block-horizontalmenu';
 @import 'block/block-logo';
 @import 'block/block-responsive-menu-mobile-icon';
+@import 'block/block-socialmedialinks';
 
 @import 'node/node';
 @import 'node/node-certification-view-mode-teaser';
@@ -74,6 +79,7 @@
 @import 'node/node-work-teaser';
 @import 'node/node-testimonial-teaser';
 @import 'node/node-team-teaser';
+@import 'node/node-contact-details-teaser';
 
 body {
   @include display-breakpoint;

@@ -408,6 +408,16 @@ table {
   /* IE6-9 fallback on horizontal gradient */
 }
 
+.layout-footer {
+  padding: 30px 0 30px 0;
+  background: #EEEEEE;
+}
+
+.layout-bottom {
+  padding: 30px 0 30px 0;
+  background: #dddddd;
+}
+
 .region {
   position: relative;
 }
@@ -902,6 +912,38 @@ body.front .block-id-content-front .node--type-page .group-right {
     padding-left: 10px;
     width: 100%;
     height: auto;
+  }
+}
+
+.view.view-contact-details.view-display-id-block_2 .view-content {
+  width: auto;
+  max-width: none;
+  margin-top: 0;
+  margin-right: -10px;
+  margin-bottom: 0;
+  margin-left: -10px;
+}
+
+.view.view-contact-details.view-display-id-block_2 .view-content:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.view.view-contact-details.view-display-id-block_2 .view-content .views-row {
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33.3333333333%;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .view.view-contact-details.view-display-id-block_2 .view-content .views-row {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
   }
 }
 
@@ -1801,19 +1843,26 @@ table tbody tr:hover th {
   line-height: 18px;
 }
 
-.block-id-contact-details-top .views-field {
+.block-id-contact-details-top .view-id-contact_details .views-field {
   display: inline-block;
   margin-right: 10px;
 }
 
-.block-id-contact-details-top .views-field .views-label {
+.block-id-contact-details-top .view-id-contact_details .views-field .views-label {
   display: inline-block;
   margin-right: 5px;
   font-weight: bold;
 }
 
-.block-id-contact-details-top .views-field .field-content {
+.block-id-contact-details-top .view-id-contact_details .views-field .field-content {
   display: inline-block;
+}
+
+.block-id-contact-details-bottom {
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100%;
 }
 
 .block-id-hero-homepage {
@@ -2472,6 +2521,32 @@ table tbody tr:hover th {
   background: #000000;
 }
 
+.block-id-socialmedialinks {
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33.3333333333%;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .block-id-socialmedialinks {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 33.3333333333%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .block-id-socialmedialinks {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+  }
+}
+
 .node:after {
   display: block;
   clear: both;
@@ -2637,7 +2712,7 @@ table tbody tr:hover th {
 
 .node--type-testimonial.node--view-mode-teaser.ds-2col .group-right, .node--type-testimonial.node--view-mode-teaser.ds-2col-empty .group-right {
   flex: 2 0 0;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 
 .node--type-team.node--view-mode-teaser .field--name-field-image img {
@@ -2664,6 +2739,31 @@ table tbody tr:hover th {
 .node--type-team.node--view-mode-teaser.ds-2col .group-right, .node--type-team.node--view-mode-teaser.ds-2col-empty .group-right {
   flex: 2 0 0;
   padding: 0 20px 20px 20px;
+}
+
+.node--type-contact-details.node--view-mode-teaser .field--name-node-title h3 {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.node--type-contact-details.node--view-mode-teaser .field--name-body {
+  margin-bottom: 0;
+}
+
+.node--type-contact-details.node--view-mode-teaser .field--name-body p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #666666;
+  font-family: "Open+Sans", "helvetica", "arial";
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.node--type-contact-details.node--view-mode-teaser .field--name-body p:last-of-type {
+  margin-bottom: 0;
 }
 
 body {

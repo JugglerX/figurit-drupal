@@ -1,0 +1,10 @@
+.block-id-socialmedialinks {
+  @include grid-column(4);
+  margin-bottom: 30px;
+  @media #{$medium-only} {
+    @include grid-column(4);
+  }
+  @media #{$small-only} {
+    @include grid-column(12);
+  }
+}
