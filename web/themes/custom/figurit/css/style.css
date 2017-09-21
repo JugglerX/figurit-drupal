@@ -777,6 +777,10 @@ body.front .block-id-content-front .node--type-page .group-right {
   }
 }
 
+.view.view-work {
+  margin-bottom: -20px;
+}
+
 .view.view-work .view-header {
   text-align: center;
 }
@@ -832,6 +836,67 @@ body.front .block-id-content-front .node--type-page .group-right {
 
 @media only screen and (max-width: 767px) {
   .view.view-work .view-content .views-row {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.view.view-team .view-header {
+  text-align: center;
+}
+
+.view.view-team .view-header h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 32px;
+  font-weight: 300;
+  font-family: "Open+Sans", "helvetica", "arial";
+  line-height: 28px;
+}
+
+.view.view-team .view-header p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.view.view-team .view-content {
+  width: auto;
+  max-width: none;
+  margin-top: 0;
+  margin-right: -10px;
+  margin-bottom: 0;
+  margin-left: -10px;
+}
+
+.view.view-team .view-content:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.view.view-team .view-content .views-row {
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .view.view-team .view-content .views-row {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .view.view-team .view-content .views-row {
     float: left;
     padding-right: 10px;
     padding-left: 10px;
@@ -1656,6 +1721,25 @@ table tbody tr:hover th {
   width: 100%;
 }
 
+.ds-2col-empty .groups {
+  display: flex;
+  flex-direction: row;
+}
+
+.ds-2col-empty .groups:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.ds-2col-empty .group-left {
+  flex: 2 0 0;
+}
+
+.ds-2col-empty .group-right {
+  flex: 2 0 0;
+}
+
 .block-id-tabs {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -1902,11 +1986,6 @@ table tbody tr:hover th {
     margin-top: 30px;
     margin-bottom: 20px;
   }
-}
-
-.block-id-services-homepage {
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .block-id-services-homepage .node--type-page .field--name-node-title {
@@ -2486,15 +2565,13 @@ table tbody tr:hover th {
   }
 }
 
-.node--type-work.node--view-mode-teaser .field--name-node-title {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .node--type-work.node--view-mode-teaser .field--name-field-image img {
   width: 100%;
   height: auto;
+}
+
+.node--type-work.node--view-mode-teaser .field--name-body {
+  margin-bottom: 0;
 }
 
 .node--type-work.node--view-mode-teaser .field--name-body p {
@@ -2506,6 +2583,10 @@ table tbody tr:hover th {
   font-weight: 400;
   font-style: normal;
   line-height: 20px;
+}
+
+.node--type-work.node--view-mode-teaser .field--name-body p:last-of-type {
+  margin-bottom: 0;
 }
 
 .node--type-work.node--view-mode-teaser.ds-2row {
@@ -2530,7 +2611,7 @@ table tbody tr:hover th {
 }
 
 .node--type-work.node--view-mode-teaser.ds-2row .group-secondrow {
-  padding: 20px 20px 10px 0;
+  padding: 20px;
 }
 
 .node--type-testimonial.node--view-mode-teaser .field--name-field-image img {
@@ -2557,6 +2638,32 @@ table tbody tr:hover th {
 .node--type-testimonial.node--view-mode-teaser.ds-2col .group-right, .node--type-testimonial.node--view-mode-teaser.ds-2col-empty .group-right {
   flex: 2 0 0;
   padding: 20px;
+}
+
+.node--type-team.node--view-mode-teaser .field--name-field-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.node--type-team.node--view-mode-teaser.ds-2col .groups, .node--type-team.node--view-mode-teaser.ds-2col-empty .groups {
+  display: flex;
+  flex-direction: row;
+}
+
+.node--type-team.node--view-mode-teaser.ds-2col .groups:after, .node--type-team.node--view-mode-teaser.ds-2col-empty .groups:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.node--type-team.node--view-mode-teaser.ds-2col .group-left, .node--type-team.node--view-mode-teaser.ds-2col-empty .group-left {
+  flex: 1 0 0;
+}
+
+.node--type-team.node--view-mode-teaser.ds-2col .group-right, .node--type-team.node--view-mode-teaser.ds-2col-empty .group-right {
+  flex: 2 0 0;
+  padding: 0 20px 20px 20px;
 }
 
 body {

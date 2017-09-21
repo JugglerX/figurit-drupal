@@ -1,8 +1,5 @@
 .node--type-work.node--view-mode-teaser {
   .field--name-node-title {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
   .field--name-field-image {
     img {
@@ -11,6 +8,7 @@
     }
   }
   .field--name-body {
+    margin-bottom: 0;
     p {
       margin-top: 0;
       margin-bottom: 0;
@@ -20,6 +18,9 @@
       font-weight: 400;
       font-style: normal;
       line-height: 20px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -37,7 +38,7 @@
 
     }
     .group-secondrow {
-      padding: 20px 20px 10px 0;
+      padding: 20px;
     }
   }
 }

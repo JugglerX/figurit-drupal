@@ -22,6 +22,7 @@
 @import 'view/view-certifications';
 @import 'view/view-testimonials';
 @import 'view/view-work';
+@import 'view/view-team';
 
 @import 'base/form';
 @import 'base/form-item';
@@ -48,6 +49,7 @@
 @import 'ds/ds-2col-75-25';
 @import 'ds/ds-2col-stacked-75-25';
 @import 'ds/ds-2row';
+@import 'ds/ds-2col-empty';
 
 @import 'block/block-tabs';
 @import 'block/block-contact-details-top';
@@ -71,6 +73,7 @@
 @import 'node/node-service-view-mode-teaser';
 @import 'node/node-work-teaser';
 @import 'node/node-testimonial-teaser';
+@import 'node/node-team-teaser';
 
 body {
   @include display-breakpoint;
