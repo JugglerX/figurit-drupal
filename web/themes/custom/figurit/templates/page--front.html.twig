@@ -46,11 +46,23 @@ page.sidebar_first and page.sidebar_second ? 'both-sidebars'
     </div>
   {% endif %}
 
+  {{ page.content_front }}
+
   {% if page.highlighted %}
     <div class="layout layout-highlighted">
       <div class="row">
         <div class="small-12 column">
           {{ page.highlighted }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if page.highlighted_second %}
+    <div class="layout layout-highlighted-second">
+      <div class="row">
+        <div class="small-12 column">
+          {{ page.highlighted_second }}
         </div>
       </div>
     </div>
@@ -98,11 +110,11 @@ page.sidebar_first and page.sidebar_second ? 'both-sidebars'
     </div>
   {% endif %}
 
-  {% if page.content_lower %}
-    <div class="layout layout-content-lower">
+  {% if page.canyon_second %}
+    <div class="layout layout-canyon-second">
       <div class="row">
         <div class="small-12 column">
-          {{ page.content_lower }}
+          {{ page.canyon_second }}
         </div>
       </div>
     </div>

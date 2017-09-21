@@ -11,9 +11,9 @@
 @import 'region/layout-canyon';
 @import 'region/layout-hero';
 @import 'region/layout-highlighted';
+@import 'region/layout-highlighted-second';
 @import 'region/region';
 @import 'region/region-content';
-
 
 @import 'page/page';
 @import 'page/front';
@@ -36,14 +36,12 @@
 @import 'base/form-filter-wrapper';
 @import 'base/form-required';
 @import 'base/field';
-
 @import 'base/button';
-//@import 'component/fonts';
-@import 'component/type';
-@import 'component/type-body';
-@import 'component/table';
-@import 'component/description';
-@import 'component/slick';
+@import 'base/type';
+@import 'base/field-body';
+@import 'base/table';
+@import 'base/description';
+@import 'base/slick';
 
 @import 'ds/ds-1col-fullwidth-hero-footer';
 @import 'ds/ds-1col-hero';

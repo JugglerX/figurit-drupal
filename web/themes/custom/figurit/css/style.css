@@ -390,7 +390,11 @@ table {
 
 .layout-highlighted {
   padding: 40px 0 40px 0;
-  background: #EAEAEA;
+  background: #FFF;
+}
+
+.layout-highlighted-second {
+  padding: 40px 0 40px 0;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,eaeaea+100 */
   background: #ffffff;
   /* Old browsers */
@@ -514,15 +518,22 @@ table {
   content: '';
 }
 
-body.front .block-id-content {
+body.front .block-id-content-front {
   width: 80%;
   margin: 0 auto;
   text-align: center;
 }
 
-body.front .block-id-content h1,
-body.front .block-id-content h2,
-body.front .block-id-content h3 {
+@media only screen and (max-width: 767px) {
+  body.front .block-id-content-front {
+    width: auto;
+    text-align: left;
+  }
+}
+
+body.front .block-id-content-front h1,
+body.front .block-id-content-front h2,
+body.front .block-id-content-front h3 {
   margin-top: 0;
   margin-bottom: 20px;
   color: #333333;
@@ -532,14 +543,14 @@ body.front .block-id-content h3 {
   line-height: 38px;
 }
 
-body.front .block-id-content .node--type-page .group-left {
+body.front .block-id-content-front .node--type-page .group-left {
   float: left;
   padding-right: 10px;
   padding-left: 10px;
   width: 100%;
 }
 
-body.front .block-id-content .node--type-page .group-right {
+body.front .block-id-content-front .node--type-page .group-right {
   float: left;
   padding-right: 10px;
   padding-left: 10px;
@@ -815,6 +826,7 @@ body.front .block-id-content .node--type-page .group-right {
     padding-right: 10px;
     padding-left: 10px;
     width: 33.3333333333%;
+    height: 470px;
   }
 }
 
@@ -1271,7 +1283,9 @@ h1 {
 }
 
 h2,
-.block-id-hero-homepage .field--name-field-hero-subheading,
+.block-id-hero-homepage .field--name-field-hero-subheading h1,
+.block-id-hero-homepage .field--name-field-hero-subheading h2,
+.block-id-hero-homepage .field--name-field-hero-subheading p,
 .block-id-hero-service .field--name-field-hero-subheading,
 .block-id-hero-basic .field--name-field-hero-subheading {
   margin-top: 0;
@@ -1722,28 +1736,6 @@ table tbody tr:hover th {
   height: 500px;
 }
 
-.block-id-hero-homepage .view {
-  width: 100%;
-  max-width: 1200px;
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
-}
-
-.block-id-hero-homepage .view:after {
-  display: block;
-  clear: both;
-  content: '';
-}
-
-.block-id-hero-homepage .view-content {
-  float: left;
-  padding-right: 10px;
-  padding-left: 10px;
-  width: 100%;
-}
-
 .block-id-hero-homepage .field--name-field-hero-heading {
   float: left;
   width: 400px;
@@ -1779,7 +1771,9 @@ table tbody tr:hover th {
   font-weight: 300;
 }
 
-.block-id-hero-homepage .field--name-field-hero-subheading {
+.block-id-hero-homepage .field--name-field-hero-subheading h1,
+.block-id-hero-homepage .field--name-field-hero-subheading h2,
+.block-id-hero-homepage .field--name-field-hero-subheading p {
   position: absolute;
   top: 218px;
   right: 0;
@@ -2530,8 +2524,13 @@ table tbody tr:hover th {
   content: '';
 }
 
+.node--type-work.node--view-mode-teaser.ds-2row .group-firstrow {
+  height: 180px;
+  overflow: hidden;
+}
+
 .node--type-work.node--view-mode-teaser.ds-2row .group-secondrow {
-  padding: 20px;
+  padding: 20px 20px 10px 0;
 }
 
 .node--type-testimonial.node--view-mode-teaser .field--name-field-image img {

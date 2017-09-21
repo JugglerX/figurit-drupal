@@ -23,6 +23,7 @@
       height: 450px;
       @media #{$medium-only} {
         @include grid-column(4);
+        height: 470px;
       }
       @media #{$small-only} {
         @include grid-column(12);
