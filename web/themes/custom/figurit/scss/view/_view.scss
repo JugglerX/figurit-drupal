@@ -1,0 +1,11 @@
+.view {
+  .view-content {
+    .views-row {
+     &:last-of-type {
+       @media #{$small-only} {
+         margin-bottom: 0;
+       }
+     }
+    }
+  }
+}

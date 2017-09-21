@@ -34,6 +34,7 @@
     "drupal/image_effects": "^1.0",
     "drupal/libraries": "3.x-dev",
     "drupal/metatag": "~1.0",
+    "drupal/owlcarousel": "^1.0@alpha",
     "drupal/pathauto": "^1.0@RC",
     "drupal/redirect": "^1.0@alpha",
     "drupal/responsive_menu": "^2.4",

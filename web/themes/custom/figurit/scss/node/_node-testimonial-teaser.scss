@@ -14,11 +14,14 @@
       flex-direction: row;
     }
     .group-left {
-      flex: 1 0 0;
+      flex: 2 0 0;
+      padding-right: 20px;
     }
     .group-right {
-      flex: 2 0 0;
-      padding: 0 20px 20px 20px;
+      flex: 5 0 0;
+      @media #{$small-only} {
+        flex: 6 0 0;
+      }
     }
   }
 }
