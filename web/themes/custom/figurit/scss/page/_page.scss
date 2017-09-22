@@ -1,39 +1,83 @@
 .page {
-  .main {
-    @include grid-row();
-    .region-content {
-      @include grid-column(12);
+  .layout {
+    @include clearfix;
+    &.layout-top {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background: $primary-color;
+    }
+    &.layout-header {
+      padding: 13px 0 12px 0;
+      border-bottom: 1px solid #EAEAEA;
+      background: #F5F5F5;
+    }
+    &.layout-hero {
+      background: $secondary-color;
+      background-size: cover;
+    }
+    &.layout-highlighted {
+      padding: 40px 0 40px 0;
+      background: #FFF;
+    }
+    &.layout-highlighted-second {
+      padding: 40px 0 40px 0;
+      background: #ffffff; /* Old browsers */
+      background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #eaeaea 100%); /* FF3.6-15 */
+      background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #eaeaea 100%); /* Chrome10-25,Safari5.1-6 */
+      background: radial-gradient(ellipse at center, #ffffff 0%, #eaeaea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eaeaea', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+    }
+    &.layout-bottom {
+      padding: 30px 0 30px 0;
+      background: #dddddd;
+    }
+    &.layout-canyon {
+      background: $primary-color;
+    }
+    &.layout-footer {
+      padding: 30px 0 30px 0;
+      background: #EEEEEE;
     }
   }
 }
 
-.page.sidebar-first {
-  .main {
-    @include grid-row();
-    .region-content {
-      @include grid-column(9);
-    }
-    .region-sidebar-first {
-      @include grid-column(3);
+  .page {
+    .main {
+      @include grid-row();
+      .region-content {
+        @include grid-column(12);
+      }
     }
   }
-}
 
-.page.sidebar-second {
-  .main {
-    @include grid-row();
-    .region-content {
-      @include grid-column(9);
-    }
-
-    .region-sidebar-second {
-      @include grid-column(3);
+  .page.sidebar-first {
+    .main {
+      @include grid-row();
+      .region-content {
+        @include grid-column(9);
+      }
+      .region-sidebar-first {
+        @include grid-column(3);
+      }
     }
   }
-}
 
-.page.both-sidebars {
-  .main {
-    @include grid-row();
+  .page.sidebar-second {
+    .main {
+      @include grid-row();
+      .region-content {
+        @include grid-column(9);
+      }
+
+      .region-sidebar-second {
+        @include grid-column(3);
+      }
+    }
   }
-}
+
+  .page.both-sidebars {
+    .main {
+      @include grid-row();
+    }
+  }
+

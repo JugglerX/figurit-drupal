@@ -197,6 +197,24 @@ function figurit_preprocess_node(array &$variables) {
   $test = $variables['attributes']['class'][0];
 }
 
+/**
+ * Implements hook_preprocess_node() for node.html.twig.
+ */
+function figurit_preprocess_ds(array &$variables) {
+  $variables['nid'] = $variables['elements']['#node']->id();
+  $variables['node_id'] = 'node-id-' . $variables['elements']['#node']->id();
+  $test = $variables['attributes']['class'][0];
+}
+
+/**
+ * Implements hook_preprocess_node() for node.html.twig.
+ */
+function figurit_preprocess_layout(array &$variables) {
+  $variables['nid'] = $variables['elements']['#node']->id();
+  $variables['node_id'] = 'node-id-' . $variables['elements']['#node']->id();
+  $test = $variables['attributes']['class'][0];
+}
+
 function figurit_ds_classes_alter(&$classes, $name) {
   if ('ds_classes_regions' === $name) {
     $classes['css-class-name'] = t('Custom Styling');
@@ -215,4 +233,20 @@ function figurit_ds_pre_render_alter(&$layout_render_array, $context, &$vars) {
  * Implements hook_theme_suggestions_node_alter().
  */
 function figurit_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+  $test = $suggestions;
+}
+
+/**
+ * Implements hook_theme_suggestions_node_alter().
+ */
+function figurit_theme_suggestions_ds_alter(array &$suggestions, array $variables) {
+  $test = $suggestions;
+}
+
+/**
+ * Implements hook_theme_suggestions_layout_alter().
+ * Allows to alter Display Suite
+ */
+function figurit_theme_suggestions_layout_alter(array &$suggestions, array $variables) {
+  $suggestions[] = 'ds';
 }

@@ -3,32 +3,25 @@
  * @file
  * Display Suite 2 column + empty template.
  *
- * Available variables:
- * - outer_wrapper: outer wrapper element
- * - left_wrapper: wrapper element around left region
- * - right_wrapper: wrapper element around right region
- * - attributes: layout attributes
- * - left_attributes: attributes for left region
- * - right_attributes: attributes for right region
- * - left: content of left region
- * - right: content of right region
  */
 #}
-<{{ outer_wrapper }}{{ attributes.addClass('ds-2col-empty', 'clearfix') }}>
+
+{% extends 'themes/custom/figurit/templates/ds/ds.html.twig' %}
+
+{% block child %}
 
 {{ title_suffix.contextual_links }}
-  <div class="groups">
-    {% if left|render %}
-    <{{ left_wrapper }}{{ left_attributes.addClass('group-left') }}>
-      {{ left }}
-    </{{ left_wrapper }}>
-    {% endif %}
 
-    {% if right|render %}
-      <{{ right_wrapper }}{{ right_attributes.addClass('group-right') }}>
-        {{ right }}
-      </{{ right_wrapper }}>
+  {% if left|render %}
+  <{{ left_wrapper }}{{ left_attributes.addClass('group-left') }}>
+    {{ left }}
+  </{{ left_wrapper }}>
   {% endif %}
-  </div>
 
-</{{ outer_wrapper }}>
+  {% if right|render %}
+    <{{ right_wrapper }}{{ right_attributes.addClass('group-right') }}>
+      {{ right }}
+    </{{ right_wrapper }}>
+  {% endif %}
+
+{% endblock %}

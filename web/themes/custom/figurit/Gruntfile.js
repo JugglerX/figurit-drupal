@@ -17,7 +17,8 @@ module.exports = function (grunt) {
       },
       style: {
         files: {
-          'css/style.css': 'scss/style.scss'
+          'css/style.css': 'scss/style.scss',
+          'css/node-certification-teaser.css': 'scss/node/node-certification-teaser.scss'
         }
       }
     },

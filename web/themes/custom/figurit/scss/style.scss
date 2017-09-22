@@ -1,32 +1,9 @@
 @import 'reset';
 @import 'settings';
 
-@import 'grid/clearfix';
-@import 'grid/breakpoints';
-@import 'grid/grid';
-
-@import 'region/layout';
-@import 'region/layout-top';
-@import 'region/layout-header';
-@import 'region/layout-canyon';
-@import 'region/layout-hero';
-@import 'region/layout-highlighted';
-@import 'region/layout-highlighted-second';
-@import 'region/layout-footer';
-@import 'region/layout-bottom';
-@import 'region/region';
-@import 'region/region-content';
-
-@import 'page/page';
-@import 'page/front';
-
-@import 'view/view';
-@import 'view/view-services';
-@import 'view/view-certifications';
-@import 'view/view-testimonials';
-@import 'view/view-work';
-@import 'view/view-team';
-@import 'view/view-contact-details';
+@import 'base/clearfix';
+@import 'breakpoints';
+@import 'grid';
 
 @import 'base/form';
 @import 'base/form-item';
@@ -46,7 +23,39 @@
 @import 'base/field-body';
 @import 'base/table';
 @import 'base/description';
-@import 'base/slick';
+
+@import 'page/page';
+
+@import 'block/block-tabs';
+@import 'block/block-contact-details-top';
+@import 'block/block-contact-details-bottom';
+@import 'block/block-content-front';
+@import 'block/block-hero-homepage';
+@import 'block/block-hero-service';
+@import 'block/block-hero-basic';
+@import 'block/block-services-homepage';
+@import 'block/block-primary-menu';
+@import 'block/block-footer-menu';
+@import 'block/block-horizontalmenu';
+@import 'block/block-logo';
+@import 'block/block-responsive-menu-mobile-icon';
+@import 'block/block-socialmedialinks';
+
+@import 'view/view';
+@import 'view/view-services';
+@import 'view/view-certifications';
+@import 'view/view-testimonials';
+@import 'view/view-work';
+@import 'view/view-team';
+@import 'view/view-contact-details';
+
+@import 'node/node';
+@import 'node/node-certification-teaser';
+@import 'node/node-service-teaser';
+@import 'node/node-work-teaser';
+@import 'node/node-testimonial-teaser';
+@import 'node/node-team-teaser';
+@import 'node/node-contact-details-teaser';
 
 @import 'ds/ds-1col-fullwidth-hero-footer';
 @import 'ds/ds-1col-hero';
@@ -54,37 +63,6 @@
 @import 'ds/ds-2col-stacked-75-25';
 @import 'ds/ds-2row';
 @import 'ds/ds-2col-empty';
-
-@import 'block/block-tabs';
-@import 'block/block-contact-details-top';
-@import 'block/block-contact-details-bottom';
-@import 'block/block-hero-homepage';
-@import 'block/block-hero-service';
-@import 'block/block-hero-basic';
-@import 'block/block-services-homepage';
-@import 'block/block-certifications-homepage';
-@import 'block/block-certifications-homepage-carousel';
-@import 'block/block-testimonials-homepage';
-@import 'block/block-user-account-menu';
-@import 'block/block-primary-menu';
-@import 'block/block-footer-menu';
-@import 'block/block-user-account-menu';
-@import 'block/block-horizontalmenu';
-@import 'block/block-logo';
-@import 'block/block-responsive-menu-mobile-icon';
-@import 'block/block-socialmedialinks';
-
-@import 'node/node';
-@import 'node/node-certification-view-mode-teaser';
-@import 'node/node-service-view-mode-teaser';
-@import 'node/node-work-teaser';
-@import 'node/node-testimonial-teaser';
-@import 'node/node-team-teaser';
-@import 'node/node-contact-details-teaser';
-
-@import 'library/owl.carousel';
-@import 'library/owl.theme';
-@import 'library/owl.transitions';
 
 body {
   @include display-breakpoint;

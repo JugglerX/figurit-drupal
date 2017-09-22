@@ -1,0 +1,81 @@
+/*
+ * 1. node-certification
+ * 2. view-certification > node-certification
+ */
+.node-certification.node-teaser {
+  min-height: 206px;
+  background-color: #FFFFFF;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.node-certification.node-teaser .field--name-field-certification-image {
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.node-certification.node-teaser .field--name-field-certification-image img {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.node-certification.node-teaser .field--name-node-title {
+  margin: 0;
+  padding: 10px 10px 0 10px;
+  border-top: 1px solid #CCCCCC;
+}
+
+.node-certification.node-teaser .field--name-node-title h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.node-certification.node-teaser .field--name-body {
+  margin: 0;
+  padding: 0 10px 10px 10px;
+}
+
+.node-certification.node-teaser .field--name-body p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #666666;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.node-certification.node-teaser.ds-2row {
+  height: inherit;
+}
+
+.node-certification.node-teaser.ds-2row .groups {
+  height: inherit;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.node-certification.node-teaser.ds-2row .group-firstrow {
+  height: 180px;
+  overflow: hidden;
+}
+
+.node-certification.node-teaser.ds-2row .group-secondrow {
+  padding: 20px;
+}
+
+.view.view-certifications .node-certification.node-teaser {
+  margin: 100px;
+}
+
+.path-work .view.view-certifications .node-certification.node-teaser {
+  margin: 300px;
+}
+
+/*# sourceMappingURL=node-certification-teaser.css.map */

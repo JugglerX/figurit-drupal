@@ -1,15 +1,15 @@
-.view.view-contact-details.view-display-id-block_1 {
-
-}
-
-.view.view-contact-details.view-display-id-block_2 {
-  .view-content {
-    @include grid-row(nest);
-    .views-row {
-      @include grid-column(4);
-      margin-bottom: 10px;
-      @media #{$small-only} {
-        @include grid-column(12);
+.view.view-contact-details {
+  &.view-display-id-block_1 {
+  }
+  &.view-display-id-block_2 {
+    .view-content {
+      @include grid-row(nest);
+      .views-row {
+        @include grid-column(4);
+        margin-bottom: 10px;
+        @media #{$small-only} {
+          @include grid-column(12);
+        }
       }
     }
   }

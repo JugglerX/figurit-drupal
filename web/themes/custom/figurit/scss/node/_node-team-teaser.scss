@@ -1,4 +1,4 @@
-.node--type-team.node--view-mode-teaser {
+.node-team.node-teaser {
   .field--name-field-image {
     img {
       width: 100%;
@@ -6,6 +6,8 @@
       border-radius: 50%;
     }
   }
+
+  // Display Suite 2 Column
   &.ds-2col,
   &.ds-2col-empty {
     .groups {
