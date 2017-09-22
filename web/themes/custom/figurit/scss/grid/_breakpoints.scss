@@ -11,8 +11,8 @@ $tiny-range: (0, 380px);
 $small-range: (0, 767px);
 $small-medium-range: (381px, 767px);
 $medium-range: (768px, 1024px);
-$large-range: (1025px, 1279px);
-$extra-large-range: (1441px, 5000px);
+$large-range: (1025px, 1280px);
+$extra-large-range: (1281px, 50000px);
 
 
 //
@@ -39,7 +39,7 @@ $medium-only: '#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max
 $large-up: '#{$screen} and (min-width:#{lower-bound($large-range)})';
 $large-only: '#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})';
 $extra-large-up: '#{$screen} and (min-width:#{lower-bound($extra-large-range)})';
-$extra-large-only: '#{$screen} and (min-width:#{lower-bound($extra-large-range)}) and (max-width:#{upper-bound($extra-large-range)})';
+$extra-large-only: '#{$screen} and (min-width:#{lower-bound($extra-large-range)})';
 
 
 //

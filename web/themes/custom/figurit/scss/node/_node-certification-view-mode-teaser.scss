@@ -1,7 +1,8 @@
-.node--type-certification.node--view-mode-teaser {
+.node-certification.node-teaser {
   min-height: 206px;
   background-color: #FFFFFF;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3);
+  margin: 20px;
   .field--name-field-certification-image {
     padding: 10px 10px 10px 10px;
     text-align: center;
@@ -41,4 +42,8 @@
       line-height: 20px;
     }
   }
+}
+
+.view.view-certifications. {
+
 }

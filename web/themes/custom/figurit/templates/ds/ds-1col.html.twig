@@ -9,7 +9,40 @@
  * - ds_content: content region
  */
 #}
-<{{ ds_content_wrapper }}{{ attributes.addClass('ds-1col', 'clearfix') }}>
+
+
+
+{% set contextual_region = (attributes.class[0] == 'contextual-region') %}
+{% set nid = 'node' ~ node.nid.value %}
+
+{%
+set add_classes = [
+    'node',
+    'node-' ~ node.bundle|clean_class,
+    content['#view_mode'] ? 'node-' ~ content['#view_mode']|clean_class,
+    node.isPromoted() ? 'node-promoted',
+    node.isSticky() ? 'node-sticky',
+    not node.isPublished() ? 'node-unpublished',
+    'ds-1col',
+    contextual_region ? 'contextual-region',
+  ]
+%}
+
+{%
+set remove_classes = [
+    contextual_region ? 'contextual-region',
+    'node--type-' ~ node.bundle|clean_class,
+    content['#view_mode'] ? 'node--view-mode-' ~ content['#view_mode']|clean_class,
+  ]
+%}
+
+{#{{ dump(node.nid.value) }}#}
+{#{{ dump(node.view_mode) }}#}
+{#{{ dump(content['#view_mode']) }}#}
+{#{{ dump(content['#bundle']) }}#}
+{#{{ dump(attributes.class) }}#}
+
+<{{ ds_content_wrapper }} id={{ nid }} {{ attributes.removeClass(remove_classes).addClass(add_classes) }}>
   <div class="group-middle">
     {{ title_suffix.contextual_links }}
     {{ ds_content }}

@@ -194,6 +194,21 @@ function figurit_theme_suggestions_block_alter(array &$suggestions, array $varia
 function figurit_preprocess_node(array &$variables) {
   $variables['nid'] = $variables['elements']['#node']->id();
   $variables['node_id'] = 'node-id-' . $variables['elements']['#node']->id();
+  $test = $variables['attributes']['class'][0];
+}
+
+function figurit_ds_classes_alter(&$classes, $name) {
+  if ('ds_classes_regions' === $name) {
+    $classes['css-class-name'] = t('Custom Styling');
+  }
+}
+
+function figurit_ds_pre_render_alter(&$layout_render_array, $context, &$vars) {
+  $layout_render_array['left'][] = array(
+      '#markup' => 'cool!',
+      '#weight' => 20,
+  );
+  $vars['attributes_array']['class'][] = 'custom';
 }
 
 /**

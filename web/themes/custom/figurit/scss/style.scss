@@ -82,6 +82,10 @@
 @import 'node/node-team-teaser';
 @import 'node/node-contact-details-teaser';
 
+@import 'library/owl.carousel';
+@import 'library/owl.theme';
+@import 'library/owl.transitions';
+
 body {
   @include display-breakpoint;
   margin: 0;
