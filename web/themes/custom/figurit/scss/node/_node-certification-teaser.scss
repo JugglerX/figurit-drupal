@@ -49,13 +49,10 @@
     }
   }
   &.node-teaser.ds-2row {
+    @include clearfix;
     height: inherit;
-    .groups {
-      //@include clearfix;
-      height: inherit;
-      background-color: #FFFFFF;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     .group-firstrow {
       height: 180px;
       overflow: hidden;
@@ -68,34 +65,10 @@
 
   @at-root .view.view-certifications & {
     &.node-teaser {
-      margin: 100px;
+      //margin: 10px;
       @at-root .path-work & {
-        margin: 300px;
+        //margin: 10px;
       }
     }
   }
-
-
-
-    //
-    //body.front & {
-    //  .view.view-certifications.view-display-id-owl-carousel & {
-    //    .test {
-    //      background: yellow;
-    //    }
-    //  }
-    //}
-    //@at-root body.front {
-    //  .view.view-certifications.view-display-id-owl-carousel & {
-    //    .test-root {
-    //      background: yellow;
-    //    }
-    //  }
-    //
-    //}
-    //body.front & {
-    //  .test {
-    //    background: yellow;
-    //  }
-    //}
 }

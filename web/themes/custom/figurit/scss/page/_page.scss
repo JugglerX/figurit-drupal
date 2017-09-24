@@ -32,7 +32,11 @@
       background: #dddddd;
     }
     &.layout-canyon {
+      padding: 30px 0 30px 0;
       background: $primary-color;
+    }
+    &.layout-canyon-second {
+      padding: 30px 0 30px 0;
     }
     &.layout-footer {
       padding: 30px 0 30px 0;
