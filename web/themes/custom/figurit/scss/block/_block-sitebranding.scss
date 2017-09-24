@@ -1,0 +1,39 @@
+.block-id-sitebranding {
+  @include grid-column(4);
+  @media #{$small-only} {
+    @include grid-column(6);
+  }
+  a.site-logo {
+    display: block;
+    float: left;
+    width: 268px;
+    height: 34px;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media #{$small-only} {
+      float: left;
+      width: 188px;
+      height: 24px;
+      background-image: url('../images/logo-mobile.png');
+      background-repeat: no-repeat;
+      background-size: 188px 24px;
+    }
+    img {
+      display: none;
+    }
+  }
+  .site-name {
+    display: block;
+    float: left;
+    clear: both;
+    a {
+      font-size: 24px;
+      line-height: 28px;
+      font-family: $custom-font;
+    }
+  }
+  .site-slogan {
+    display: none;
+  }
+}

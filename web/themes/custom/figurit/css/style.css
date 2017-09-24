@@ -1314,7 +1314,8 @@ table tbody tr:hover th {
 }
 
 .block-id-hero-homepage {
-  height: 500px;
+  min-height: 300px;
+  padding: 20px 0 20px 0;
 }
 
 .block-id-hero-homepage .field--name-field-hero-heading {
@@ -1352,19 +1353,21 @@ table tbody tr:hover th {
   font-weight: 300;
 }
 
-.block-id-hero-homepage .field--name-field-hero-subheading h1,
-.block-id-hero-homepage .field--name-field-hero-subheading h2,
-.block-id-hero-homepage .field--name-field-hero-subheading p {
-  position: absolute;
-  top: 218px;
-  right: 0;
+.block-id-hero-homepage .field--name-field-hero-subheading {
+  clear: both;
+  float: right;
   width: 200px;
   margin: 0;
   padding: 20px;
-  color: #FFFFFF;
   border-bottom: 5px solid #1CD34F;
   background: rgba(0, 0, 0, 0.1);
   font-weight: 400;
+}
+
+.block-id-hero-homepage .field--name-field-hero-subheading h1,
+.block-id-hero-homepage .field--name-field-hero-subheading h2,
+.block-id-hero-homepage .field--name-field-hero-subheading p {
+  color: #FFFFFF;
 }
 
 .block-id-hero-service .field--name-field-hero {
@@ -1934,7 +1937,6 @@ table tbody tr:hover th {
   padding-right: 10px;
   padding-left: 10px;
   width: 33.3333333333%;
-  margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1960,6 +1962,63 @@ table tbody tr:hover th {
   padding-right: 10px;
   padding-left: 10px;
   width: 100%;
+}
+
+.block-id-sitebranding {
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33.3333333333%;
+}
+
+@media only screen and (max-width: 767px) {
+  .block-id-sitebranding {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 50%;
+  }
+}
+
+.block-id-sitebranding a.site-logo {
+  display: block;
+  float: left;
+  width: 268px;
+  height: 34px;
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media only screen and (max-width: 767px) {
+  .block-id-sitebranding a.site-logo {
+    float: left;
+    width: 188px;
+    height: 24px;
+    background-image: url("../images/logo-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 188px 24px;
+  }
+}
+
+.block-id-sitebranding a.site-logo img {
+  display: none;
+}
+
+.block-id-sitebranding .site-name {
+  display: block;
+  float: left;
+  clear: both;
+}
+
+.block-id-sitebranding .site-name a {
+  font-size: 24px;
+  line-height: 28px;
+  font-family: "Lato", "helvetica", "arial";
+}
+
+.block-id-sitebranding .site-slogan {
+  display: none;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2281,7 +2340,7 @@ table tbody tr:hover th {
   }
 }
 
-.view.view-contact-details.view-display-id-block_2 .view-content {
+.view.view-contact-details.view-display-id-block-2 .view-content {
   width: auto;
   max-width: none;
   margin-top: 0;
@@ -2290,13 +2349,13 @@ table tbody tr:hover th {
   margin-left: -10px;
 }
 
-.view.view-contact-details.view-display-id-block_2 .view-content:after {
+.view.view-contact-details.view-display-id-block-2 .view-content:after {
   display: block;
   clear: both;
   content: '';
 }
 
-.view.view-contact-details.view-display-id-block_2 .view-content .views-row {
+.view.view-contact-details.view-display-id-block-2 .view-content .views-row {
   float: left;
   padding-right: 10px;
   padding-left: 10px;
@@ -2305,7 +2364,7 @@ table tbody tr:hover th {
 }
 
 @media only screen and (max-width: 767px) {
-  .view.view-contact-details.view-display-id-block_2 .view-content .views-row {
+  .view.view-contact-details.view-display-id-block-2 .view-content .views-row {
     float: left;
     padding-right: 10px;
     padding-left: 10px;

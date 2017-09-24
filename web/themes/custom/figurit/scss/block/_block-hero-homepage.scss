@@ -1,5 +1,6 @@
 .block-id-hero-homepage {
-  height: 500px;
+  min-height: 300px;
+  padding: 20px 0 20px 0;
   .field--name-field-hero-heading {
     float: left;
     width: 400px;
@@ -28,20 +29,23 @@
     }
   }
   .field--name-field-hero-subheading {
+    //position: absolute;
+    //top: 218px;
+    //right: 0;
+    clear: both;
+    float: right;
+    width: 200px;
+    margin: 0;
+    padding: 20px;
+
+    border-bottom: 5px solid $primary-color;
+    background: rgba(0, 0, 0, 0.1);
+    font-weight: 400;
     h1,
     h2,
     p {
       @extend %h2;
-      position: absolute;
-      top: 218px;
-      right: 0;
-      width: 200px;
-      margin: 0;
-      padding: 20px;
       color: #FFFFFF;
-      border-bottom: 5px solid $primary-color;
-      background: rgba(0, 0, 0, 0.1);
-      font-weight: 400;
     }
   }
 }
