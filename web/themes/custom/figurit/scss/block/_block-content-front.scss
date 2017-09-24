@@ -10,12 +10,15 @@
   h2,
   h3 {
     margin-top: 0;
-    margin-bottom: 20px;
-    color: #333333;
-    font-family: $custom-font;
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 38px;
+    margin-bottom: 12px;
+    font-size: 38px;
+    font-weight: 300;
+    font-family: $base-font;
+    line-height: 46px;
+    @media #{$small-only} {
+      font-size: 30px;
+      line-height: 34px;
+    }
   }
   .node--type-page {
     .group-left {

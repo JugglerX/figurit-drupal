@@ -1,6 +1,9 @@
 .page {
   .layout {
     @include clearfix;
+    .region {
+      @include clearfix;
+    }
     &.layout-top {
       padding-top: 10px;
       padding-bottom: 10px;
