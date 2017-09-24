@@ -1177,6 +1177,70 @@ table tbody tr:hover th {
   background-image: linear-gradient(rgba(255, 255, 255, 0.25) 20%, transparent 200%);
 }
 
+.block-id-tools {
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 25%;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .block-id-tools {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 33.3333333333%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .block-id-tools {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+  }
+}
+
+.block-id-tools ul.menu {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  border-bottom: 0;
+  font-family: "Open+Sans", "helvetica", "arial";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.block-id-tools ul.menu:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.block-id-tools ul.menu li {
+  display: block;
+  text-decoration: none;
+}
+
+.block-id-tools ul.menu li a {
+  display: block;
+  text-decoration: none;
+  color: #1CD34F;
+}
+
+.block-id-tools ul.menu li a:hover {
+  text-decoration: underline;
+  color: #1CD34F;
+}
+
+.block-id-tools ul.menu li a.active {
+  text-decoration: underline;
+  color: #1CD34F;
+}
+
 .block-id-contact-details-top {
   float: left;
   padding-right: 10px;
@@ -1635,25 +1699,36 @@ table tbody tr:hover th {
   float: left;
   padding-right: 10px;
   padding-left: 10px;
-  width: 66.6666666667%;
+  width: 25%;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .block-id-footer {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 33.3333333333%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .block-id-footer {
-    display: none;
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
   }
 }
 
 .block-id-footer ul.menu {
-  z-index: 140;
-  float: right;
   margin: 0;
   padding: 0;
   vertical-align: middle;
   border-bottom: 0;
   font-family: "Open+Sans", "helvetica", "arial";
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 18px;
 }
 
@@ -1665,18 +1740,13 @@ table tbody tr:hover th {
 
 .block-id-footer ul.menu li {
   display: block;
-  float: left;
-  margin: 0;
-  padding: 0;
   text-decoration: none;
 }
 
 .block-id-footer ul.menu li a {
   display: block;
-  padding: 7px 13px;
   text-decoration: none;
   color: #1CD34F;
-  background: none;
 }
 
 .block-id-footer ul.menu li a:hover {
@@ -1693,13 +1763,7 @@ table tbody tr:hover th {
   float: left;
   padding-right: 10px;
   padding-left: 10px;
-  width: 66.6666666667%;
-}
-
-@media only screen and (max-width: 767px) {
-  .block-id-useraccountmenu {
-    display: none;
-  }
+  width: 100%;
 }
 
 .block-id-useraccountmenu ul.menu {
@@ -1782,7 +1846,7 @@ table tbody tr:hover th {
   color: #1CD34F;
 }
 
-.block-id-logo {
+.logo {
   float: left;
   padding-right: 10px;
   padding-left: 10px;
@@ -1790,7 +1854,7 @@ table tbody tr:hover th {
 }
 
 @media only screen and (max-width: 767px) {
-  .block-id-logo {
+  .logo {
     float: left;
     padding-right: 10px;
     padding-left: 10px;
@@ -1798,7 +1862,7 @@ table tbody tr:hover th {
   }
 }
 
-.block-id-logo .logo {
+.logo .logo-inner {
   float: left;
   width: 268px;
   height: 34px;
@@ -1808,7 +1872,7 @@ table tbody tr:hover th {
 }
 
 @media only screen and (max-width: 767px) {
-  .block-id-logo .logo {
+  .logo .logo-inner {
     float: left;
     width: 188px;
     height: 24px;
@@ -1818,14 +1882,10 @@ table tbody tr:hover th {
   }
 }
 
-.block-id-logo .logo a {
+.logo .logo-inner a {
   display: block;
   width: 100%;
   height: 100%;
-}
-
-.block-id-logo .field {
-  margin: 0;
 }
 
 .block-id-responsivemenumobileicon {
@@ -1893,6 +1953,13 @@ table tbody tr:hover th {
     padding-left: 10px;
     width: 100%;
   }
+}
+
+.block-id-poweredbydrupal {
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 767px) {

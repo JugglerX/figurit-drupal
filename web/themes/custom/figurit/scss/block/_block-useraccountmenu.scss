@@ -1,8 +1,5 @@
 .block-id-useraccountmenu {
-  @include grid-column(8);
-  @media #{$small-only} {
-    display: none;
-  }
+  @include grid-column(12);
   ul.menu {
     @include clearfix;
     z-index: 140;

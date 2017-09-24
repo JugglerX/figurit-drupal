@@ -1,9 +1,9 @@
-.block-id-logo {
+.logo {
   @include grid-column(4);
   @media #{$small-only} {
     @include grid-column(6);
   }
-  .logo {
+  .logo-inner {
     float: left;
     width: 268px;
     height: 34px;
@@ -23,8 +23,5 @@
       width: 100%;
       height: 100%;
     }
-  }
-  .field {
-    margin: 0;
   }
 }
