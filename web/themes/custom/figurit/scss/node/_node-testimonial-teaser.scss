@@ -1,4 +1,11 @@
 .node-testimonial.node-teaser {
+  min-height: 200px;
+  @media #{$medium-only} {
+    min-height: 250px;
+  }
+  @media #{$small-only} {
+    min-height: inherit;
+  }
   .field--name-field-image {
     img {
       width: 100%;
@@ -9,8 +16,7 @@
   &.ds-2col-empty {
     @include clearfix;
     display: flex;
-    flex-direction: row;
-    .group-left {
+    flex-direction: row;.group-left {
       flex: 2 0 0;
       padding-right: 20px;
     }

@@ -10,6 +10,14 @@
   .field--name-node-title {
     margin-bottom: 10px;
   }
+  .field--name-body {
+    margin-bottom: 0;
+    p {
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
   .field--name-field-icon {
     float: left;
     margin-right: 10px;

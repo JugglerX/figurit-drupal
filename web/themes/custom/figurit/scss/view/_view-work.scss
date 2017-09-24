@@ -21,14 +21,28 @@
     .views-row {
       @include grid-column(3);
       margin-bottom: 20px;
-      height: 450px;
+      height: 400px;
+      @media #{$large-up} {
+        @include grid-column(3);
+      }
       @media #{$medium-only} {
-        @include grid-column(4);
-        height: 470px;
+        @include grid-column(6);
+        height: 340px;
       }
       @media #{$small-only} {
         @include grid-column(12);
         height: auto;
+      }
+    }
+  }
+}
+
+.view.view-work.view-display-id-block-1 {
+  .views-content {
+    .views-row {
+      display: none;
+      &:nth-child(1) {
+
       }
     }
   }

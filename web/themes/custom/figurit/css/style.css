@@ -990,6 +990,10 @@ table tbody tr:hover th {
   background-size: cover;
 }
 
+.page .layout.layout-middle {
+  padding: 40px 0 30px 0;
+}
+
 .page .layout.layout-highlighted {
   padding: 40px 0 40px 0;
   background: #FFF;
@@ -1939,7 +1943,16 @@ table tbody tr:hover th {
   padding-left: 10px;
   width: 25%;
   margin-bottom: 20px;
-  height: 450px;
+  height: 400px;
+}
+
+@media only screen and (min-width: 1025px) {
+  .view.view-work .view-content .views-row {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 25%;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1947,8 +1960,8 @@ table tbody tr:hover th {
     float: left;
     padding-right: 10px;
     padding-left: 10px;
-    width: 33.3333333333%;
-    height: 470px;
+    width: 50%;
+    height: 340px;
   }
 }
 
@@ -1960,6 +1973,10 @@ table tbody tr:hover th {
     width: 100%;
     height: auto;
   }
+}
+
+.view.view-work.view-display-id-block-1 .views-content .views-row {
+  display: none;
 }
 
 .view.view-team .view-header {
@@ -2153,6 +2170,14 @@ table tbody tr:hover th {
   margin-bottom: 10px;
 }
 
+.node-service.node-teaser .field--name-body {
+  margin-bottom: 0;
+}
+
+.node-service.node-teaser .field--name-body p:last-of-type {
+  margin-bottom: 0;
+}
+
 .node-service.node-teaser .field--name-field-icon {
   float: left;
   margin-right: 10px;
@@ -2214,6 +2239,22 @@ table tbody tr:hover th {
 
 .node-work.node-teaser.ds-2row .group-secondrow {
   padding: 20px;
+}
+
+.node-testimonial.node-teaser {
+  min-height: 200px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .node-testimonial.node-teaser {
+    min-height: 250px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .node-testimonial.node-teaser {
+    min-height: inherit;
+  }
 }
 
 .node-testimonial.node-teaser .field--name-field-image img {
