@@ -1252,18 +1252,18 @@ table tbody tr:hover th {
   line-height: 18px;
 }
 
-.block-id-contact-details-top .view-id-contact_details .views-field {
+.block-id-contact-details-top .view-contact-details .views-field {
   display: inline-block;
   margin-right: 10px;
 }
 
-.block-id-contact-details-top .view-id-contact_details .views-field .views-label {
+.block-id-contact-details-top .view-contact-details .views-field .views-label {
   display: inline-block;
   margin-right: 5px;
   font-weight: bold;
 }
 
-.block-id-contact-details-top .view-id-contact_details .views-field .field-content {
+.block-id-contact-details-top .view-contact-details .views-field .field-content {
   display: inline-block;
 }
 

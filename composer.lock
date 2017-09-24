@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad7e17d3cce7a554421af1612539a743",
+    "content-hash": "a371c7aaff2e21df564d9fa3241aed16",
     "packages": [
         {
             "name": "ajgl/breakpoint-twig-extension",
@@ -1214,82 +1214,6 @@
             }
         },
         {
-            "name": "drupal/advagg",
-            "version": "3.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/advagg",
-                "reference": "8.x-3.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/advagg-8.x-3.1.zip",
-                "reference": "8.x-3.1",
-                "shasum": "d4826d92dfa4d48548046bf56b0f8ff6a8d00421"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-3.1",
-                    "datestamp": "1502356745",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Mike Carper (mikeytown2)",
-                    "homepage": "https://www.drupal.org/u/mikeytown2",
-                    "role": "Creator, Maintainer"
-                },
-                {
-                    "name": "Nick Wilde (nickwilde)",
-                    "homepage": "https://www.drupal.org/u/nickwilde",
-                    "email": "design@briarmoon.ca",
-                    "role": "Drupal 8 Port/maintainer"
-                },
-                {
-                    "name": "doublejosh",
-                    "homepage": "https://www.drupal.org/user/199720"
-                },
-                {
-                    "name": "iamcarrico",
-                    "homepage": "https://www.drupal.org/user/1300542"
-                },
-                {
-                    "name": "markcarver",
-                    "homepage": "https://www.drupal.org/user/501638"
-                },
-                {
-                    "name": "mikeytown2",
-                    "homepage": "https://www.drupal.org/user/282446"
-                },
-                {
-                    "name": "rupl",
-                    "homepage": "https://www.drupal.org/user/411999"
-                }
-            ],
-            "description": "Improved aggregation of CSS/JS files to speed up page load times.",
-            "homepage": "https://drupal.org/project/advagg",
-            "support": {
-                "source": "https://cgit.drupalcode.org/advagg",
-                "issues": "https://drupal.org/project/issues/advagg",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
-            }
-        },
-        {
             "name": "drupal/better_exposed_filters",
             "version": "3.0.0-alpha3",
             "source": {
@@ -1385,61 +1309,6 @@
             "homepage": "https://www.drupal.org/project/bg_image_formatter",
             "support": {
                 "source": "http://cgit.drupalcode.org/bg_image_formatter"
-            }
-        },
-        {
-            "name": "drupal/blazy",
-            "version": "1.0.0-rc2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/blazy",
-                "reference": "8.x-1.0-rc2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/blazy-8.x-1.0-rc2.zip",
-                "reference": "8.x-1.0-rc2",
-                "shasum": "242f3022b039c6fd3b98f6ce1955d295119b4b5a"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-rc2",
-                    "datestamp": "1495745283"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Gaus Surahman",
-                    "homepage": "https://www.drupal.org/u/gausarts",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Contributors",
-                    "homepage": "https://www.drupal.org/node/2663268/committers",
-                    "role": "Contributor"
-                }
-            ],
-            "description": "Provides basic bLazy integration for lazy loading and multi-serving images.",
-            "homepage": "https://drupal.org/project/blazy",
-            "keywords": [
-                "Drupal",
-                "bLazy",
-                "lazyload"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/blazy",
-                "issues": "https://drupal.org/project/issues/blazy"
             }
         },
         {
@@ -2216,60 +2085,6 @@
             }
         },
         {
-            "name": "drupal/field_group",
-            "version": "dev-3.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/field_group",
-                "reference": "83c00b5e61056940745e9c37ba4bbac9a1124d75"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-3.x-dev",
-                    "datestamp": "1499984642"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Hydra",
-                    "homepage": "https://www.drupal.org/user/647364"
-                },
-                {
-                    "name": "Stalski",
-                    "homepage": "https://www.drupal.org/user/322618"
-                },
-                {
-                    "name": "jyve",
-                    "homepage": "https://www.drupal.org/user/591438"
-                },
-                {
-                    "name": "swentel",
-                    "homepage": "https://www.drupal.org/user/107403"
-                },
-                {
-                    "name": "zuuperman",
-                    "homepage": "https://www.drupal.org/user/361625"
-                }
-            ],
-            "description": "Provides the field_group module.",
-            "homepage": "https://www.drupal.org/project/field_group",
-            "support": {
-                "source": "http://cgit.drupalcode.org/field_group"
-            },
-            "time": "2017-07-13 22:41:32"
-        },
-        {
             "name": "drupal/image_effects",
             "version": "1.0.0",
             "source": {
@@ -2650,104 +2465,6 @@
             }
         },
         {
-            "name": "drupal/slick",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/slick",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/slick-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "14ae69943a07749163ed13900dcd0a6809c54ebd"
-            },
-            "require": {
-                "drupal/blazy": "~1.0",
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1495746183"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "arshadcn",
-                    "homepage": "https://www.drupal.org/user/571032"
-                },
-                {
-                    "name": "gausarts",
-                    "homepage": "https://www.drupal.org/user/159062"
-                }
-            ],
-            "description": "Slick carousel, the last carousel you'll ever need.",
-            "homepage": "https://drupal.org/project/slick",
-            "keywords": [
-                "Drupal",
-                "carousel",
-                "slideshow"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/slick",
-                "issues": "https://drupal.org/project/issues/slick"
-            }
-        },
-        {
-            "name": "drupal/slick_views",
-            "version": "1.0.0-rc2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/slick_views",
-                "reference": "8.x-1.0-rc2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/slick_views-8.x-1.0-rc2.zip",
-                "reference": "8.x-1.0-rc2",
-                "shasum": "13a1394dece68c76bf53502bd1e892e491885264"
-            },
-            "require": {
-                "drupal/core": "*",
-                "drupal/slick": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-rc2",
-                    "datestamp": "1486728183"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "gausarts",
-                    "homepage": "https://www.drupal.org/user/159062"
-                }
-            ],
-            "description": "Provides Slick carousel integration with Views.",
-            "homepage": "https://www.drupal.org/project/slick_views",
-            "support": {
-                "source": "http://cgit.drupalcode.org/slick_views"
-            }
-        },
-        {
             "name": "drupal/smart_trim",
             "version": "1.0.0",
             "source": {
@@ -2967,51 +2684,6 @@
             "homepage": "https://www.drupal.org/project/twig_xdebug",
             "support": {
                 "source": "http://cgit.drupalcode.org/twig_xdebug"
-            }
-        },
-        {
-            "name": "drupal/views_block_filter_block",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/views_block_filter_block",
-                "reference": "ca039afb46ae9603e8c034a2ecd8c7e261af6c7f"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1495707184"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Yogesh Pawar",
-                    "homepage": "https://www.drupal.org/user/2922907"
-                },
-                {
-                    "name": "iamEAP",
-                    "homepage": "https://www.drupal.org/user/1467594"
-                },
-                {
-                    "name": "sumitmadan",
-                    "homepage": "https://www.drupal.org/user/1538790"
-                }
-            ],
-            "description": "Provides blocks for Views exposed filters on View blocks.",
-            "homepage": "https://www.drupal.org/project/views_block_filter_block",
-            "support": {
-                "source": "http://cgit.drupalcode.org/views_block_filter_block"
             }
         },
         {
@@ -6496,6 +6168,61 @@
             "time": "2017-07-22T11:58:36+00:00"
         },
         {
+            "name": "drupal/blazy",
+            "version": "1.0.0-rc2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/blazy",
+                "reference": "8.x-1.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/blazy-8.x-1.0-rc2.zip",
+                "reference": "8.x-1.0-rc2",
+                "shasum": "242f3022b039c6fd3b98f6ce1955d295119b4b5a"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc2",
+                    "datestamp": "1495745283"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Gaus Surahman",
+                    "homepage": "https://www.drupal.org/u/gausarts",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://www.drupal.org/node/2663268/committers",
+                    "role": "Contributor"
+                }
+            ],
+            "description": "Provides basic bLazy integration for lazy loading and multi-serving images.",
+            "homepage": "https://drupal.org/project/blazy",
+            "keywords": [
+                "Drupal",
+                "bLazy",
+                "lazyload"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/blazy",
+                "issues": "https://drupal.org/project/issues/blazy"
+            }
+        },
+        {
             "name": "fabpot/goutte",
             "version": "v3.2.1",
             "source": {
@@ -7580,13 +7307,10 @@
         "drupal/better_exposed_filters": 15,
         "drupal/ctools": 15,
         "drupal/exclude_node_title": 10,
-        "drupal/field_group": 20,
         "drupal/libraries": 20,
         "drupal/owlcarousel": 15,
         "drupal/pathauto": 5,
-        "drupal/redirect": 15,
-        "drupal/slick_views": 5,
-        "drupal/views_block_filter_block": 20
+        "drupal/redirect": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
