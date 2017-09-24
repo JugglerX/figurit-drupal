@@ -2234,6 +2234,25 @@ table tbody tr:hover th {
   border-top: 3px solid #1CD34F;
 }
 
+.view.view-certifications .view-header {
+  text-align: center;
+}
+
+.view.view-certifications .view-header h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 32px;
+  font-weight: 300;
+  font-family: "Open+Sans", "helvetica", "arial";
+  line-height: 28px;
+}
+
+.view.view-certifications .view-header p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
 .view.view-certifications .view-content {
   width: auto;
   max-width: none;

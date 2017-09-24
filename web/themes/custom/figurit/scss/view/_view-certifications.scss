@@ -1,4 +1,20 @@
 .view.view-certifications {
+  .view-header {
+    text-align: center;
+    h2 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 32px;
+      font-weight: 300;
+      font-family: $base-font;
+      line-height: 28px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
+  }
   .view-content {
     @include grid-row(nest);
     .views-row {
