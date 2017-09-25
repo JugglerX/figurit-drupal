@@ -24,6 +24,7 @@
       @media #{$small-only} {
         @include grid-column(12);
         height: auto;
+        margin-bottom: 15px;
       }
     }
   }

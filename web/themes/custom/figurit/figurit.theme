@@ -194,7 +194,6 @@ function figurit_theme_suggestions_block_alter(array &$suggestions, array $varia
 function figurit_preprocess_node(array &$variables) {
   $variables['nid'] = $variables['elements']['#node']->id();
   $variables['node_id'] = 'node-id-' . $variables['elements']['#node']->id();
-  $test = $variables['attributes']['class'][0];
 }
 
 /**
@@ -203,7 +202,6 @@ function figurit_preprocess_node(array &$variables) {
 function figurit_preprocess_ds(array &$variables) {
   $variables['nid'] = $variables['elements']['#node']->id();
   $variables['node_id'] = 'node-id-' . $variables['elements']['#node']->id();
-  $test = $variables['attributes']['class'][0];
 }
 
 /**
@@ -212,7 +210,6 @@ function figurit_preprocess_ds(array &$variables) {
 function figurit_preprocess_layout(array &$variables) {
   $variables['nid'] = $variables['elements']['#node']->id();
   $variables['node_id'] = 'node-id-' . $variables['elements']['#node']->id();
-  $test = $variables['attributes']['class'][0];
 }
 
 function figurit_ds_classes_alter(&$classes, $name) {
@@ -233,14 +230,12 @@ function figurit_ds_pre_render_alter(&$layout_render_array, $context, &$vars) {
  * Implements hook_theme_suggestions_node_alter().
  */
 function figurit_theme_suggestions_node_alter(array &$suggestions, array $variables) {
-  $test = $suggestions;
 }
 
 /**
  * Implements hook_theme_suggestions_node_alter().
  */
 function figurit_theme_suggestions_ds_alter(array &$suggestions, array $variables) {
-  $test = $suggestions;
 }
 
 /**

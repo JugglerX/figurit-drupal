@@ -17,5 +17,13 @@
         display: inline-block;
       }
     }
+    .views-field-field-email {
+      a {
+        color: #333;
+        &:hover {
+          color: #333;
+        }
+      }
+    }
   }
 }

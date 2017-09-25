@@ -1,12 +1,4 @@
 .node-service.node-teaser {
-  .group-left {
-    float: left;
-    width: 110px;
-  }
-  .group-right {
-    float: left;
-    width: calc(100% - 110px);
-  }
   .field--name-node-title {
     margin-bottom: 10px;
   }
@@ -19,14 +11,24 @@
     }
   }
   .field--name-field-icon {
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 50px;
-    @media #{$medium-only} {
-      margin-bottom: 80px;
+    img {
+      width: 100%;
+      height: auto;
     }
-    @media #{$small-only} {
-      margin-bottom: 10px;
+  }
+
+  // Display Suite 2 Column
+  &.ds-2col,
+  &.ds-2col-empty {
+    @include clearfix;
+    display: flex;
+    flex-direction: row;
+    .group-left {
+      flex: 1 0 0;
+    }
+    .group-right {
+      flex: 4 0 0;
+      padding: 0 20px 20px 20px;
     }
   }
 }

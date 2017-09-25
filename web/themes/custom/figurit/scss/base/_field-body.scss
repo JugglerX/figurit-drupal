@@ -5,4 +5,52 @@
     margin-bottom: 20px;
     margin-left: 20px;
   }
+  p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #666666;
+    font-family: $base-font;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+  }
+  h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: $custom-font;
+    font-size: 40px;
+    font-weight: 400;
+  }
+  h2 {
+    margin-top: 0;
+    margin-bottom: 13px;
+    font-family: $custom-font;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #333333;
+  }
+  h3 {
+    margin-top: 0;
+    margin-bottom: 13px;
+    font-family: $custom-font;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #333333;
+  }
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
+  a {
+    text-decoration: none;
+    color: $primary-color;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
 }
