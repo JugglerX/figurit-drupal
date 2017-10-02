@@ -2,13 +2,11 @@
   min-height: 300px;
   padding: 20px 0 20px 0;
   .field--name-field-hero-heading {
-    width: 400px;
-    margin: 0;
     padding-top: 50px;
     color: #FFFFFF;
     font-weight: 300;
+    text-align: center;
     @media #{$small-only} {
-      width: 90%;
       padding-top: 20px;
     }
     h1,
@@ -58,6 +56,9 @@
   }
   .field--name-body {
     width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
     p {
       color: #FFFFFF;
       font-weight: 200;
@@ -67,9 +68,9 @@
     }
   }
   .field--name-field-link {
+    text-align: center;
     a {
       @include btn();
     }
-
   }
 }

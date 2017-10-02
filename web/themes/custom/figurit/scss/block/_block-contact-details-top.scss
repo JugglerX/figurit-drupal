@@ -12,11 +12,13 @@
         display: inline-block;
         margin-right: 5px;
         font-weight: bold;
+        color: #333;
       }
       .field-content {
         display: inline-block;
       }
     }
+
     .views-field-field-email {
       a {
         color: #333;
@@ -24,6 +26,12 @@
           color: #333;
         }
       }
+    }
+    .views-field-field-phone {
+      color: #333;
+    }
+    .views-field-field-short-address {
+      color: #333;
     }
   }
 }

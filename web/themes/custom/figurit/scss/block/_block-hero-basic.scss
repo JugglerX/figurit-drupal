@@ -6,12 +6,14 @@
     float: left;
     width: 400px;
     margin: 0;
-    padding-top: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     color: #FFFFFF;
     font-weight: 400;
     @media #{$small-only} {
       width: 80%;
       padding-top: 40px;
+      float: none;
     }
     h1,
     h2,
@@ -33,17 +35,25 @@
     }
   }
   .field--name-field-hero-subheading {
-    float: left;
+    clear: left;
+    float: right;
     width: 400px;
     margin: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 20px;
     color: #FFFFFF;
-    border-bottom: 5px solid $primary-color;
-    background: rgba(0, 0, 0, 0.1);
-    font-weight: 200;
+    //border-bottom: 5px solid $primary-color;
+    background: rgba(0, 0, 0, 0.2);
+    font-weight: 400;
     @media #{$small-only} {
       margin-top: 30px;
       margin-bottom: 20px;
+      float: none;
+      width: auto;
+    }
+    @media #{$medium-only} {
+      width: 300px;
     }
     h1,
     h2,

@@ -649,7 +649,7 @@ label.form-required:after {
 }
 
 .field__label {
-  margin-bottom: 5px;
+  margin-bottom: 0;
   color: #656565;
   font-weight: bold;
 }
@@ -675,6 +675,16 @@ label.form-required:after {
   font-weight: 400;
   line-height: 24px;
   color: #333333;
+}
+
+.field--name-node-title h1 {
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Lato", "helvetica", "arial";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
 }
 
 .btn {
@@ -796,7 +806,7 @@ label.form-required:after {
   margin-bottom: 15px;
   font-family: "Open+Sans", "helvetica", "arial";
   font-size: 15px;
-  line-height: 22px;
+  line-height: 21px;
 }
 
 .field--name-body ul,
@@ -1298,6 +1308,7 @@ a:hover, a:focus {
   display: inline-block;
   margin-right: 5px;
   font-weight: bold;
+  color: #333;
 }
 
 .block-id-contact-details-top .view-contact-details .views-field .field-content {
@@ -1309,6 +1320,14 @@ a:hover, a:focus {
 }
 
 .block-id-contact-details-top .view-contact-details .views-field-field-email a:hover {
+  color: #333;
+}
+
+.block-id-contact-details-top .view-contact-details .views-field-field-phone {
+  color: #333;
+}
+
+.block-id-contact-details-top .view-contact-details .views-field-field-short-address {
   color: #333;
 }
 
@@ -1554,7 +1573,8 @@ a:hover, a:focus {
   float: left;
   width: 400px;
   margin: 0;
-  padding-top: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   color: #FFFFFF;
   font-weight: 400;
 }
@@ -1563,6 +1583,7 @@ a:hover, a:focus {
   .block-id-hero-basic .field--name-field-hero-heading {
     width: 80%;
     padding-top: 40px;
+    float: none;
   }
 }
 
@@ -1592,20 +1613,30 @@ a:hover, a:focus {
 }
 
 .block-id-hero-basic .field--name-field-hero-subheading {
-  float: left;
+  clear: left;
+  float: right;
   width: 400px;
   margin: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
   padding: 20px;
   color: #FFFFFF;
-  border-bottom: 5px solid #1CD34F;
-  background: rgba(0, 0, 0, 0.1);
-  font-weight: 200;
+  background: rgba(0, 0, 0, 0.2);
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 767px) {
   .block-id-hero-basic .field--name-field-hero-subheading {
     margin-top: 30px;
     margin-bottom: 20px;
+    float: none;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .block-id-hero-basic .field--name-field-hero-subheading {
+    width: 300px;
   }
 }
 
@@ -2307,16 +2338,14 @@ a:hover, a:focus {
 }
 
 .block-content--type-section .field--name-field-hero-heading {
-  width: 400px;
-  margin: 0;
   padding-top: 50px;
   color: #FFFFFF;
   font-weight: 300;
+  text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
   .block-content--type-section .field--name-field-hero-heading {
-    width: 90%;
     padding-top: 20px;
   }
 }
@@ -2382,6 +2411,9 @@ a:hover, a:focus {
 
 .block-content--type-section .field--name-body {
   width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .block-content--type-section .field--name-body p {
@@ -2391,6 +2423,10 @@ a:hover, a:focus {
 
 .block-content--type-section .field--name-body p:last-of-type {
   margin-bottom: 0;
+}
+
+.block-content--type-section .field--name-field-link {
+  text-align: center;
 }
 
 .block-content--type-section .field--name-field-link a {
@@ -2474,6 +2510,7 @@ a:hover, a:focus {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 33%;
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -3343,7 +3380,7 @@ body {
   color: #666666;
   font-family: "Open+Sans", "helvetica", "arial";
   font-size: 15px;
-  line-height: 22px;
+  line-height: 21px;
   font-weight: 400;
 }
 

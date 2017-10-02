@@ -32,6 +32,7 @@
       flex-grow: 0;
       flex-shrink: 0;
       flex-basis: 33%;
+      margin-bottom: 10px;
       @media #{$small-only} {
         flex-basis: 100%;
       }
