@@ -13,6 +13,12 @@
       border-radius: 50%;
     }
   }
+  .field--name-field-testimonial-link {
+    margin-bottom: 5px;
+  }
+  .field--name-field-testimonial-name {
+    font-weight: 600;
+  }
   &.ds-2col-empty {
     @include clearfix;
     display: flex;

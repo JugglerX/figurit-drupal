@@ -9,10 +9,10 @@
   text-transform: uppercase;
   color: #FFFFFF;
   border: 1px;
-  border-color: $secondary-color;
+  border-color: $primary-color;
   border-radius: 3px;
   outline: none;
-  background-color: $secondary-color;
+  background-color: $primary-color;
   font-family: $custom-font;
   font-size: 14px;
   font-weight: 200;
@@ -26,6 +26,36 @@
     text-decoration: none;
     color: #FFFFFF;
     background-color: #2B5784;
+    background-image: none;
+    box-shadow: none;
+  }
+}
+@mixin btn-bordered() {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  padding: 11px 17px 10px 17px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $primary-color;
+  border: 3px solid $primary-color;
+  outline: none;
+  background: none;
+  font-family: $custom-font;
+  font-size: 16px;
+  font-weight: 400;
+  appearance: none;
+  &:link,
+  &:visited {
+    color: $primary-color;
+  }
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: $primary-color;
     background-image: none;
     box-shadow: none;
   }

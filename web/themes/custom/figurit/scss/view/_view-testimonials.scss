@@ -27,10 +27,14 @@
         @include grid-column(12);
         height: auto;
         margin-bottom: 20px;
+        border-bottom: 1px solid #EAEAEA;
+        padding-bottom: 20px;
       }
       &:last-of-type {
         @media #{$small-only} {
           margin-bottom: 0;
+          border-bottom: none;
+          padding-bottom: 0;
         }
       }
     }

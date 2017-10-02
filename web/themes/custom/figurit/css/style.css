@@ -678,10 +678,10 @@ label.form-required:after {
   text-transform: uppercase;
   color: #FFFFFF;
   border: 1px;
-  border-color: #232A2C;
+  border-color: #1CD34F;
   border-radius: 3px;
   outline: none;
-  background-color: #232A2C;
+  background-color: #1CD34F;
   font-family: "Lato", "helvetica", "arial";
   font-size: 14px;
   font-weight: 200;
@@ -711,10 +711,10 @@ label.form-required:after {
   text-transform: uppercase;
   color: #FFFFFF;
   border: 1px;
-  border-color: #232A2C;
+  border-color: #1CD34F;
   border-radius: 3px;
   outline: none;
-  background-color: #232A2C;
+  background-color: #1CD34F;
   font-family: "Lato", "helvetica", "arial";
   font-size: 14px;
   font-weight: 200;
@@ -758,10 +758,10 @@ label.form-required:after {
   text-transform: uppercase;
   color: #FFFFFF;
   border: 1px;
-  border-color: #232A2C;
+  border-color: #1CD34F;
   border-radius: 3px;
   outline: none;
-  background-color: #232A2C;
+  background-color: #1CD34F;
   font-family: "Lato", "helvetica", "arial";
   font-size: 14px;
   font-weight: 200;
@@ -807,7 +807,9 @@ h2,
 .block-id-hero-homepage .field--name-field-hero-subheading h1,
 .block-id-hero-homepage .field--name-field-hero-subheading h2,
 .block-id-hero-homepage .field--name-field-hero-subheading p,
-.block-id-hero-service .field--name-field-hero-subheading,
+.block-id-hero-service .field--name-field-hero-subheading h1,
+.block-id-hero-service .field--name-field-hero-subheading h2,
+.block-id-hero-service .field--name-field-hero-subheading p,
 .block-id-hero-basic .field--name-field-hero-subheading {
   margin-top: 0;
   margin-bottom: 13px;
@@ -1074,11 +1076,6 @@ table tbody tr:hover th {
   /* IE6-9 fallback on horizontal gradient */
 }
 
-.page .layout.layout-bottom {
-  padding: 30px 0 30px 0;
-  background: #dddddd;
-}
-
 .page .layout.layout-canyon {
   padding: 30px 0 30px 0;
   background: #1CD34F;
@@ -1090,7 +1087,11 @@ table tbody tr:hover th {
 
 .page .layout.layout-footer {
   padding: 30px 0 30px 0;
-  background: #EEEEEE;
+}
+
+.page .layout.layout-bottom {
+  padding: 30px 0 30px 0;
+  border-top: 1px solid #1CD34F;
 }
 
 .page .main {
@@ -1137,11 +1138,29 @@ table tbody tr:hover th {
   width: 75%;
 }
 
+@media only screen and (max-width: 767px) {
+  .page.sidebar-first .main .region-content {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+  }
+}
+
 .page.sidebar-first .main .region-sidebar-first {
   float: left;
   padding-right: 10px;
   padding-left: 10px;
   width: 25%;
+}
+
+@media only screen and (max-width: 767px) {
+  .page.sidebar-first .main .region-sidebar-first {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+  }
 }
 
 .page.sidebar-second .main {
@@ -1166,11 +1185,29 @@ table tbody tr:hover th {
   width: 75%;
 }
 
+@media only screen and (max-width: 767px) {
+  .page.sidebar-second .main .region-content {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+  }
+}
+
 .page.sidebar-second .main .region-sidebar-second {
   float: left;
   padding-right: 10px;
   padding-left: 10px;
   width: 25%;
+}
+
+@media only screen and (max-width: 767px) {
+  .page.sidebar-second .main .region-sidebar-second {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+  }
 }
 
 .page.both-sidebars .main {
@@ -1431,20 +1468,43 @@ table tbody tr:hover th {
 }
 
 .block-id-hero-homepage .field--name-field-hero-subheading {
-  clear: both;
+  width: 300px;
   float: right;
-  width: 200px;
   margin: 0;
+  margin-top: 150px;
+  margin-bottom: 40px;
   padding: 20px;
+  color: #FFFFFF;
   border-bottom: 5px solid #1CD34F;
   background: rgba(0, 0, 0, 0.1);
-  font-weight: 400;
+  font-weight: 200;
+}
+
+@media only screen and (max-width: 767px) {
+  .block-id-hero-homepage .field--name-field-hero-subheading {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .block-id-hero-homepage .field--name-field-hero-subheading {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 
 .block-id-hero-homepage .field--name-field-hero-subheading h1,
 .block-id-hero-homepage .field--name-field-hero-subheading h2,
 .block-id-hero-homepage .field--name-field-hero-subheading p {
   color: #FFFFFF;
+  font-weight: 200;
+}
+
+.block-id-hero-homepage .field--name-field-hero-subheading h1:last-of-type,
+.block-id-hero-homepage .field--name-field-hero-subheading h2:last-of-type,
+.block-id-hero-homepage .field--name-field-hero-subheading p:last-of-type {
+  margin-bottom: 0;
 }
 
 .block-id-hero-service .field--name-field-hero {
@@ -1487,8 +1547,8 @@ table tbody tr:hover th {
 }
 
 .block-id-hero-service .field--name-field-hero-subheading {
-  float: right;
   width: 300px;
+  float: right;
   margin: 0;
   margin-top: 150px;
   margin-bottom: 40px;
@@ -1502,8 +1562,15 @@ table tbody tr:hover th {
 @media only screen and (max-width: 767px) {
   .block-id-hero-service .field--name-field-hero-subheading {
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
+}
+
+.block-id-hero-service .field--name-field-hero-subheading h1,
+.block-id-hero-service .field--name-field-hero-subheading h2,
+.block-id-hero-service .field--name-field-hero-subheading p {
+  color: #FFFFFF;
+  font-weight: 200;
 }
 
 .block-id-hero-basic .field--name-field-hero {
@@ -2245,10 +2312,10 @@ table tbody tr:hover th {
 .view.view-services .view-header h2 {
   margin-top: 0;
   margin-bottom: 8px;
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 300;
   font-family: "Open+Sans", "helvetica", "arial";
-  line-height: 28px;
+  line-height: 34px;
 }
 
 .view.view-services .view-header p {
@@ -2258,44 +2325,75 @@ table tbody tr:hover th {
 }
 
 .view.view-services .view-content {
-  width: auto;
-  max-width: none;
-  margin-top: 0;
-  margin-right: -10px;
-  margin-bottom: 0;
-  margin-left: -10px;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.view.view-services .view-content:after {
-  display: block;
-  clear: both;
-  content: '';
+@media only screen and (max-width: 767px) {
+  .view.view-services .view-content {
+    display: block;
+  }
 }
 
 .view.view-services .view-content .views-row {
-  float: left;
-  padding-right: 10px;
-  padding-left: 10px;
-  width: 50%;
-  height: 180px;
-  margin-bottom: 10px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 33%;
 }
 
 @media only screen and (max-width: 767px) {
   .view.view-services .view-content .views-row {
-    float: left;
-    padding-right: 10px;
-    padding-left: 10px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 15px;
+    flex-basis: 100%;
   }
 }
 
-.view.view-services.view-display-id-block_2 {
-  padding-top: 50px;
-  margin-top: 30px;
+.view.view-services .more-link {
+  text-align: center;
+}
+
+.view.view-services .more-link a {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  padding: 11px 17px 10px 17px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1CD34F;
+  border: 3px solid #1CD34F;
+  outline: none;
+  background: none;
+  font-family: "Lato", "helvetica", "arial";
+  font-size: 16px;
+  font-weight: 400;
+  appearance: none;
+}
+
+.view.view-services .more-link a:link, .view.view-services .more-link a:visited {
+  color: #1CD34F;
+}
+
+.view.view-services .more-link a:hover, .view.view-services .more-link a:focus {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #1CD34F;
+  background-image: none;
+  box-shadow: none;
+}
+
+.view.view-services.view-display-id-block-3 {
+  padding-top: 20px;
+  margin-top: 10px;
   border-top: 3px solid #1CD34F;
+}
+
+.view.view-services.view-display-id-block-3 .view-content {
+  display: block;
+}
+
+.view.view-services.view-display-id-block-3 .view-content .views-row {
+  margin: 0 0 6px 0;
 }
 
 .view.view-certifications .view-header {
@@ -2421,12 +2519,16 @@ table tbody tr:hover th {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
+    border-bottom: 1px solid #EAEAEA;
+    padding-bottom: 20px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .view.view-testimonials .view-content .views-row:last-of-type {
     margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
   }
 }
 
@@ -2781,6 +2883,14 @@ table tbody tr:hover th {
   width: 100%;
   height: auto;
   border-radius: 50%;
+}
+
+.node-testimonial.node-teaser .field--name-field-testimonial-link {
+  margin-bottom: 5px;
+}
+
+.node-testimonial.node-teaser .field--name-field-testimonial-name {
+  font-weight: 600;
 }
 
 .node-testimonial.node-teaser.ds-2col-empty {

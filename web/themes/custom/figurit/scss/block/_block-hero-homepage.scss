@@ -29,23 +29,33 @@
     }
   }
   .field--name-field-hero-subheading {
-    //position: absolute;
-    //top: 218px;
-    //right: 0;
-    clear: both;
+    width: 300px;
     float: right;
-    width: 200px;
     margin: 0;
+    margin-top: 150px;
+    margin-bottom: 40px;
     padding: 20px;
-
+    color: #FFFFFF;
     border-bottom: 5px solid $primary-color;
     background: rgba(0, 0, 0, 0.1);
-    font-weight: 400;
+    font-weight: 200;
+    @media #{$small-only} {
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    @media #{$tiny-only} {
+      width: 100%;
+      margin-bottom: 0;
+    }
     h1,
     h2,
     p {
       @extend %h2;
       color: #FFFFFF;
+      font-weight: 200;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
   }
 }
