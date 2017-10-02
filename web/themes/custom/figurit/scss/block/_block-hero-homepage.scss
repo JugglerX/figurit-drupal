@@ -2,9 +2,6 @@
   min-height: 300px;
   padding: 20px 0 20px 0;
   .field--name-field-hero-heading {
-    //float: left;
-    //width: 400px;
-    //margin: 0;
     text-align: center;
     width: 500px;
     margin: 0 auto;
@@ -23,21 +20,20 @@
       color: #FFFFFF;
       font-family: $custom-font;
       font-size: 40px;
-      font-weight: 300;
+      font-weight: 200;
       line-height: 48px;
       strong {
         color: $primary-color;
-        font-weight: 300;
+        font-weight: 200;
+      }
+      &:last-of-type {
+        margin-bottom: 0;
       }
     }
   }
   .field--name-field-hero-subheading {
-    //width: 300px;
-    //float: right;
-    //margin: 0;
     width: 500px;
     margin: 0 auto;
-    //margin-top: 150px;
     margin-top: 20px;
     margin-bottom: 40px;
     padding: 20px;
@@ -56,9 +52,17 @@
     h1,
     h2,
     p {
-      @extend %h2;
+      margin-top: 0;
+      margin-bottom: 20px;
       color: #FFFFFF;
-      font-weight: 200;
+      font-family: $custom-font;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 32px;
+      strong {
+        color: $primary-color;
+        font-weight: 200;
+      }
       &:last-of-type {
         margin-bottom: 0;
       }

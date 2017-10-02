@@ -18,10 +18,12 @@
 @import 'base/form-filter-wrapper';
 @import 'base/form-required';
 @import 'base/field';
+@import 'base/field-node-title';
 @import 'base/button';
-@import 'base/type';
+//@import 'base/type';
 @import 'base/field-body';
 @import 'base/table';
+@import 'base/link';
 @import 'base/description';
 
 @import 'page/page';
@@ -61,6 +63,7 @@
 @import 'node/node';
 @import 'node/node-certification-teaser';
 @import 'node/node-service-teaser';
+@import 'node/node-service-full';
 @import 'node/node-work-teaser';
 @import 'node/node-testimonial-teaser';
 @import 'node/node-team-teaser';
@@ -77,9 +80,11 @@ body {
   @include display-breakpoint;
   margin: 0;
   padding: 0;
-  color: #333333;
+  color: #666666;
   font-family: $base-font;
   font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 400;
 }
 
 * {
