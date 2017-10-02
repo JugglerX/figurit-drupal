@@ -2,9 +2,12 @@
   min-height: 300px;
   padding: 20px 0 20px 0;
   .field--name-field-hero-heading {
-    float: left;
-    width: 400px;
-    margin: 0;
+    //float: left;
+    //width: 400px;
+    //margin: 0;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
     padding-top: 50px;
     color: #FFFFFF;
     font-weight: 300;
@@ -29,10 +32,13 @@
     }
   }
   .field--name-field-hero-subheading {
-    width: 300px;
-    float: right;
-    margin: 0;
-    margin-top: 150px;
+    //width: 300px;
+    //float: right;
+    //margin: 0;
+    width: 500px;
+    margin: 0 auto;
+    //margin-top: 150px;
+    margin-top: 20px;
     margin-bottom: 40px;
     padding: 20px;
     color: #FFFFFF;

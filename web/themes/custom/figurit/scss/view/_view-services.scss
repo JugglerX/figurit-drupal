@@ -1,18 +1,25 @@
 .view.view-services {
   .view-header {
     text-align: center;
+    margin-bottom: 40px;
     h2 {
       margin-top: 0;
-      margin-bottom: 8px;
-      font-size: 34px;
+      margin-bottom: 0;
+      font-size: 36px;
       font-weight: 300;
       font-family: $base-font;
-      line-height: 34px;
+      line-height: 38px;
     }
     p {
       font-size: 16px;
       line-height: 26px;
       margin-bottom: 20px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+    h2 + p {
+      margin-bottom: 10px;
     }
   }
   .view-content {
@@ -22,12 +29,14 @@
       display: block;
     }
     .views-row {
-      //flex: 0 0 33%;
       flex-grow: 0;
       flex-shrink: 0;
       flex-basis: 33%;
       @media #{$small-only} {
         flex-basis: 100%;
+      }
+      @media #{$medium-only} {
+        flex-basis: 50%;
       }
       &:last-of-type {
         @media #{$small-only} {
@@ -38,8 +47,11 @@
   }
   .more-link {
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
     a {
-      @include btn-bordered;
+      @include btn;
+      @include btn-wide;
     }
   }
 

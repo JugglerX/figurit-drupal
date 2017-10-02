@@ -25,6 +25,7 @@
 @import 'base/description';
 
 @import 'page/page';
+@import 'page/page-front';
 
 @import 'block/block-tabs';
 @import 'block/block-tools';
@@ -47,6 +48,7 @@
 @import 'block/block-poweredbydrupal';
 @import 'block/block-sitebranding';
 @import 'block/block-hamburger';
+@import 'block/block-content-type-section';
 
 @import 'view/view';
 @import 'view/view-services';

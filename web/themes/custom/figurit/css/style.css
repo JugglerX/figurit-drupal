@@ -679,13 +679,12 @@ label.form-required:after {
   color: #FFFFFF;
   border: 1px;
   border-color: #1CD34F;
-  border-radius: 3px;
   outline: none;
   background-color: #1CD34F;
-  font-family: "Lato", "helvetica", "arial";
-  font-size: 14px;
-  font-weight: 200;
   appearance: none;
+  font-family: "Lato", "helvetica", "arial";
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .btn:link, .btn:visited {
@@ -695,7 +694,7 @@ label.form-required:after {
 .btn:hover, .btn:focus {
   text-decoration: none;
   color: #FFFFFF;
-  background-color: #2B5784;
+  background-color: #16a63e;
   background-image: none;
   box-shadow: none;
 }
@@ -712,13 +711,12 @@ label.form-required:after {
   color: #FFFFFF;
   border: 1px;
   border-color: #1CD34F;
-  border-radius: 3px;
   outline: none;
   background-color: #1CD34F;
-  font-family: "Lato", "helvetica", "arial";
-  font-size: 14px;
-  font-weight: 200;
   appearance: none;
+  font-family: "Lato", "helvetica", "arial";
+  font-size: 16px;
+  font-weight: 400;
   border-color: #6E706F;
   background-color: #6E706F;
 }
@@ -730,7 +728,7 @@ label.form-required:after {
 .btn-cancel:hover, .btn-cancel:focus {
   text-decoration: none;
   color: #FFFFFF;
-  background-color: #2B5784;
+  background-color: #16a63e;
   background-image: none;
   box-shadow: none;
 }
@@ -759,13 +757,12 @@ label.form-required:after {
   color: #FFFFFF;
   border: 1px;
   border-color: #1CD34F;
-  border-radius: 3px;
   outline: none;
   background-color: #1CD34F;
-  font-family: "Lato", "helvetica", "arial";
-  font-size: 14px;
-  font-weight: 200;
   appearance: none;
+  font-family: "Lato", "helvetica", "arial";
+  font-size: 16px;
+  font-weight: 400;
   color: #33669B;
   border: 1px solid #33669B;
   background-color: #FFFFFF;
@@ -778,7 +775,7 @@ label.form-required:after {
 .btn-clear:hover, .btn-clear:focus {
   text-decoration: none;
   color: #FFFFFF;
-  background-color: #2B5784;
+  background-color: #16a63e;
   background-image: none;
   box-shadow: none;
 }
@@ -810,7 +807,11 @@ h2,
 .block-id-hero-service .field--name-field-hero-subheading h1,
 .block-id-hero-service .field--name-field-hero-subheading h2,
 .block-id-hero-service .field--name-field-hero-subheading p,
-.block-id-hero-basic .field--name-field-hero-subheading {
+.block-id-hero-basic .field--name-field-hero-subheading,
+.block-content--type-section .field--name-field-hero-subheading h1,
+.block-content--type-section .field--name-field-hero-subheading h2,
+.block-content--type-section .field--name-field-hero-subheading p,
+.block-content--type-section .field--name-body p {
   margin-top: 0;
   margin-bottom: 13px;
   font-family: "Lato", "helvetica", "arial";
@@ -1064,14 +1065,7 @@ table tbody tr:hover th {
 
 .page .layout.layout-highlighted-second {
   padding: 40px 0 40px 0;
-  background: #ffffff;
-  /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #eaeaea 100%);
-  /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #eaeaea 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, #ffffff 0%, #eaeaea 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: #FFFFFF;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eaeaea', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
 }
@@ -1083,6 +1077,7 @@ table tbody tr:hover th {
 
 .page .layout.layout-canyon-second {
   padding: 30px 0 30px 0;
+  background: #1CD34F;
 }
 
 .page .layout.layout-footer {
@@ -1223,6 +1218,10 @@ table tbody tr:hover th {
   display: block;
   clear: both;
   content: '';
+}
+
+.page .layout.layout-middle {
+  padding: 0;
 }
 
 .block-id-tabs {
@@ -1433,9 +1432,9 @@ table tbody tr:hover th {
 }
 
 .block-id-hero-homepage .field--name-field-hero-heading {
-  float: left;
-  width: 400px;
-  margin: 0;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
   padding-top: 50px;
   color: #FFFFFF;
   font-weight: 300;
@@ -1468,10 +1467,9 @@ table tbody tr:hover th {
 }
 
 .block-id-hero-homepage .field--name-field-hero-subheading {
-  width: 300px;
-  float: right;
-  margin: 0;
-  margin-top: 150px;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
   margin-bottom: 40px;
   padding: 20px;
   color: #FFFFFF;
@@ -2299,6 +2297,130 @@ table tbody tr:hover th {
   margin: 0;
 }
 
+.block-content--type-section {
+  min-height: 300px;
+  padding: 20px 0 20px 0;
+}
+
+.block-content--type-section .field--name-field-hero-heading {
+  width: 400px;
+  margin: 0;
+  padding-top: 50px;
+  color: #FFFFFF;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 767px) {
+  .block-content--type-section .field--name-field-hero-heading {
+    width: 90%;
+    padding-top: 20px;
+  }
+}
+
+.block-content--type-section .field--name-field-hero-heading h1,
+.block-content--type-section .field--name-field-hero-heading h2,
+.block-content--type-section .field--name-field-hero-heading p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  font-family: "Lato", "helvetica", "arial";
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 48px;
+}
+
+.block-content--type-section .field--name-field-hero-heading h1 strong,
+.block-content--type-section .field--name-field-hero-heading h2 strong,
+.block-content--type-section .field--name-field-hero-heading p strong {
+  color: #1CD34F;
+  font-weight: 300;
+}
+
+.block-content--type-section .field--name-field-hero-subheading {
+  width: 300px;
+  float: right;
+  margin: 0;
+  margin-top: 150px;
+  margin-bottom: 40px;
+  padding: 20px;
+  color: #FFFFFF;
+  border-bottom: 5px solid #1CD34F;
+  background: rgba(0, 0, 0, 0.1);
+  font-weight: 200;
+}
+
+@media only screen and (max-width: 767px) {
+  .block-content--type-section .field--name-field-hero-subheading {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .block-content--type-section .field--name-field-hero-subheading {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.block-content--type-section .field--name-field-hero-subheading h1,
+.block-content--type-section .field--name-field-hero-subheading h2,
+.block-content--type-section .field--name-field-hero-subheading p {
+  color: #FFFFFF;
+  font-weight: 200;
+}
+
+.block-content--type-section .field--name-field-hero-subheading h1:last-of-type,
+.block-content--type-section .field--name-field-hero-subheading h2:last-of-type,
+.block-content--type-section .field--name-field-hero-subheading p:last-of-type {
+  margin-bottom: 0;
+}
+
+.block-content--type-section .field--name-body {
+  width: 70%;
+}
+
+.block-content--type-section .field--name-body p {
+  color: #FFFFFF;
+  font-weight: 200;
+}
+
+.block-content--type-section .field--name-body p:last-of-type {
+  margin-bottom: 0;
+}
+
+.block-content--type-section .field--name-field-link a {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  padding: 11px 17px 10px 17px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: 1px;
+  border-color: #1CD34F;
+  outline: none;
+  background-color: #1CD34F;
+  appearance: none;
+  font-family: "Lato", "helvetica", "arial";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.block-content--type-section .field--name-field-link a:link, .block-content--type-section .field--name-field-link a:visited {
+  color: #FFFFFF;
+}
+
+.block-content--type-section .field--name-field-link a:hover, .block-content--type-section .field--name-field-link a:focus {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #16a63e;
+  background-image: none;
+  box-shadow: none;
+}
+
 @media only screen and (max-width: 767px) {
   .view .view-content .views-row:last-of-type {
     margin-bottom: 0;
@@ -2307,21 +2429,30 @@ table tbody tr:hover th {
 
 .view.view-services .view-header {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .view.view-services .view-header h2 {
   margin-top: 0;
-  margin-bottom: 8px;
-  font-size: 34px;
+  margin-bottom: 0;
+  font-size: 36px;
   font-weight: 300;
   font-family: "Open+Sans", "helvetica", "arial";
-  line-height: 34px;
+  line-height: 38px;
 }
 
 .view.view-services .view-header p {
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 20px;
+}
+
+.view.view-services .view-header p:last-of-type {
+  margin-bottom: 0;
+}
+
+.view.view-services .view-header h2 + p {
+  margin-bottom: 10px;
 }
 
 .view.view-services .view-content {
@@ -2347,8 +2478,16 @@ table tbody tr:hover th {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .view.view-services .view-content .views-row {
+    flex-basis: 50%;
+  }
+}
+
 .view.view-services .more-link {
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .view.view-services .more-link a {
@@ -2360,24 +2499,26 @@ table tbody tr:hover th {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #1CD34F;
-  border: 3px solid #1CD34F;
+  color: #FFFFFF;
+  border: 1px;
+  border-color: #1CD34F;
   outline: none;
-  background: none;
+  background-color: #1CD34F;
+  appearance: none;
   font-family: "Lato", "helvetica", "arial";
   font-size: 16px;
   font-weight: 400;
-  appearance: none;
+  padding: 11px 47px 10px 47px;
 }
 
 .view.view-services .more-link a:link, .view.view-services .more-link a:visited {
-  color: #1CD34F;
+  color: #FFFFFF;
 }
 
 .view.view-services .more-link a:hover, .view.view-services .more-link a:focus {
   text-decoration: none;
   color: #FFFFFF;
-  background-color: #1CD34F;
+  background-color: #16a63e;
   background-image: none;
   box-shadow: none;
 }
@@ -2398,21 +2539,30 @@ table tbody tr:hover th {
 
 .view.view-certifications .view-header {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .view.view-certifications .view-header h2 {
   margin-top: 0;
-  margin-bottom: 8px;
-  font-size: 32px;
+  margin-bottom: 0;
+  font-size: 36px;
   font-weight: 300;
   font-family: "Open+Sans", "helvetica", "arial";
-  line-height: 28px;
+  line-height: 38px;
 }
 
 .view.view-certifications .view-header p {
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 20px;
+}
+
+.view.view-certifications .view-header p:last-of-type {
+  margin-bottom: 0;
+}
+
+.view.view-certifications .view-header h2 + p {
+  margin-bottom: 10px;
 }
 
 .view.view-certifications .view-content {
@@ -2763,6 +2913,8 @@ table tbody tr:hover th {
 
 .node-certification.node-teaser.ds-2row {
   height: inherit;
+  border: 2px solid #1cd350;
+  padding: 20px;
   background-color: #FFFFFF;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -2773,12 +2925,8 @@ table tbody tr:hover th {
   content: '';
 }
 
-.node-certification.node-teaser.ds-2row .group-firstrow {
-  border-bottom: 2px solid #f5f5f5;
-}
-
 .node-certification.node-teaser.ds-2row .group-secondrow {
-  padding: 20px;
+  text-align: center;
 }
 
 .node-service.node-teaser .field--name-node-title {

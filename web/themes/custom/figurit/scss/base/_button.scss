@@ -10,13 +10,12 @@
   color: #FFFFFF;
   border: 1px;
   border-color: $primary-color;
-  border-radius: 3px;
   outline: none;
   background-color: $primary-color;
-  font-family: $custom-font;
-  font-size: 14px;
-  font-weight: 200;
   appearance: none;
+  font-family: $custom-font;
+  font-size: 16px;
+  font-weight: 400;
   &:link,
   &:visited {
     color: #FFFFFF;
@@ -25,7 +24,7 @@
   &:focus {
     text-decoration: none;
     color: #FFFFFF;
-    background-color: #2B5784;
+    background-color: darken($primary-color, 10%);
     background-image: none;
     box-shadow: none;
   }
@@ -92,6 +91,9 @@
 }
 @mixin btn-small() {
   padding: 6px 11px 5px 11px;
+}
+@mixin btn-wide() {
+  padding: 11px 47px 10px 47px;
 }
 .btn {
   @include btn;
