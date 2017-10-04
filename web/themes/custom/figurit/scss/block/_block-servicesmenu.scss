@@ -1,0 +1,34 @@
+.block-id-servicesmenu {
+  margin-top: 40px;
+  ul.menu {
+    @include clearfix;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    border-bottom: 0;
+    font-family: $base-font;
+    li {
+      display: block;
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      a {
+        display: block;
+        text-decoration: none;
+        color: $primary-color;
+        background: none;
+        &:hover {
+          text-decoration: underline;
+          color: $primary-color;
+        }
+        &.active {
+          text-decoration: underline;
+          color: $primary-color;
+        }
+      }
+      ul.menu {
+        margin-left: 10px;
+      }
+    }
+  }
+}

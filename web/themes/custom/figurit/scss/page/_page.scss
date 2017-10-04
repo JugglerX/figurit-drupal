@@ -68,11 +68,17 @@
       @media #{$small-only} {
         @include grid-column(12);
       }
+      @media #{$medium-only} {
+        @include grid-column(8);
+      }
     }
     .region-sidebar-first {
       @include grid-column(3);
       @media #{$small-only} {
         @include grid-column(12);
+      }
+      @media #{$medium-only} {
+        @include grid-column(4);
       }
     }
   }
@@ -86,11 +92,17 @@
       @media #{$small-only} {
         @include grid-column(12);
       }
+      @media #{$medium-only} {
+        @include grid-column(8);
+      }
     }
     .region-sidebar-second {
       @include grid-column(3);
       @media #{$small-only} {
         @include grid-column(12);
+      }
+      @media #{$medium-only} {
+        @include grid-column(4);
       }
     }
   }

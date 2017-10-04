@@ -5,11 +5,17 @@
     @media #{$small-only} {
       @include grid-column(12);
     }
+    @media #{$medium-only} {
+      @include grid-column(10);
+    }
   }
   .group-right {
     @include grid-column(3);
     @media #{$small-only} {
       @include grid-column(12);
+    }
+    @media #{$medium-only} {
+      @include grid-column(2);
     }
   }
 }
