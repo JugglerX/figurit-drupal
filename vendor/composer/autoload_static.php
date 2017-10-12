@@ -80,6 +80,7 @@ class ComposerStaticInit4c9a0779880e95baf8f28fad9417fe2b
             'Symfony\\Cmf\\Component\\Routing\\' => 30,
             'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
             'Stecman\\Component\\Symfony\\Console\\BashCompletion\\' => 49,
+            'SendGrid\\' => 9,
         ),
         'R' => 
         array (
@@ -96,6 +97,10 @@ class ComposerStaticInit4c9a0779880e95baf8f28fad9417fe2b
         'M' => 
         array (
             'Masterminds\\' => 12,
+        ),
+        'H' => 
+        array (
+            'Html2Text\\' => 10,
         ),
         'G' => 
         array (
@@ -301,6 +306,10 @@ class ComposerStaticInit4c9a0779880e95baf8f28fad9417fe2b
         array (
             0 => __DIR__ . '/..' . '/stecman/symfony-console-completion/src',
         ),
+        'SendGrid\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fastglass/sendgrid/src',
+        ),
         'RedBeanPHP\\' => 
         array (
             0 => __DIR__ . '/..' . '/gabordemooij/redbean/RedBeanPHP',
@@ -328,6 +337,11 @@ class ComposerStaticInit4c9a0779880e95baf8f28fad9417fe2b
         'Masterminds\\' => 
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
+        ),
+        'Html2Text\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/html2text/html2text/src',
+            1 => __DIR__ . '/..' . '/html2text/html2text/test',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
@@ -463,6 +477,10 @@ class ComposerStaticInit4c9a0779880e95baf8f28fad9417fe2b
             'Stack' => 
             array (
                 0 => __DIR__ . '/..' . '/stack/builder/src',
+            ),
+            'Smtpapi' => 
+            array (
+                0 => __DIR__ . '/..' . '/sendgrid/smtpapi/lib',
             ),
         ),
         'P' => 
