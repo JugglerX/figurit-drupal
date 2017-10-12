@@ -2970,10 +2970,6 @@ h2.block-title {
   }
 }
 
-.view.view-work {
-  margin-bottom: -20px;
-}
-
 .view.view-work .view-header {
   text-align: center;
 }
@@ -2994,55 +2990,39 @@ h2.block-title {
 }
 
 .view.view-work .view-content {
-  width: auto;
-  max-width: none;
-  margin-top: 0;
-  margin-right: -10px;
-  margin-bottom: 0;
-  margin-left: -10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
-.view.view-work .view-content:after {
-  display: block;
-  clear: both;
-  content: '';
+@media only screen and (max-width: 767px) {
+  .view.view-work .view-content {
+    display: block;
+  }
 }
 
 .view.view-work .view-content .views-row {
-  float: left;
-  padding-right: 10px;
-  padding-left: 10px;
-  width: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 24%;
   margin-bottom: 20px;
-  height: 400px;
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (max-width: 767px) {
   .view.view-work .view-content .views-row {
-    float: left;
-    padding-right: 10px;
-    padding-left: 10px;
-    width: 25%;
+    flex-basis: 100%;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .view.view-work .view-content .views-row {
-    float: left;
-    padding-right: 10px;
-    padding-left: 10px;
-    width: 50%;
-    height: 340px;
+    flex-basis: 32%;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .view.view-work .view-content .views-row {
-    float: left;
-    padding-right: 10px;
-    padding-left: 10px;
-    width: 100%;
-    height: auto;
+  .view.view-work .view-content .views-row:last-of-type {
+    margin-bottom: 0;
   }
 }
 
@@ -3072,6 +3052,7 @@ h2.block-title {
 .view.view-team .view-content {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 767px) {
@@ -3083,7 +3064,7 @@ h2.block-title {
 .view.view-team .view-content .views-row {
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: 50%;
+  flex-basis: 48%;
   margin-bottom: 10px;
 }
 
@@ -3095,7 +3076,7 @@ h2.block-title {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .view.view-team .view-content .views-row {
-    flex-basis: 50%;
+    flex-basis: 48%;
   }
 }
 
@@ -3280,7 +3261,7 @@ h2.block-title {
 }
 
 .node-work.node-teaser.ds-2row {
-  height: inherit;
+  height: 100%;
   background-color: #FFFFFF;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

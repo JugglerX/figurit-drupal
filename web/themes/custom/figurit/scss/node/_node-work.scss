@@ -27,7 +27,7 @@
   // Display Suite: 2 Row
   &.ds-2row {
     @include clearfix;
-    height: inherit;
+    height: 100%;
     background-color: #FFFFFF;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     .group-firstrow {
