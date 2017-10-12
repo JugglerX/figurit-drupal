@@ -975,6 +975,14 @@ a:hover, a:focus {
   line-height: 16px;
 }
 
+.role-administrator .view {
+  padding-top: 30px;
+}
+
+.block > .container > .view > .contextual {
+  display: none;
+}
+
 .page .layout:after {
   display: block;
   clear: both;
@@ -1210,6 +1218,7 @@ a:hover, a:focus {
 
 .block {
   display: block;
+  position: relative;
 }
 
 .block:after {
@@ -1342,7 +1351,7 @@ h2.block-title {
   color: #1CD34F;
 }
 
-.block-id-contact-details-top {
+.block-id-offices-top {
   float: left;
   padding-right: 10px;
   padding-left: 10px;
@@ -1353,39 +1362,39 @@ h2.block-title {
   line-height: 18px;
 }
 
-.block-id-contact-details-top .view-contact-details .views-field {
+.block-id-offices-top .view-offices .views-field {
   display: inline-block;
   margin-right: 10px;
 }
 
-.block-id-contact-details-top .view-contact-details .views-field .views-label {
+.block-id-offices-top .view-offices .views-field .views-label {
   display: inline-block;
   margin-right: 5px;
   font-weight: bold;
   color: #333;
 }
 
-.block-id-contact-details-top .view-contact-details .views-field .field-content {
+.block-id-offices-top .view-offices .views-field .field-content {
   display: inline-block;
 }
 
-.block-id-contact-details-top .view-contact-details .views-field-field-email a {
+.block-id-offices-top .view-offices .views-field-field-email a {
   color: #333;
 }
 
-.block-id-contact-details-top .view-contact-details .views-field-field-email a:hover {
+.block-id-offices-top .view-offices .views-field-field-email a:hover {
   color: #333;
 }
 
-.block-id-contact-details-top .view-contact-details .views-field-field-phone {
+.block-id-offices-top .view-offices .views-field-field-phone {
   color: #333;
 }
 
-.block-id-contact-details-top .view-contact-details .views-field-field-short-address {
+.block-id-offices-top .view-offices .views-field-field-address {
   color: #333;
 }
 
-.block-id-contact-details-bottom {
+.block-id-offices-bottom {
   float: left;
   padding-right: 10px;
   padding-left: 10px;
@@ -2668,6 +2677,10 @@ h2.block-title {
   box-shadow: none;
 }
 
+.view {
+  position: relative;
+}
+
 @media only screen and (max-width: 767px) {
   .view .view-content .views-row:last-of-type {
     margin-bottom: 0;
@@ -2744,6 +2757,7 @@ h2.block-title {
 .view.view-services.view-display-id-homepage .view-content {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2774,6 +2788,7 @@ h2.block-title {
 .view.view-services.view-display-id-grid .view-content {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2845,7 +2860,7 @@ h2.block-title {
 }
 
 .view.view-certifications .view-content .views-row {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .view.view-certifications .view-content .views-row:last-of-type {
@@ -2868,7 +2883,7 @@ h2.block-title {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 32%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2879,7 +2894,7 @@ h2.block-title {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .view.view-certifications.view-display-id-grid .view-content .views-row {
-    flex-basis: 48%;
+    flex-basis: 49%;
   }
 }
 
@@ -2899,7 +2914,7 @@ h2.block-title {
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 24%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2910,7 +2925,7 @@ h2.block-title {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .view.view-certifications.view-display-id-homepage .view-content .views-row {
-    flex-basis: 48%;
+    flex-basis: 49%;
   }
 }
 
@@ -2948,8 +2963,8 @@ h2.block-title {
 .view.view-testimonials .view-content .views-row {
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: 48%;
-  margin-bottom: 10px;
+  flex-basis: 49%;
+  margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2960,7 +2975,7 @@ h2.block-title {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .view.view-testimonials .view-content .views-row {
-    flex-basis: 48%;
+    flex-basis: 49%;
   }
 }
 

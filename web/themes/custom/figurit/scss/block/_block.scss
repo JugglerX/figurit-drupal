@@ -1,4 +1,5 @@
 .block {
   @include clearfix;
   display: block;
+  position: relative;
 }

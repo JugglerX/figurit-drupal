@@ -1,0 +1,15 @@
+.role-administrator {
+  .view {
+    padding-top: 30px;
+  }
+}
+
+.block {
+  > .container {
+    > .view {
+      > .contextual {
+        display: none;
+      }
+    }
+  }
+}

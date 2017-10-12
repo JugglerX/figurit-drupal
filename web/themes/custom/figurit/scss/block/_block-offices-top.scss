@@ -1,10 +1,10 @@
-.block-id-contact-details-top {
+.block-id-offices-top {
   @include grid-column(12);
   font-family: $base-font;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  .view-contact-details {
+  .view-offices {
     .views-field {
       display: inline-block;
       margin-right: 10px;
@@ -18,7 +18,6 @@
         display: inline-block;
       }
     }
-
     .views-field-field-email {
       a {
         color: #333;
@@ -30,7 +29,7 @@
     .views-field-field-phone {
       color: #333;
     }
-    .views-field-field-short-address {
+    .views-field-field-address {
       color: #333;
     }
   }
