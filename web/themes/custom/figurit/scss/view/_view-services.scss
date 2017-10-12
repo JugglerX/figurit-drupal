@@ -22,7 +22,6 @@
       margin-bottom: 10px;
     }
   }
-
   .more-link {
     text-align: center;
     margin-top: 10px;
@@ -32,11 +31,10 @@
       @include btn-wide;
     }
   }
-
 }
 
-// View Services Block List
-.view.view-services.view-display-id-block-1 {
+// View Services Block: Homepage
+.view.view-services.view-display-id-homepage {
   .view-content {
     display: flex;
     flex-flow: row wrap;
@@ -63,8 +61,8 @@
   }
 }
 
-// View Services Block
-.view.view-services.view-display-id-block-2 {
+// View Services Block: Grid
+.view.view-services.view-display-id-grid {
   .view-content {
     display: flex;
     flex-flow: row wrap;
@@ -91,8 +89,8 @@
   }
 }
 
-// View Services Block List
-.view.view-services.view-display-id-block-3 {
+// View Services Block: List (Menu Links)
+.view.view-services.view-display-id-list {
   padding-top: 20px;
   margin-top: 10px;
   border-top: 3px solid $primary-color;
