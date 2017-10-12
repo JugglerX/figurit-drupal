@@ -19,6 +19,8 @@
   .field--name-field-testimonial-name {
     font-weight: 600;
   }
+
+  // Display Suite 2 Column
   &.ds-2col-empty {
     @include clearfix;
     display: flex;

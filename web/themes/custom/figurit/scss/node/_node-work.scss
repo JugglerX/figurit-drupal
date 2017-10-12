@@ -23,6 +23,7 @@
       }
     }
   }
+
   // Display Suite: 2 Row
   &.ds-2row {
     @include clearfix;
@@ -36,9 +37,6 @@
     .group-secondrow {
       padding: 20px;
     }
-  }
-  @at-root .view.view-work {
-
   }
 }
 
