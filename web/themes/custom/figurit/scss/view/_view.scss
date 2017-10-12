@@ -1,11 +1,11 @@
 .view {
   .view-content {
     .views-row {
-     &:last-of-type {
-       @media #{$small-only} {
-         margin-bottom: 0;
-       }
-     }
+      &:last-of-type {
+        @media #{$small-only} {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }

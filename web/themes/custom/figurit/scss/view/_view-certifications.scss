@@ -37,7 +37,23 @@
   }
 }
 
-.view.view-certifications.view-display-id-block-1 {
+.view.view-certifications.view-display-id-basic  {
+  .view-content {
+    @include grid-row(nest);
+    .views-row {
+      @include grid-column(3);
+      margin-bottom: 10px;
+      @media #{$medium-only} {
+        @include grid-column(4);
+      }
+      @media #{$small-only} {
+        @include grid-column(12);
+      }
+    }
+  }
+}
+
+.view.view-certifications.view-display-id-homepage  {
   .view-content {
     @include grid-row(nest);
     .views-row {

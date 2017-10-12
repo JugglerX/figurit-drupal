@@ -34,9 +34,21 @@
 
 #}
 
+{% set contextual_region = (attributes.class[0] == 'contextual-region') or (attributes.class[1] == 'contextual-region') %}
+{% set bid = machine_name_without_theme_name ? 'block-id-' ~ machine_name_without_theme_name|clean_class %}
+
 {% set classes = [
   'block',
   'block-id-' ~ machine_name_without_theme_name|clean_class,
+  'block-provider-' ~ configuration.provider|clean_class,
+  contextual_region ? 'contextual-region',
+]
+%}
+
+{%
+set remove_classes = [
+  contextual_region ? 'contextual-region',
+  'views-element-container',
 ]
 %}
 
@@ -45,7 +57,7 @@
 {#'block-' ~ base_plugin_id|clean_class,#}
 {#'block-' ~ derivative_plugin_id|clean_class#}
 
-<div {{ attributes.addClass(classes).removeClass('views-element-container') }}>
+<div {{ attributes.removeClass(remove_classes).addClass(classes) }} id={{ bid }} >
 
   {{ title_prefix }}
   {% if label %}

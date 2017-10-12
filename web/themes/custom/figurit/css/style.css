@@ -1016,8 +1016,6 @@ a:hover, a:focus {
 .page .layout.layout-highlighted-second {
   padding: 40px 0 40px 0;
   background: #FFFFFF;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eaeaea', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
 }
 
 .page .layout.layout-canyon {
@@ -2766,7 +2764,7 @@ h2.block-title {
   padding: 0 10px 10px 10px;
 }
 
-.view.view-certifications.view-display-id-block-1 .view-content {
+.view.view-certifications.view-display-id-basic .view-content {
   width: auto;
   max-width: none;
   margin-top: 0;
@@ -2775,13 +2773,13 @@ h2.block-title {
   margin-left: -10px;
 }
 
-.view.view-certifications.view-display-id-block-1 .view-content:after {
+.view.view-certifications.view-display-id-basic .view-content:after {
   display: block;
   clear: both;
   content: '';
 }
 
-.view.view-certifications.view-display-id-block-1 .view-content .views-row {
+.view.view-certifications.view-display-id-basic .view-content .views-row {
   float: left;
   padding-right: 10px;
   padding-left: 10px;
@@ -2790,7 +2788,7 @@ h2.block-title {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .view.view-certifications.view-display-id-block-1 .view-content .views-row {
+  .view.view-certifications.view-display-id-basic .view-content .views-row {
     float: left;
     padding-right: 10px;
     padding-left: 10px;
@@ -2799,7 +2797,48 @@ h2.block-title {
 }
 
 @media only screen and (max-width: 767px) {
-  .view.view-certifications.view-display-id-block-1 .view-content .views-row {
+  .view.view-certifications.view-display-id-basic .view-content .views-row {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+  }
+}
+
+.view.view-certifications.view-display-id-homepage .view-content {
+  width: auto;
+  max-width: none;
+  margin-top: 0;
+  margin-right: -10px;
+  margin-bottom: 0;
+  margin-left: -10px;
+}
+
+.view.view-certifications.view-display-id-homepage .view-content:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.view.view-certifications.view-display-id-homepage .view-content .views-row {
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 25%;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .view.view-certifications.view-display-id-homepage .view-content .views-row {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 33.3333333333%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .view.view-certifications.view-display-id-homepage .view-content .views-row {
     float: left;
     padding-right: 10px;
     padding-left: 10px;

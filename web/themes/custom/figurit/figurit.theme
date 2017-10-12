@@ -45,19 +45,19 @@ function figurit_preprocess_html(&$variables) {
 function figurit_preprocess_page(array &$variables) {
 
   // URL Path Classes
-  $path_unaliased = \Drupal::service('path.current')->getPath();
-  $path_aliased = \Drupal::service('path.alias_manager')->getAliasByPath($path_unaliased);
-  $path_aliased_array = explode('/', $path_aliased);
-
-  $path_classes_array = [];
-  $current_path = "page";
-
-  foreach ($path_aliased_array as $path_chunk) {
-    if ($path_chunk != "" || $path_chunk != null) {
-      $current_path = $current_path . '-' . strtolower($path_chunk);
-      $variables['attributes']['class'][] = $current_path;
-    }
-  }
+  //  $path_unaliased = \Drupal::service('path.current')->getPath();
+  //  $path_aliased = \Drupal::service('path.alias_manager')->getAliasByPath($path_unaliased);
+  //  $path_aliased_array = explode('/', $path_aliased);
+  //
+  //  $path_classes_array = [];
+  //  $current_path = "page";
+  //
+  //  foreach ($path_aliased_array as $path_chunk) {
+  //    if ($path_chunk != "" || $path_chunk != null) {
+  //      $current_path = $current_path . '-' . strtolower($path_chunk);
+  //      $variables['attributes']['class'][] = $current_path;
+  //    }
+  //  }
 }
 
 /**
