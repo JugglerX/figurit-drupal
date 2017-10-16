@@ -2382,6 +2382,10 @@ h2.block-title {
   z-index: 110;
 }
 
+.block-id-hamburger #hamburger.open span {
+  background: #f9f9f9;
+}
+
 .block-id-hamburger #hamburger span {
   position: absolute;
   left: 0;

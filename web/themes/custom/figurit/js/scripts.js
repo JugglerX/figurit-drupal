@@ -4,6 +4,7 @@ console.log('Scripts.js');
 
   Drupal.behaviors.hamburger = {
     attach: function (context) {
+
       $('#hamburger').on('click', function (e) {
         console.log($(this));
         console.log($(this).hasClass('open'));
@@ -15,6 +16,16 @@ console.log('Scripts.js');
           $('#block-mainnavigation').addClass('open');
         }
       });
+
+      $('#block-mainnavigation').on('click', function(e) {
+        console.log(e.target == this);
+        if (e.target == this) {
+          console.log($(this));
+          $(this).removeClass('open');
+          $('#hamburger').removeClass('open');
+        }
+      })
+
     }
   };
 

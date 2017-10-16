@@ -16,6 +16,9 @@
     }
     &.open {
       z-index: 110;
+      span {
+        background: #f9f9f9;
+      }
     }
     span {
       position: absolute;
