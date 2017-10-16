@@ -120,6 +120,13 @@ function figurit_preprocess_block(array &$variables) {
   $variables['derivative_plugin_id'] = $variables['elements']['#derivative_plugin_id'];
   $variables['region'] = $block->getRegion();
 
+//  if (isset($variables['elements']['content']['#block_content'])) {
+//    $variables['custom_block_content_type'] = $variables['elements']['content']['#block_content']->bundle();
+//  }
+
+
+
+
   /*
    * // Add a clearfix class to system branding blocks.
    *

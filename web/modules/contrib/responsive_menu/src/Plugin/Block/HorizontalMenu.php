@@ -1,15 +1,9 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\responsive_menu\Plugin\Block\HorizontalMenu.
- */
-
 namespace Drupal\responsive_menu\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Cache\Cache;
-use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Menu\MenuActiveTrailInterface;
 use Drupal\Core\Menu\MenuLinkTreeInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
@@ -39,6 +33,9 @@ class HorizontalMenu extends BlockBase implements ContainerFactoryPluginInterfac
    */
   protected $menuActiveTrail;
 
+  /**
+   * {@inheritdoc}
+   */
   public function __construct(array $configuration, $plugin_id, $plugin_definition, MenuLinkTreeInterface $menu_tree, MenuActiveTrailInterface $menu_active_trail) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->menuTree = $menu_tree;
@@ -73,16 +70,16 @@ class HorizontalMenu extends BlockBase implements ContainerFactoryPluginInterfac
     $parameters->setMaxDepth($depth);
     // Force the entire tree to be build be setting expandParents to an
     // empty array.
-    $parameters->expandedParents = array();
+    $parameters->expandedParents = [];
     $tree = $menu_tree->load($menu_name, $parameters);
-    $manipulators = array(
+    $manipulators = [
       // Show links to nodes that are accessible for the current user.
-      array('callable' => 'menu.default_tree_manipulators:checkNodeAccess'),
+      ['callable' => 'menu.default_tree_manipulators:checkNodeAccess'],
       // Only show links that are accessible for the current user.
-      array('callable' => 'menu.default_tree_manipulators:checkAccess'),
+      ['callable' => 'menu.default_tree_manipulators:checkAccess'],
       // Use the default sorting of menu links.
-      array('callable' => 'menu.default_tree_manipulators:generateIndexAndSort'),
-    );
+      ['callable' => 'menu.default_tree_manipulators:generateIndexAndSort'],
+    ];
     $tree = $menu_tree->transform($tree, $manipulators);
     $menu = $menu_tree->build($tree);
 
@@ -90,11 +87,11 @@ class HorizontalMenu extends BlockBase implements ContainerFactoryPluginInterfac
     \Drupal::ModuleHandler()->alter('responsive_menu_horizontal_tree', $menu);
 
     $menu['#theme'] = 'responsive_menu_horizontal';
-    $output = array(
+    $output = [
       '#theme' => 'responsive_menu_block_wrapper',
       '#element_type' => \Drupal::config('responsive_menu.settings')->get('horizontal_wrapping_element'),
       '#content' => $menu,
-    );
+    ];
 
     // Add the superfish library if the user has requested it.
     $superfish_setting = \Drupal::config('responsive_menu.settings')->get('horizontal_superfish');

@@ -51,6 +51,8 @@
   'views-element-container',
 ] %}
 
+{{ breakpoint() }}
+
 <div {{ attributes.removeClass(remove_classes).addClass(classes) }} id={{ bid }} >
   {{ title_prefix }}
   {% if label %}

@@ -39,7 +39,7 @@ function hook_responsive_menu_horizontal_menu_name_alter(&$menu_name) {
  * @param array $rendered_tree
  *   The built menu tree to be altered. This is provided as a render array.
  */
-function hook_responsive_menu_off_canvas_tree_alter(&$rendered_tree) {
+function hook_responsive_menu_off_canvas_tree_alter(array &$rendered_tree) {
   // Modify the off-canvas mobile menu tree and change the title of the
   // first item.
   $first = key($rendered_tree['#items']);
@@ -52,7 +52,7 @@ function hook_responsive_menu_off_canvas_tree_alter(&$rendered_tree) {
  * @param array $rendered_tree
  *   The built menu tree to be altered. This is provided as a render array.
  */
-function hook_responsive_menu_horizontal_tree_alter(&$rendered_tree) {
+function hook_responsive_menu_horizontal_tree_alter(array &$rendered_tree) {
   // Modify the horizontal menu tree and change the title of the first item.
   $first = key($rendered_tree['#items']);
   $render_array['#items'][$first]['title'] = 'first';

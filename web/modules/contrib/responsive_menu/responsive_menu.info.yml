@@ -4,13 +4,11 @@ description: 'Provides a javascript based off-canvas responsive menu with depth.
 package: Other
 dependencies:
   - drupal:breakpoint
-# version: 8.x-2.x-dev
-# project: responsive_menu
-# datestamp: '1449481752'
+  - system (>=8.4)
 type: module
 
-# Information added by Drupal.org packaging script on 2016-11-07
-version: '8.x-2.4'
+# Information added by Drupal.org packaging script on 2017-10-11
+version: '8.x-2.5'
 core: '8.x'
 project: 'responsive_menu'
-datestamp: 1478545740
+datestamp: 1507722655

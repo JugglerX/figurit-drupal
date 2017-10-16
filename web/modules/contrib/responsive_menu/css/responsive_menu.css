@@ -38,11 +38,6 @@ html.mm-opened .mm-page {
   position: relative;
 }
 
-.horizontal-menu > li > a:hover,
-.horizontal-menu > li.active-trail > a {
-}
-
-
 .horizontal-menu > li ul ul {
   left: 13.75em;
   top: 0;
@@ -92,13 +87,13 @@ html.mm-opened .mm-page {
 }
 
 .horizontal-menu > li li > a {
-    display: block;
-    position: relative;
-    padding-top: 0.25em;
-    padding-right: 1em;
-    padding-bottom: 0.25em;
-    padding-left: 1em;
-    text-transform: none;
+  display: block;
+  position: relative;
+  padding-top: 0.25em;
+  padding-right: 1em;
+  padding-bottom: 0.25em;
+  padding-left: 1em;
+  text-transform: none;
 }
 
 .off-canvas-wrapper {

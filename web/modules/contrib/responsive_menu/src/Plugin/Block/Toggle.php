@@ -1,7 +1,4 @@
-<?php /**
- * @file
- * Contains \Drupal\responsive_menu\Plugin\Block\Toggle.
- */
+<?php
 
 namespace Drupal\responsive_menu\Plugin\Block;
 
@@ -21,10 +18,9 @@ class Toggle extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    return array(
+    return [
       '#theme' => 'responsive_menu_block_toggle',
-    );
+    ];
   }
-
 
 }

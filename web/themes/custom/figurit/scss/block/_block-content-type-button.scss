@@ -1,59 +1,4 @@
-.block-content--type-button {
-  min-height: 300px;
-  padding: 20px 0 20px 0;
-  .field--name-field-hero-heading {
-    padding-top: 50px;
-    color: #FFFFFF;
-    font-weight: 300;
-    text-align: center;
-    @media #{$small-only} {
-      padding-top: 20px;
-    }
-    h1,
-    h2,
-    p {
-      margin-top: 0;
-      margin-bottom: 20px;
-      color: #FFFFFF;
-      font-family: $custom-font;
-      font-size: 40px;
-      font-weight: 300;
-      line-height: 48px;
-      strong {
-        color: $primary-color;
-        font-weight: 300;
-      }
-    }
-  }
-  .field--name-field-hero-subheading {
-    width: 300px;
-    float: right;
-    margin: 0;
-    margin-top: 150px;
-    margin-bottom: 40px;
-    padding: 20px;
-    color: #FFFFFF;
-    border-bottom: 5px solid $primary-color;
-    background: rgba(0, 0, 0, 0.1);
-    font-weight: 200;
-    @media #{$small-only} {
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
-    @media #{$tiny-only} {
-      width: 100%;
-      margin-bottom: 0;
-    }
-    h1,
-    h2,
-    p {
-      color: #FFFFFF;
-      font-weight: 200;
-      &:last-of-type {
-        margin-bottom: 0;
-      }
-    }
-  }
+.block-content-button {
   .field--name-body {
     width: 70%;
     margin: 0 auto;
@@ -68,7 +13,6 @@
     }
   }
   .field--name-field-link {
-    text-align: center;
     a {
       @include btn();
     }
