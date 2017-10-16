@@ -6,6 +6,13 @@ global-css:
 global-js:
   js:
     js/scripts.min.js: {}
+  dependencies:
+    - core/matchmedia
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - core/drupal.debounce
+    - core/collapse
 
 loglevel:
   version: "1.4.1"
