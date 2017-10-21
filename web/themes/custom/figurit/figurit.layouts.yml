@@ -1,30 +1,16 @@
-ds_1col_fullwidth_hero_footer:
-  label: One column fullwidth hero footer
+ds_2row:
+  label: Two row layout
   category: Display Suite
   class: '\Drupal\ds\Plugin\DsLayout'
   type: partial
-  template: ds/ds-1col-fullwidth-hero-footer
-  icon: ds/ds-1col-fullwidth-hero-footer.png
+  path: templates/ds
+  template: ds-2row
+  icon: ds-2row.png
   regions:
-    header:
-      label: Header (Fullwidth)
-    middle:
-      label: Middle Fixed
-    footer:
-      label: Footer (Fullwidth)
-
-ds_1col_hero:
-  label: One column layout + hero
-  category: Display Suite
-  class: '\Drupal\ds\Plugin\DsLayout'
-  type: partial
-  template: ds/ds-1col-hero
-  icon: ds/ds-1col-hero.png
-  regions:
-    hero:
-      label: Hero
-    middle:
-      label: Middle
+    firstrow:
+      label: First Row
+    secondrow:
+      label: Second Row
 
 ds_2col_75_25:
   label: Two column layout - 75/25
@@ -71,40 +57,3 @@ ds_2col_empty:
       label: Left
     right:
       label: Right
-
-ds_2row:
-  label: Two row layout
-  category: Display Suite
-  class: '\Drupal\ds\Plugin\DsLayout'
-  type: partial
-  path: templates/ds
-  template: ds-2row
-  icon: ds-2row.png
-  regions:
-    firstrow:
-      label: First Row
-    secondrow:
-      label: Second Row
-
-layout_twocol_fullwidth_bricks:
-  label: 'Two column fullwidth bricks'
-  path: layouts/twocol_fullwidth_bricks
-  template: layout--twocol-fullwidth-bricks
-  library: layout_discovery/twocol_bricks
-  category: 'Columns: 2'
-  default_region: middle
-  regions:
-    top:
-      label: Top
-    first_above:
-      label: 'First above'
-    second_above:
-      label: 'Second above'
-    middle:
-      label: Middle
-    first_below:
-      label: 'First below'
-    second_below:
-      label: 'Second below'
-    bottom:
-      label: Bottom
