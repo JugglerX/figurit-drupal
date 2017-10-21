@@ -86,6 +86,7 @@ regions:
   header: Header
   sub_header: 'Sub Header'
   hero: Hero
+  breadcrumb: Breadcrumb
   highlighted: Highlighted First Row
   highlighted_second: Highlighted Second Row
   above_content: 'Above Content'

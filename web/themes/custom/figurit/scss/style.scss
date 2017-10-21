@@ -1,10 +1,13 @@
 @import 'reset';
 @import 'settings';
 
-@import 'base/clearfix';
-@import 'breakpoints';
-@import 'grid';
+@import 'foundation/foundation';
+/// Outputs CSS classes for the grid.
+@include foundation-grid;
 
+@import 'base/clearfix';
+
+@import 'base/clearfix';
 @import 'base/form';
 @import 'base/form-item';
 @import 'base/form-label';
@@ -58,6 +61,7 @@
 @import 'block/block-contactblock';
 
 @import 'view/view';
+@import 'view/view-articles';
 @import 'view/view-services';
 @import 'view/view-certifications';
 @import 'view/view-testimonials';
@@ -65,6 +69,7 @@
 @import 'view/view-team';
 
 @import 'node/node';
+@import 'node/node-article';
 @import 'node/node-certification';
 @import 'node/node-service';
 @import 'node/node-work';
@@ -80,7 +85,6 @@
 @import 'ds/ds-2col-empty';
 
 body {
-  @include display-breakpoint;
   margin: 0;
   padding: 0;
   color: #666666;

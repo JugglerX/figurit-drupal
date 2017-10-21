@@ -17,7 +17,6 @@ select {
   font-size: $form-font-size;
   font-weight: 200;
   line-height: $form-line-height;
-
   appearance: none;
   &:disabled {
     border-color: #CCCCCC;

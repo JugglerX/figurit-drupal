@@ -14,12 +14,14 @@
       border-bottom: 1px solid #EAEAEA;
       background: #F5F5F5;
     }
+    &.layout-breadcrumb {
+    }
     &.layout-hero {
       background: $secondary-color;
       background-size: cover;
     }
     &.layout-middle {
-      padding: 40px 0 30px 0;
+      padding: 30px 0 30px 0;
     }
     &.layout-highlighted {
       padding: 40px 0 40px 0;
@@ -38,11 +40,11 @@
       background: $primary-color;
     }
     &.layout-footer {
-      padding: 30px 0 30px 0;
+      padding: 20px 0 20px 0;
+      border-top: 1px solid $primary-color;
     }
     &.layout-bottom {
-      padding: 30px 0 30px 0;
-      border-top: 1px solid $primary-color;
+      padding: 10px 0 10px 0;
     }
   }
 }
@@ -61,19 +63,19 @@
     @include grid-row();
     .region-content {
       @include grid-column(9);
-      @media #{$small-only} {
+      @include breakpoint(small only) {
         @include grid-column(12);
       }
-      @media #{$medium-only} {
+      @include breakpoint(medium only) {
         @include grid-column(8);
       }
     }
     .region-sidebar-first {
       @include grid-column(3);
-      @media #{$small-only} {
+      @include breakpoint(small only) {
         @include grid-column(12);
       }
-      @media #{$medium-only} {
+      @include breakpoint(medium only) {
         @include grid-column(4);
       }
     }
@@ -85,19 +87,19 @@
     @include grid-row();
     .region-content {
       @include grid-column(9);
-      @media #{$small-only} {
+      @include breakpoint(small only) {
         @include grid-column(12);
       }
-      @media #{$medium-only} {
+      @include breakpoint(medium only) {
         @include grid-column(8);
       }
     }
     .region-sidebar-second {
       @include grid-column(3);
-      @media #{$small-only} {
+      @include breakpoint(small only) {
         @include grid-column(12);
       }
-      @media #{$medium-only} {
+      @include breakpoint(medium only) {
         @include grid-column(4);
       }
     }

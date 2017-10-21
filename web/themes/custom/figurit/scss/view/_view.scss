@@ -35,9 +35,17 @@
   .view-content {
     .views-row {
       &:last-of-type {
-        @media #{$small-only} {
+        @include breakpoint(small only) {
           margin-bottom: 0;
         }
+      }
+    }
+  }
+  .view-empty {
+    ul.links {
+      margin-bottom: 20px;
+      li {
+
       }
     }
   }

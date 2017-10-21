@@ -18,10 +18,11 @@
       background-image: url('../images/logo-mobile.png');
       background-repeat: no-repeat;
       background-size: 188px 24px;
-
     }
     img {
       display: none;
+      width: 100%;
+      height: auto;
     }
   }
   .site-name {
